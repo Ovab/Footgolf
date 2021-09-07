@@ -24,7 +24,7 @@ include 'connect.php';
              exit('Please fill both the username and password fields!');
          }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-         if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `speler-telefoon` FROM spelers WHERE `Speler-email` = ?')) {
+         if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `Speler-nummer` FROM spelers WHERE `Speler-email` = ?')) {
              $stmt->bind_param('s', $_POST['speler-email']);
              $stmt->execute();
              // Store the result so we can check if the account exists in the database.
