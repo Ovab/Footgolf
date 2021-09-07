@@ -4,12 +4,12 @@
 $servername = "localhost";
 //server gebruikersnaam
 $username = "root";
-<<<<<<< Updated upstream:connect.php
+
 //server wachtwoord
-$password = "";
-=======
 $password = "root";
->>>>>>> Stashed changes:php/connect.php
+
+$password = "root";
+
 $database= 'footgolf';
 
 // Create connection
@@ -20,9 +20,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 
 }
-<<<<<<< Updated upstream:connect.php
+
 
 session_start();
-
-=======
->>>>>>> Stashed changes:php/connect.php
