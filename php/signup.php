@@ -2,23 +2,19 @@
 
 //signup.php
 include "connect.php";
-echo '<h3>Sign up</h3>';
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     /*the form hasn't been posted yet, display it
       note that the action="" will cause the form to post to the same page it is on */
     echo '<form method="post" action="">
-        email: <input type="text" name="speler-email" /><br>
-        Naam: <input type="text" name="speler-naam" /><br>
-        06-Nummer: <input type="text" name="speler-nummer" /><br>
-        <input type="submit" value="Sign up" />
+       
      </form>';
 } else {
     $errors = array();
 
     if (isset($_POST['speler-naam'])) {
         if (!ctype_alpha($_POST['speler-naam'])) {
-            $errors[] = 'De naam kan alleen letters betvatten';
+            $errors[] = 'De naam kan alleen letters bevatten';
         }
     }
     else{
@@ -45,7 +41,52 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             echo 'Something went wrong while registering. Please try again later.';
             echo mysqli_error($conn);//debug shiit
         } else {
-            echo 'yurrr';
+
         }
     }
 }
+?>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+
+    <img class="image" src="img/Footgolf.png">
+
+
+
+  <div class="wrapper">
+    <section class="form signup">
+      <header>Signup</header>
+      <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <div class="error-text"></div>
+        <div class="field input">
+          <label>Email Address</label>
+          <input type="text" name="speler-email" placeholder="Enter your email" required>
+        </div>
+        <div class="field input">
+          <label>Name</label>
+          <input type="text" name="speler-naam" placeholder="Enter your game name" required>
+        </div>
+        <div class="field input">
+            <label>Tel Nummer</label>
+            <input type="number" name="speler-nummer" placeholder="Enter your phone number">
+        </div>
+
+        <div class="field button">
+          <input type="submit" name="submit" value="Continue to play">
+        </div>
+      </form>
+    </section>
+  </div>
+
+
+
+
+
+
+</body>
+</html>
+
