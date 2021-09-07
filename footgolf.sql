@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 07, 2021 at 06:55 AM
+-- Generation Time: Sep 07, 2021 at 10:03 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -51,17 +51,13 @@ DROP TABLE IF EXISTS `spelers`;
 CREATE TABLE IF NOT EXISTS `spelers` (
   `Speler-email` varchar(45) NOT NULL,
   `Speler-naam` varchar(45) NOT NULL,
-  `Speler-nummer` int(10) NOT NULL,
+  `Speler-telefoon` int(11) DEFAULT NULL,
+  `Speler1` int(11) NOT NULL,
+  `Speler2` int(11) NOT NULL,
+  `Speler3` int(11) NOT NULL,
+  `Speler4` int(11) NOT NULL,
   PRIMARY KEY (`Speler-email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `spelers`
---
-
-INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-nummer`) VALUES
-('bavo.famknol2@gmail.com', 'ovab', 0),
-('bavo.famknol@gmail.com', 'bavo knol', 0);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -75,12 +71,8 @@ CREATE TABLE IF NOT EXISTS `spellen` (
   `Hole` int(11) DEFAULT NULL,
   `Afstand` int(11) DEFAULT NULL,
   `Norm` int(11) DEFAULT NULL,
-  `Speler_1_score` int(11) NOT NULL,
-  `Speler_2_score` int(11) NOT NULL,
-  `Speler_3_score` int(11) NOT NULL,
-  `Speler_4_score` int(11) NOT NULL,
   PRIMARY KEY (`SpelID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -94,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `spellen_has_spelers` (
   `Spelers_Speler-email` varchar(45) NOT NULL,
   PRIMARY KEY (`Spellen_SpelID`,`Spelers_Speler-email`),
   KEY `fk_Spellen_has_Spelers_Spelers1` (`Spelers_Speler-email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Constraints for dumped tables
