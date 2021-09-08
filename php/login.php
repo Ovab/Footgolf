@@ -51,8 +51,6 @@ include 'connect.php';
  <?php
 
  //signup.php
- include "connect.php";
-
  if ($_SERVER['REQUEST_METHOD'] != 'POST') {
      /*the form hasn't been posted yet, display it
        note that the action="" will cause the form to post to the same page it is on */
