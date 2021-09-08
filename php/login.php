@@ -105,7 +105,7 @@ include 'connect.php';
              crossorigin="anonymous"
      ></script>
      <link rel="stylesheet" href="style.css" />
-     <title>Sign in & Sign up Form</title>
+     <title>Footgolf Log In / Registreer</title>
  </head>
  <body>
  <div class="container">
@@ -147,7 +147,7 @@ include 'connect.php';
              <div class="content">
                  <h3>Nieuw hier?</h3>
                  <p>
-                     Registreer nu om de ultieme Footgolf everaring te belevening?
+                     Registreer nu om de ultieme Footgolf ervaring te beleven?
                  </p>
                  <button class="btn transparent" id="sign-up-btn">
                      Registreer
@@ -159,7 +159,7 @@ include 'connect.php';
              <div class="content">
                  <h3>Een van ons?</h3>
                  <p>
-                     Log in, om weer te leukste ervaring te beleven
+                     Log in, om weer de leukste ervaring te beleven
                  </p>
                  <button class="btn transparent" id="sign-in-btn">
                      Log in
