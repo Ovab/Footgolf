@@ -13,12 +13,16 @@ include 'connect.php';
      }
 
      else {
-         if (!isset($_POST['speler-email'])) {
+         if (!isset($_POST['speler-naam'])) {
              // Could not get the data that should have been     sent.
-             exit('Please fill both the username and password fields!');
+             echo('Please fill both the username and password fields!');
+             if(!ctype_alnum($_POST['speler-email']))
+             {
+                  echo'The username can only contain letters and digits.';
+             }
          }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-         if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `Speler-nummer` FROM spelers WHERE `Speler-email` = ?')) {
+         if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `Speler-telefoon` FROM spelers WHERE `Speler-email` = ?')) {
              $stmt->bind_param('s', $_POST['speler-email']);
              $stmt->execute();
              // Store the result so we can check if the account exists in the database.
@@ -62,7 +66,7 @@ include 'connect.php';
      <div class="forms-container">
          <div class="signin-signup">
              <form action="#" class="sign-in-form">
-                 <h2 class="title">Sign in</h2>
+                 <h2 class="title">Log in</h2>
                  <div class="input-field">
                      <i class="fas fa-user"></i>
                      <input type="text" placeholder="Username" />
@@ -71,12 +75,13 @@ include 'connect.php';
                      <i class="fas fa-phone"></i>
                      <input type="number" placeholder="Telefoon nummer" />
                  </div>
+                 <input type="submit" class="btn" value="Log in" />
              </form>
              <form action="#" class="sign-up-form">
                  <h2 class="title">Sign up</h2>
                  <div class="input-field">
                      <i class="fas fa-user"></i>
-                     <input type="text" placeholder="Username" />
+                     <input type="text" placeholder="Spelernaam" />
                  </div>
                  <div class="input-field">
                      <i class="fas fa-envelope"></i>
@@ -104,7 +109,6 @@ include 'connect.php';
                  <img src="img/Footgolf-logo.png" class="image" alt="" />
              </div>
          </div>
-
          <div class="panel right-panel">
              <div class="content">
                  <h3>Een van ons?</h3>
@@ -114,7 +118,7 @@ include 'connect.php';
                  <button class="btn transparent" id="sign-in-btn">
                      Log in
                  </button>
-                 <img src="img/Footgolf-logo.png" class="image2" alt="">
+
              </div>
          </div>
      </div>
