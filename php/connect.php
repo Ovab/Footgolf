@@ -19,5 +19,4 @@ if ($conn->connect_error) {
 
 }
 
-
 session_start();
