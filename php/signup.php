@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             echo 'Something went wrong while registering. Please try again later.';
             echo mysqli_error($conn);//debug shiit
         } else {
-
+        //Header naar index
         }
     }
 }

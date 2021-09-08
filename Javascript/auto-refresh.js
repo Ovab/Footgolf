@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 function refreshvar2(){
     setTimeout( function() {
-        $('#c2b').fadeOut('slow').load('../score_register.php').fadeIn('slow');
+        $('#c2b').fadeOut('slow').load('../php/score_register.php').fadeIn('slow');
         refreshvar2();
     }, 5000);
 }
