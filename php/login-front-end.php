@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(E_ERROR | E_PARSE);
 $errors=$_SESSION['errors'];
 echo $errors;
 $errors=' ';
@@ -16,7 +17,7 @@ unset($_SESSION['errors'])
              crossorigin="anonymous"
      ></script>
      <link rel="stylesheet" href="style.css" />
-     <title>Sign in & Sign up Form</title>
+     <title>Footgolf - Log in / Sign up</title>
  </head>
  <body>
  <div class="container">
@@ -51,7 +52,7 @@ unset($_SESSION['errors'])
                  </div>
                  <input type="checkbox" checked="checked" style="display: none" name="Signup"/>
                  <input type="submit" class="btn" value="Registreer" />
-                 <img src="img/footgolf5.png" class="image2">
+                 <img src="../img/footgolf5.png" class="image2">
              </form>
          </div>
      </div>
@@ -61,7 +62,7 @@ unset($_SESSION['errors'])
              <div class="content">
                  <h3>Nieuw hier?</h3>
                  <p>
-                     Registreer nu om de ultieme Footgolf everaring te belevening?
+                     Registreer nu om de ultieme Footgolf ervaring te beleven?
                  </p>
                  <button class="btn transparent" id="sign-up-btn">
                      Registreer
@@ -73,7 +74,7 @@ unset($_SESSION['errors'])
              <div class="content">
                  <h3>Een van ons?</h3>
                  <p>
-                     Log in, om weer te leukste ervaring te beleven
+                     Log in, om weer de leukste ervaring te beleven!
                  </p>
                  <button class="btn transparent" id="sign-in-btn">
                      Log in
