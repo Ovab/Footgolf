@@ -175,15 +175,15 @@ form.sign-in-form {
 }
 
 .image{
-    margin-top: 7em;
+
     width: 100%;
     transition: transform 1.1s ease-in-out;
     transition-delay: 0.4s;
 }
 
-.image2{
-    margin-bottom: 70em;
-    width: 100%;
+.image2 {
+    margin-top: 1em;
+    width: 30%;
     transition: transform 1.1s ease-in-out;
     transition-delay: 0.4s;
 }
