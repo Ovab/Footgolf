@@ -3,27 +3,32 @@
  <head>
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <script
-             src="https://kit.fontawesome.com/64d58efce2.js"
-             crossorigin="anonymous"
-     ></script>
+     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="style.css" />
      <title>Footgolf - Log in / Sign up</title>
  </head>
  <body>
  <div class="container">
      <div class="forms-container">
+     <!--Sign in form -->
          <div class="signin-signup">
              <form action="signin.php" class="sign-in-form" method="post">
                  <h2 class="title">Log in</h2>
                  <?php
+                 //resume / start sessie
                  session_start();
+                 //zet php error reporting uit
                  error_reporting(E_ERROR | E_PARSE);
+                 //maar het session variable een normale voor reasons
                  $errors=$_SESSION['errors'];
+                 //Check of de session array bestaat, als dat zo is print de error
                  if (isset($_SESSION['errors'])) {echo "<div class='error-text'>".$errors."</div>";}
+                 //variablen leeg maken just in case
                  $errors=' ';
                  unset($_SESSION['errors'])
+                 //eind PHP code
                  ?>
+
                  <div class="input-field">
                      <i class="fas fa-user"></i>
                      <input type="text" placeholder="email" name="speler-email"/>
@@ -32,11 +37,11 @@
                      <i class="fas fa-phone"></i>
                      <input type="number" placeholder="Telefoon nummer" name="speler-nummer"/>
                  </div>
-                 <input onclick="showError()"  type="submit" class="btn" value="Log in" />
+                 <input type="submit" class="btn" value="Log in" />
              </form>
 <!-- Signup form  -->
              <form action="signup.php" class="sign-up-form" method="post">
-                 <h2 class="title">Sign up</h2>
+                 <h2 class="title">Registreer</h2>
                  <div class="input-field">
                      <i class="fas fa-user"></i>
                      <input type="text" placeholder="Spelernaam" name="speler-naam"/>
@@ -49,7 +54,6 @@
                      <i class="fas fa-phone"></i>
                      <input type="number" placeholder="Telefoon nummer" name="speler-nummer"/>
                  </div>
-                 <input type="checkbox" checked="checked" style="display: none" name="Signup"/>
                  <input type="submit" class="btn" value="Registreer" />
                  <img src="../img/footgolf5.png" class="image2">
              </form>

@@ -13,20 +13,18 @@ else{
     $_SESSION['errors']='Niet alle velden zijn ingevoerd ingevoerd';
     header('Location:login-front-end.php');
 }
- if (!empty($errors)) {
+ if (empty($errors)) {
     $email=$_POST['speler-email'];
     $speler=$_POST['speler-naam'];
     $telnummer=$_POST['speler-nummer'];
     $sql = "INSERT INTO spelers(`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES('". $email ."', '". $speler ."', '".$telnummer. "')";
-
+//TODO Veilig maken
     $result = mysqli_query($conn, $sql);
     if (!$result) {
-
-        //something went wrong, display the error
-        echo 'Something went wrong while registering. Please try again later.';
-        echo mysqli_error($conn);//debug shiit
+        $_SESSION['errors']='Iets ging fout probeer plz opnieuw';
+        header('Location:login-front-end.php');
     } else {
         //Header naar index
-        header('Location:index.php');
+        header('Location:../index.html');
     }
 }
