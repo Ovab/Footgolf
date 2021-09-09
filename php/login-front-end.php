@@ -1,12 +1,3 @@
-<?php
-session_start();
-error_reporting(E_ERROR | E_PARSE);
-$errors=$_SESSION['errors'];
-echo $errors;
-$errors=' ';
-unset($_SESSION['errors'])
-?>
-
 <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -25,6 +16,14 @@ unset($_SESSION['errors'])
          <div class="signin-signup">
              <form action="signin.php" class="sign-in-form" method="post">
                  <h2 class="title">Log in</h2>
+                 <?php
+                 session_start();
+                 error_reporting(E_ERROR | E_PARSE);
+                 $errors=$_SESSION['errors'];
+                 if (isset($_SESSION['errors'])) {echo "<div class='error-text'>".$errors."</div>";}
+                 $errors=' ';
+                 unset($_SESSION['errors'])
+                 ?>
                  <div class="input-field">
                      <i class="fas fa-user"></i>
                      <input type="text" placeholder="email" name="speler-email"/>
@@ -33,7 +32,7 @@ unset($_SESSION['errors'])
                      <i class="fas fa-phone"></i>
                      <input type="number" placeholder="Telefoon nummer" name="speler-nummer"/>
                  </div>
-                 <input type="submit" class="btn" value="Log in" />
+                 <input onclick="showError()"  type="submit" class="btn" value="Log in" />
              </form>
 <!-- Signup form  -->
              <form action="signup.php" class="sign-up-form" method="post">
@@ -85,7 +84,10 @@ unset($_SESSION['errors'])
          </div>
      </div>
  </div>
+<script>
 
- <script src="../Javascript/app.js"></script>
+</script>
+ <script src="../Javascript/app.js">
+ </script>
  </body>
  </html>

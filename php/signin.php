@@ -1,5 +1,6 @@
 <?php
 include_once 'connect.php';
+
 if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
     $_SESSION['errors']='Je bent al ingelogd, je kan <a href="../php/signout.php">uitloggen</a> als je wilt.';
     header('Location:login-front-end.php');
@@ -25,9 +26,13 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
         }
     } else {
         // Incorrect username
+        //hier invoegen
         $_SESSION['errors']="We konden geen email vinden van dit account";
         header('Location:login-front-end.php');
     }
 
     $stmt->close();
+
+
+
 }
