@@ -1,7 +1,8 @@
 <?php
 include_once 'connect.php';
 if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
-    echo 'You are already signed in, you can <a href="../php/signout.php">sign out</a> if you want.';
+    $_SESSION['errors']='Je bent al ingelogd, je kan <a href="../php/signout.php">uitloggen</a> als je wilt.';
+    header('Location:login-front-end.php');
 } else {
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
     if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `Speler-telefoon` FROM spelers WHERE `Speler-email` = ?')) {
@@ -19,11 +20,13 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
             }
         } else {
             // Incorrect password
-            echo 'Incorrect username and/or password!';
+            $_SESSION['errors']='De inlog gegevens zijn onjuist';
+            header('Location:login-front-end.php');
         }
     } else {
         // Incorrect username
-        echo 'Incorrect username and/or password!';
+        $_SESSION['errors']="We konden geen email vinden van dit account";
+        header('Location:login-front-end.php');
     }
 
     $stmt->close();

@@ -1,4 +1,12 @@
- <!DOCTYPE html>
+<?php
+session_start();
+$errors=$_SESSION['errors'];
+echo $errors;
+$errors=' ';
+unset($_SESSION['errors'])
+?>
+
+<!DOCTYPE html>
  <html lang="en">
  <head>
      <meta charset="UTF-8" />
@@ -7,14 +15,14 @@
              src="https://kit.fontawesome.com/64d58efce2.js"
              crossorigin="anonymous"
      ></script>
-     <link rel="stylesheet" href="php/style.css" />
+     <link rel="stylesheet" href="style.css" />
      <title>Sign in & Sign up Form</title>
  </head>
  <body>
  <div class="container">
      <div class="forms-container">
          <div class="signin-signup">
-             <form action="php/signin.php" class="sign-in-form" method="post">
+             <form action="signin.php" class="sign-in-form" method="post">
                  <h2 class="title">Log in</h2>
                  <div class="input-field">
                      <i class="fas fa-user"></i>
@@ -27,7 +35,7 @@
                  <input type="submit" class="btn" value="Log in" />
              </form>
 <!-- Signup form  -->
-             <form action="php/signup.php" class="sign-up-form" method="post">
+             <form action="signup.php" class="sign-up-form" method="post">
                  <h2 class="title">Sign up</h2>
                  <div class="input-field">
                      <i class="fas fa-user"></i>
@@ -58,7 +66,7 @@
                  <button class="btn transparent" id="sign-up-btn">
                      Registreer
                  </button>
-                 <img src="img/Footgolf-logo.png" class="image" alt="" />
+                 <img src="../img/Footgolf-logo.png" class="image" alt="" />
              </div>
          </div>
          <div class="panel right-panel">
@@ -77,6 +85,6 @@
      </div>
  </div>
 
- <script src="Javascript/app.js"></script>
+ <script src="../Javascript/app.js"></script>
  </body>
  </html>

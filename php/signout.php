@@ -1,4 +1,4 @@
 <?php
 include_once 'connect.php';
-session_destroy();
+session_unset();
 header('login.html');
