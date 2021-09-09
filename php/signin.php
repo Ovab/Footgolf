@@ -20,14 +20,13 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
                 print_r($_SESSION);
             }
         } else {
-            // Incorrect password
+            // Incorrect telefoon nummer
             $_SESSION['errors']='De inlog gegevens zijn onjuist';
             header('Location:login-front-end.php');
         }
     } else {
         // Incorrect username
-        //hier invoegen
-        $_SESSION['errors']="We konden geen email vinden van dit account";
+        $_SESSION['errors']="We konden geen email of telefoonnummer vinden van dit account";
         header('Location:login-front-end.php');
     }
 

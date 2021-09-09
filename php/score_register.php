@@ -8,6 +8,7 @@ $sql="insert into spellen(SpelID,Hole, Afstand, Norm, Score)  values ('".$score1
     echo 'Something went wrong while registering. Please try again later.';
     echo mysqli_error($conn);//debug shiit
 } else {
-    //Header naar index
+    //Header naar score front end
+        header('location:Score-front-end.php');
 
 }
