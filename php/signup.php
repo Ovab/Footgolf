@@ -18,7 +18,7 @@ else{
     $speler=$_POST['speler-naam'];
     $telnummer=$_POST['speler-nummer'];
     $sql = "INSERT INTO spelers(`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES('". $email ."', '". $speler ."', '".$telnummer. "')";
-//TODO Veilig maken
+//TODO:Veilig maken
     $result = mysqli_query($conn, $sql);
     if (!$result) {
         $_SESSION['errors']='Iets ging fout probeer plz opnieuw';

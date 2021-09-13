@@ -1,7 +1,15 @@
 <?php
 include_once "connect.php";
 $score1=$_POST['speler_score'];
-$sql="insert into spellen(SpelID,Hole, Afstand, Norm, Score)  values ('".$score1."','".$score1."','".$score1."','".$score1."', '".$score1."')";
+$qury='SpelID,Hole, Afstand, Norm, Score,';
+$spelerPos='Speler'.$_SESSION['Speler_pos'];
+$q2=', groupID';
+$groepID=$_SESSION['groepID'];
+$where=' where groupID='.$_SESSION['groepID'];
+$where_met_values=` values ($score1 ,$score1 ,$score1 , $score1 ,$score1 ,$score1, $groepID)$where`;
+$query="insert into spellen(SpelID,Hole, Afstand, Norm, Score, groupID)  values ($score1 ,$score1 ,$score1 , $score1 ,$score1, $groepID) where groupID = $groepID";
+
+$sql="$query";
     $res=mysqli_query($conn,$sql);
     if (!$res) {
     //something went wrong, display the error
