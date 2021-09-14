@@ -7,14 +7,21 @@ echo ("<link rel='stylesheet' href='maakgroep.css'>
         <input class='btn' type='submit' name='maak_group' class='button' value='Maak Groep'>
 </form></div>");
 } else{
-    //Genereer random nummer tussen 1000 en 9999
-    $random= mt_rand(1000,9999);
+    //Genereer 5 digit random nummer
+    $random= mt_rand(1000,99999);
     //Zet nummer in DB
-    $_SESSION['groepID']=mysqli_query($conn, "insert into groep (groupID,Aanmaak_datum) VALUES($random,NOW()) ");
-    //maak een session variable van het random nummer
-    $_SESSION['groepID']= $random;
-    //Maak ID-maker de leider van de groep
-    $_SESSION['groepLead']= true;
-    //Print het session variable, success met dit goed in de HTML zetten Lotfi ;)
-    echo "Je group id is ".$random;
+    $insert=mysqli_query($conn, "insert into groep (groupID,Aanmaak_datum) VALUES($random,NOW()) ");
+    if(!$insert){
+        echo 'Oeps er ging iets fout, probeer aub opnieuw';
+    }
+    else {
+        //maak een session variable van het random nummer
+        $_SESSION['groepID'] = $random;
+        //Maak ID-maker de leider van de groep
+        $_SESSION['groepLead'] = true;
+        //
+        $_SESSION['Speler_pos'] = 1;
+        //Print het session variable, success met dit goed in de HTML zetten Lotfi ;)
+        echo "Je group id is " . $random;
+    }
 }

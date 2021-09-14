@@ -5,6 +5,8 @@
     <title>Footgolf - Score</title>
 </head>
 <body>
+<?php include('connect.php');print_r($_SESSION);
+?>
 <p id="score"></p>
 <form action="score_register.php" method="post">
     <label>Voer uw score in:</label>
@@ -12,24 +14,27 @@
     <input type="submit">
 </form>
 <p id="score1"></p>
+<!--Import jQuery -->
 <script src="../Javascript/jquery.min.js"></script>
+<!--auto refresh script -->
 <script>
-    let ready=true
-    //setInterval(function(){ ready=false }, 3000);
-    setTimeout( function () {
-        jQuery.ajax({
-            url: 'score_fetch.php', //Define your script url here ...
-            data: '', //Pass some data if you need to
-            method: 'POST', //Makes sense only if you passing data
-            success: function(answer) {
-                jQuery('#score1').html(answer);//update your div with new content, yey ....
-            },
-            error: function() {
-                //unknown error occorupted
-                alert("shit brokey");
-            }
-        });
-    }, 2000 );
+    //maak functie aan.
+        function update_var() {
+            jQuery.ajax({
+                url: 'score_fetch.php', //Define your script url here ...
+                method: 'POST', //Makes sense only if you passing data
+                success: function (answer) {
+                    jQuery('#score1').html(answer);//update your div with new content, yey ....
+                },
+                error: function () {
+                    //unknown error occorupted
+                    alert("shit brokey");
+                }
+            });
+        }
+        update_var()
+        //Call de functie elke ~2.7 sec
+    setInterval(function(){ update_var() }, 2700);
 </script>
 </body>
 </html>
