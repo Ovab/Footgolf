@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 300px;
+    background-color: #EC1C24;
+    border: none;
+    outline: none;
+    height: 98px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #EC1C24;
+}

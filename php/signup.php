@@ -21,7 +21,7 @@ else{
 //TODO Veilig maken
     $result = mysqli_query($conn, $sql);
     if (!$result) {
-        $_SESSION['errors']='Iets ging fout probeer plz opnieuw';
+        $_SESSION['errors']='Er is iets fout gegaan, probeer het later opnieuw';
         header('Location:login-front-end.php');
     } else {
         //Header naar index
