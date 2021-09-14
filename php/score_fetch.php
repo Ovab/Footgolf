@@ -1,13 +1,15 @@
 <?php
 include_once "connect.php";
-$sql = "SELECT SpelID, Hole, Afstand, Norm, Score FROM spellen";
+$groepID=$_SESSION['groepID'];
+$sql = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4 FROM spellen where groupID=$groepID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-// output data of each row
+// output data
 while($row = $result->fetch_assoc()) {
-echo "SpelID: ". $row["SpelID"]." Score ".$row['Score']. "<br>";
-}
+    //echo de data, dit refreshed elke paar sec (zie Score-front-end.php in script tag voor cooldown)
+echo "SpelID: ". $row["SpelID"]." <br> Score Speler 1: ".$row['Speler1']. "<br>" ."Score Speler 2: ".$row['Speler2']. "<br>";
+    }
 } else {
 echo "0 results";
 }

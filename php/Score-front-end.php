@@ -21,13 +21,13 @@
     //maak functie aan.
         function update_var() {
             jQuery.ajax({
-                url: 'score_fetch.php', //Define your script url here ...
-                method: 'POST', //Makes sense only if you passing data
+                url: 'score_fetch.php', //Script URL.
+                method: 'POST', //Methode data doorgeven
                 success: function (answer) {
-                    jQuery('#score1').html(answer);//update your div with new content, yey ....
+                    jQuery('#score1').html(answer);//update your div with new content ....
                 },
                 error: function () {
-                    //unknown error occorupted
+                    //Iets ging fout, niet sure wat tho
                     alert("shit brokey");
                 }
             });
