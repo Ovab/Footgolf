@@ -10,7 +10,8 @@ echo ("<link rel='stylesheet' href='maakgroep.css'>
     //Genereer 5 digit random nummer
     $random= mt_rand(1000,99999);
     //Zet nummer in DB
-    $insert=mysqli_query($conn, "insert into groep (groupID,Aanmaak_datum) VALUES($random,NOW()) ");
+    //insert into groep (groupID,Aanmaak_datum) VALUES($random,NOW())
+    $insert=mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler-aantal`) VALUES ($random, NOW(), 1)");
     if(!$insert){
         echo 'Oeps er ging iets fout, probeer aub opnieuw';
     }
