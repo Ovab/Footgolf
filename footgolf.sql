@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 07, 2021 at 10:03 AM
+-- Generation Time: Sep 15, 2021 at 09:42 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -31,15 +31,16 @@ DROP TABLE IF EXISTS `groep`;
 CREATE TABLE IF NOT EXISTS `groep` (
   `groupID` int(11) NOT NULL AUTO_INCREMENT,
   `Aanmaak_datum` datetime NOT NULL,
+  `Speler-aantal` int(4) NOT NULL,
   PRIMARY KEY (`groupID`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=74306 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `groep`
 --
 
-INSERT INTO `groep` (`groupID`, `Aanmaak_datum`) VALUES
-(1, '2021-09-06 12:30:29');
+INSERT INTO `groep` (`groupID`, `Aanmaak_datum`, `Speler-aantal`) VALUES
+(8135, '2021-09-15 10:21:49', 1);
 
 -- --------------------------------------------------------
 
@@ -52,12 +53,15 @@ CREATE TABLE IF NOT EXISTS `spelers` (
   `Speler-email` varchar(45) NOT NULL,
   `Speler-naam` varchar(45) NOT NULL,
   `Speler-telefoon` int(11) DEFAULT NULL,
-  `Speler1` int(11) NOT NULL,
-  `Speler2` int(11) NOT NULL,
-  `Speler3` int(11) NOT NULL,
-  `Speler4` int(11) NOT NULL,
   PRIMARY KEY (`Speler-email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `spelers`
+--
+
+INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES
+('bavo.famknol@gmail.com', 'ovab', 619541435);
 
 -- --------------------------------------------------------
 
@@ -69,10 +73,22 @@ DROP TABLE IF EXISTS `spellen`;
 CREATE TABLE IF NOT EXISTS `spellen` (
   `SpelID` int(11) NOT NULL,
   `Hole` int(11) DEFAULT NULL,
-  `Afstand` int(11) DEFAULT NULL,
-  `Norm` int(11) DEFAULT NULL,
+  `Speler1` int(11) NOT NULL,
+  `Speler2` int(11) DEFAULT NULL,
+  `Speler3` int(11) DEFAULT NULL,
+  `Speler4` int(11) DEFAULT NULL,
+  `groupID` int(11) NOT NULL,
   PRIMARY KEY (`SpelID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `spellen`
+--
+
+INSERT INTO `spellen` (`SpelID`, `Hole`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `groupID`) VALUES
+(2, 1, 3, NULL, NULL, NULL, 74305),
+(7, 1, 7, 6, 8, 2, 43815),
+(8, 1, 8, NULL, NULL, NULL, 60345);
 
 -- --------------------------------------------------------
 
