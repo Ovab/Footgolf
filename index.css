@@ -15,29 +15,53 @@ body {
 
 .wrapper {
     width: auto;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    height: 100vh;
+    text-align: center;
 }
 
-.icon {
-    width: 2em;
-    height: auto;
-    position: absolute;
-    left: 25%;
-    bottom: 25%;
-    top: 25%;
-    right: 25%;
+.btns-wrapper {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 .btn {
+    line-height: 1.2;
     position: relative;
-    width: 75px;
-    height: 45px;
+    width: 100px;
+    height: 50px;
     background: white;
     border-radius: 30px;
     box-shadow: 2px 2px 6px #333333;
     margin: 10px;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #aaaaaa;
+}
+
+.icon {
+    margin-top: 0.5em;
+    width: 2em;
+    height: auto;
+    padding: 0;
+}
+
+
+
+
+
+
+
+p {
+    margin: 0;
+    padding: 0;
 }
