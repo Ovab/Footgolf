@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Footgolf</title>
+    <title>Footgolf - Home</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<link rel="stylesheet" href="index.css">
+
+
+
 <div class="wrapper">
 
     <h2 class="title">Categories</h2>
     <div class="btns-wrapper">
-    <div class="btn"><img class="icon" src="icons/golfer.png"><br><p>Spelregels</p></div>
+    <div class="btn" onclick="showSpelregels()"><img class="icon" src="icons/golfer.png"><br><p>Spelregels</p></div>
     <div class="btn"><img class="icon" src="icons/holes.png"><br><p>Gholes</p></div>
     <div class="btn"><img class="icon" src="icons/reservation.png"><br><p>Reservatie</p></div>
     </div>
-    <h2 class="title">Spelregels</h2>
 
-<div class="container">
-    <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br><p1>De bedoeling van het spel is dat je de bal in zo min mogelijk trappen, Langs diverse hindernissen de Ghole in speelt
+    <h2 class="title" id="title">Spelregels</h2>
+
+<div class="container" id="spelregels">
+    <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+        <p1>De bedoeling van het spel is dat je de bal in zo min mogelijk trappen, Langs diverse hindernissen de Ghole in speelt
         Tijdens het spel geldt dat de bal die het verst van de Ghole af ligt, als eerste mag worden gespeeld.
         Het maximaal aantal par per baan is 10.
-    </p1></div>
-    <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br><p2>Veel Plezier!</p2></div>
-    <div class="box3"><img class="icon" src="img/Footgolf-Badge-1.png"><br><p3>
-        De hindernes gemist wordt:
+    </p1>
+    </div>
+
+    <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+        <p2>Veel Plezier!</p2>
+    </div>
+
+    <div class="box3"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+        <p3>
+        Als de hindernis gemist wordt:
         Leg dan de bal 3 meter voor de hindernis
-        De bal via het ongemaaide gras weer in de baan komt:
+        Als de bal via het ongemaaide gras weer in de baan komt:
         Leg dan de bal terug waar deze de baan verliet
-    </p3></div>
+        </p3>
+    </div>
 </div>
 </div>
 
+<script src="Javascript/index.js"></script>
 
 </body>
 </html>
