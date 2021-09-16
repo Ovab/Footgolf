@@ -31,7 +31,7 @@ if($row_student = mysqli_fetch_assoc($res_student)) {
     }
 }
 else {
-    $student = mysqli_query($conn,"INSERT INTO spellen(SpelID,Hole, Speler1, groupID) values ($score1 ,$hole ,$score1, $groepID);");
+    $student = mysqli_query($conn,"INSERT INTO spellen(Hole, Speler1, groupID) values ($hole ,$score1, $groepID);");
     if(!$student){
         echo 'Er ging iets fout, probeer aub opnieuw <br>';
         //Testing
