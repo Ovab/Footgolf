@@ -1,12 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylegroep.css" />
+    <link rel="stylesheet" href="../stylegroep.css" />
     <title>Footgolf - Log in / Sign up</title>
 </head>
 
@@ -19,7 +17,7 @@
                 <h2 class="title">Voer Game Code </h2>
 
                 <?php
-                include 'connect.php';
+                session_start();
                 $errors=$_SESSION['Errors'];
                 if (isset($_SESSION['Errors'])) {echo "<div class='error-text'>".$errors."</div>";}
                 $errors=' ';
@@ -40,9 +38,9 @@
                             Log in
                         </button>
 
-<script src="../Javascript/app.js"></script>
+<script src="../../Javascript/app.js"></script>
 
 
 </body>
-<script src='../Javascript/jquery.min.js'></script>
+<script src='../../Javascript/jquery.min.js'></script>
 </html>

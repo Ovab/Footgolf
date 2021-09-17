@@ -1,6 +1,6 @@
 <?php
 //signup.php
-include "connect.php";
+include "../connect.php";
 if (isset($_POST['speler-naam'])) {
     if (!ctype_alpha($_POST['speler-naam'])) {
         $errors='De naam kan alleen letters bevatten';

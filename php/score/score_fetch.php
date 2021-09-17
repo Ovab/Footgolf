@@ -1,5 +1,5 @@
 <?php
-include_once "connect.php";
+include_once "../connect.php";
 $groepID=$_SESSION['groepID'];
 $sql = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4 FROM spellen where groupID=$groepID";
 $result = $conn->query($sql);

@@ -5,7 +5,7 @@
     <title>Footgolf - Score</title>
 </head>
 <body>
-<?php include('connect.php');print_r($_SESSION);
+<?php include('../connect.php');print_r($_SESSION);
 ?>
 <p id="score"></p>
 <form action="score_register.php" method="post">
@@ -15,7 +15,7 @@
 </form>
 <p id="score1"></p>
 <!--Import jQuery -->
-<script src="../Javascript/jquery.min.js"></script>
+<script src="../../Javascript/jquery.min.js"></script>
 <!--auto refresh script -->
 <script>
     //maak functie aan.

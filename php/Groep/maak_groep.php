@@ -1,8 +1,8 @@
 <?php
-include 'connect.php';
+include '../connect.php';
 //Kan je weg halen als je het form heb geremaked, is mainly voor testing
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
-echo ("<link rel='stylesheet' href='maakgroep.css'>
+echo ("<link rel='stylesheet' href='../stylegroep.css'>
 <div class='wrapper'><form method='post' action=''>
         <input class='btn' type='submit' name='maak_group' class='button' value='Maak Groep'>
 </form></div>");
@@ -11,7 +11,7 @@ echo ("<link rel='stylesheet' href='maakgroep.css'>
     $random= mt_rand(1000,99999);
     //Zet nummer in DB
     //insert into groep (groupID,Aanmaak_datum) VALUES($random,NOW())
-    $insert=mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler-aantal`) VALUES ($random, NOW(), 1)");
+    $insert=mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler_aantal`) VALUES ($random, NOW(), 1)");
     if(!$insert){
         echo 'Oeps er ging iets fout, probeer aub opnieuw';
     }

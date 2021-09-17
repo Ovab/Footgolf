@@ -1,5 +1,5 @@
 <?php
-include_once "connect.php";
+include_once "../connect.php";
 $score1=$_POST['speler_score'];
 $spelerPos=$_SESSION['Speler_pos'];
 $hole=$_GET['hole'];

@@ -1,5 +1,5 @@
 <?php
-include_once 'connect.php';
+include_once '../connect.php';
 $user_input=isset($_POST['GroepID']);
 //Check of query heeft gerunt
 if(!empty($user_input)) {

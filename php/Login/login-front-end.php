@@ -4,7 +4,7 @@
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="../style.css" />
      <title>Footgolf - Log in / Sign up</title>
  </head>
  <body>
@@ -55,7 +55,7 @@
                      <input type="number" placeholder="Telefoon nummer" name="speler-nummer"/>
                  </div>
                  <input type="submit" class="btn" value="Registreer" />
-                 <img src="../img/footgolf5.png" class="image2">
+                 <img src="../../img/footgolf5.png" class="image2" alt="Footgolf logo">
              </form>
          </div>
      </div>
@@ -70,7 +70,7 @@
                  <button class="btn transparent" id="sign-up-btn">
                      Registreer
                  </button>
-                 <img src="../img/Footgolf-logo.png" class="image" alt="" />
+                 <img src="../../img/Footgolf-logo.png" class="image" alt="" />
              </div>
          </div>
          <div class="panel right-panel">
@@ -91,7 +91,7 @@
 <script>
 
 </script>
- <script src="../Javascript/app.js">
+ <script src="../../Javascript/app.js">
  </script>
  </body>
  </html>
