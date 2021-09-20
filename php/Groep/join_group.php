@@ -18,10 +18,11 @@
 
                 <?php
                 session_start();
-                $errors=$_SESSION['Errors'];
+                $errors=isset($_SESSION['Errors']);
                 if (isset($_SESSION['Errors'])) {echo "<div class='error-text'>".$errors."</div>";}
+                echo print_r($_SESSION);
                 $errors=' ';
-                unset($_SESSION['Errors'])
+                unset($_SESSION['Errors']);
                 ?>
 <div class="input-field">
     <i class="fas fa-lock"></i>

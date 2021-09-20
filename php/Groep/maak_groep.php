@@ -7,12 +7,12 @@ echo ("<link rel='stylesheet' href='../stylegroep.css'>
         <input class='btn' type='submit' name='maak_group' class='button' value='Maak Groep'>
 </form></div>");
 } else{
+    $naam1=$_SESSION['user_name'];
     //Genereer 5 digit random nummer
     $random= mt_rand(1000,99999);
-    //Zet nummer in DB
-    //insert into groep (groupID,Aanmaak_datum) VALUES($random,NOW())
-    $insert=mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler_aantal`) VALUES ($random, NOW(), 1)");
+    $insert=mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler_aantal`, Speler1_naam) VALUES ($random, NOW(), 1, '$naam1')");
     if(!$insert){
+        echo mysqli_error($conn)."<br>";
         echo 'Oeps er ging iets fout, probeer aub opnieuw';
     }
     else {

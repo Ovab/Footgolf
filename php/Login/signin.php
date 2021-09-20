@@ -2,7 +2,7 @@
 include_once '../connect.php';
 
 if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
-    $_SESSION['errors']='Je bent al ingelogd, je kan <a href="../php/signout.php">uitloggen</a> als je wilt.';
+    $_SESSION['errors']='Je bent al ingelogd, je kan <a href="signout.php">uitloggen</a> als je wilt.';
     header('Location:login-front-end.php');
 } else {
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
@@ -17,7 +17,7 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
             while ($row = mysqli_fetch_assoc($result)) {
                 $_SESSION['signed_in'] = true;
                 $_SESSION['user_name'] = $row['Speler-naam'];
-                header("location:../index.html");
+                header("location:../../index.html");
             }
         } else {
             // Incorrect telefoon nummer
