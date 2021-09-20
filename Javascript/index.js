@@ -5,8 +5,14 @@ const title = document.getElementById('title');
 //spelRegels.style.display = "none";
 //title.style.display = "none";
 
-function showSpelregels() {
+function toggleSpelregels() {
+    if (spelRegels.style.display === "none") {
     title.innerHTML = "Spelregels";
     title.style.display = "block";
     spelRegels.style.display = "flex";
+    } else {
+        title.innerHTML = "";
+        title.style.display = "none";
+        spelRegels.style.display = "none";
+    }
 }
