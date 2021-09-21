@@ -1,11 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylegroep.css" />
+    <title>Footgolf - maak group</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="forms-container">
+        <!--Sign in form -->
+        <div class="signin-signup">
+            <form action="maak_groep.php" class="maak-groep" method="post">
+                <h2 class="title">Genereer u Game Code </h2>
 <?php
 include '../connect.php';
 //Kan je weg halen als je het form heb geremaked, is mainly voor testing
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
-echo ("<link rel='stylesheet' href='style.css'>
-<div class='wrapper'><form method='post' action=''>
-        <input class='btn' type='submit' name='maak_group' class='button' value='Maak Groep'>
-</form></div>");
 } else{
     $naam1=$_SESSION['user_name'];
     //Genereer 5 digit random nummer
@@ -26,3 +40,28 @@ echo ("<link rel='stylesheet' href='style.css'>
         echo "Je group id is " . $random;
     }
 }
+?>
+
+<div class="input-field">
+    <i class="fas fa-lock"></i>
+    <?php
+    echo"<input  placeholder='voorbeeld: 2948 ' name='GroepID'/>";
+    ?>
+</div>
+<input type="submit" class="btn" value="Genereer" />
+<div class="panel right-panel">
+    <div class="content">
+        <h3>Een van ons?</h3>
+        <p>
+            Log in, om weer de leukste ervaring te beleven!
+        </p>
+        <button class="btn transparent" id="sign-in-btn">
+            Log in
+        </button>
+
+        <script src="../../Javascript/app.js"></script>
+
+
+        </body>
+        <script src='../../Javascript/jquery.min.js'></script>
+        </html>
