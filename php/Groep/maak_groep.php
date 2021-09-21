@@ -15,7 +15,7 @@
         <!--Sign in form -->
         <div class="signin-signup">
             <form action="maak_groep.php" class="maak-groep" method="post">
-                <h2 class="title">Genereer u Game Code </h2>
+                <h2 class="title">Genereer uw game code</h2>
 <?php
 include '../connect.php';
 //Kan je weg halen als je het form heb geremaked, is mainly voor testing
@@ -37,7 +37,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST'){
         //
         $_SESSION['Speler_pos'] = 1;
         //Print het session variable, success met dit goed in de HTML zetten Lotfi ;)
-        echo "Je group id is " . $random;
+        echo '<h3>Game Code:</h3>';
     }
 }
 ?>
@@ -45,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST'){
 <div class="input-field">
     <i class="fas fa-lock"></i>
     <?php
-    echo"<input  placeholder='voorbeeld: 2948 ' name='GroepID'/>";
+    echo '<input type="text" placeholder="' . $random . '" readonly <input/>';
     ?>
 </div>
 <input type="submit" class="btn" value="Genereer" />
