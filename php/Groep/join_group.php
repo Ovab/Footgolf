@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylegroep.css" />
-    <title>Footgolf - Log in / Sign up</title>
+    <title>Footgolf - Groep Join</title>
 </head>
 
 <body>
@@ -19,8 +19,8 @@
                 <?php
                 session_start();
                 $errors=isset($_SESSION['Errors']);
-                if (isset($_SESSION['Errors'])) {echo "<div class='error-text'>".$errors."</div>";}
-                echo print_r($_SESSION);
+                if (isset($_SESSION['Errors'])) {echo "<div class='error-text'>".$errors.". <br></div>";}
+                //echo print_r($_SESSION);
                 $errors=' ';
                 unset($_SESSION['Errors']);
                 ?>

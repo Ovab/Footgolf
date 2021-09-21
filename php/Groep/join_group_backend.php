@@ -1,9 +1,9 @@
 <?php
 include_once '../connect.php';
-error_reporting(E_ERROR | E_PARSE);
+session_start();
+//error_reporting(E_ERROR | E_PARSE);
 $user_input=isset($_POST['GroepID']);
-//$user_input=24243;
-//Check of query heeft gerunt
+//Check of data is doorgekomen
 if(!empty($user_input)) {
     $res=mysqli_query($conn, "select groupID, `Speler_aantal` from groep where groupID=$user_input");
     if ($res) {
@@ -16,17 +16,17 @@ if(!empty($user_input)) {
         if (isset($player_aantal) >= 5) {
             $_SESSION['Errors'] = "Sorry deze groep zit vol";
         } else {
-            $_SESSION['Errors']=mysqli_error($conn);
             $naam=$_SESSION['user_name'];
+
             $speler_count='Speler'.$player_aantal+=1;
-            $speler_q="update groep set $speler_count = '$naam' where groupID=$user_input";
             //verhoog player aantal
+            $speler_q="update groep set $speler_count = '$naam' where groupID=$user_input";
+            $_SESSION['Errors']=$speler_q;
             mysqli_query($conn, "update groep set `Speler_aantal`= Speler_aantal+1, $speler_count = '$naam' where groupID=$user_input");
             mysqli_query($conn, $speler_q);
-            $_SESSION['Errors']=mysqli_error($conn);
             //Zet groepID
             $_SESSION['groupID'] = $user_input;
-            //header("location:join_group.php");
+            header("location:join_group.php");
             //Geef aantal spelers weer
         }
     } else {
