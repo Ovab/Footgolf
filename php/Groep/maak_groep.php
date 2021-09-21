@@ -10,7 +10,7 @@ echo ("<link rel='stylesheet' href='../stylegroep.css'>
     $naam1=$_SESSION['user_name'];
     //Genereer 5 digit random nummer
     $random= mt_rand(1000,99999);
-    $insert=mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler_aantal`, Speler1_naam) VALUES ($random, NOW(), 1, '$naam1')");
+    $insert=mysqli_query($conn,"insert into groep(groupID, Aanmaak_datum, `Speler_aantal`, Speler1) VALUES ($random, NOW(), 1, '$naam1')");
     if(!$insert){
         echo mysqli_error($conn)."<br>";
         echo 'Oeps er ging iets fout, probeer aub opnieuw';

@@ -1,7 +1,8 @@
 <?php
 include_once '../connect.php';
-//$user_input=isset($_POST['GroepID']);
-$user_input=24243;
+error_reporting(E_ERROR | E_PARSE);
+$user_input=isset($_POST['GroepID']);
+//$user_input=24243;
 //Check of query heeft gerunt
 if(!empty($user_input)) {
     $res=mysqli_query($conn, "select groupID, `Speler_aantal` from groep where groupID=$user_input");
@@ -17,26 +18,20 @@ if(!empty($user_input)) {
         } else {
             $_SESSION['Errors']=mysqli_error($conn);
             $naam=$_SESSION['user_name'];
-            $p_c=$player_aantal+=1;
-            $speler_count='Speler'.$p_c;
-            echo $speler_count."<br>";
+            $speler_count='Speler'.$player_aantal+=1;
             $speler_q="update groep set $speler_count = '$naam' where groupID=$user_input";
             //verhoog player aantal
-            echo $speler_q."<br>";
             mysqli_query($conn, "update groep set `Speler_aantal`= Speler_aantal+1, $speler_count = '$naam' where groupID=$user_input");
             mysqli_query($conn, $speler_q);
             $_SESSION['Errors']=mysqli_error($conn);
             //Zet groepID
             $_SESSION['groupID'] = $user_input;
-            print_r($_SESSION);
             //header("location:join_group.php");
             //Geef aantal spelers weer
-            //echo "<h2 id='pc'> </h2>";
         }
     } else {
-        $_SESSION['Errors']="yeet";
         $_SESSION['Errors'] = "Deze groep staat niet in onze database, probeer aub opnieuw".mysqli_error($conn);
-        //header("location:join_group.php");
+        header("location:join_group.php");
     }
 }
 else{
