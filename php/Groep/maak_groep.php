@@ -2,7 +2,7 @@
 include '../connect.php';
 //Kan je weg halen als je het form heb geremaked, is mainly voor testing
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
-echo ("<link rel='stylesheet' href='../stylegroep.css'>
+echo ("<link rel='stylesheet' href='style.css'>
 <div class='wrapper'><form method='post' action=''>
         <input class='btn' type='submit' name='maak_group' class='button' value='Maak Groep'>
 </form></div>");
