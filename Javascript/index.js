@@ -11,7 +11,20 @@ reservation.style.display = "none";
 
 function toggleSpelregels() {
     if (spelRegels.style.display === "none" && spelRegels.style.display === "none" && gholes.style.display === "none") {
-        title.innerHTML = "Spelregels";
+        title.innerHTML = "spelregels";
+        title.style.display = "block";
+        //gholes.style.display = "none";
+        //reservation.style.display = "none";
+        spelRegels.style.display = "flex";
+    } else {
+        title.style.display = "none";
+        spelRegels.style.display = "none";
+    }
+}
+
+function toggleGholes() {
+    if (gholes.style.display === "none" && gholes.style.display === "none" && gholes.style.display === "none") {
+        title.innerHTML = "Gholes";
         title.style.display = "block";
         //gholes.style.display = "none";
         //reservation.style.display = "none";
