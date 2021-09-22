@@ -164,7 +164,7 @@ h2{
 }
 
 
-.wrapper1 .icon{
+.wrapper1 .icon1{
     margin: 0 20px;
     text-align: center;
     cursor: pointer;
@@ -176,7 +176,7 @@ h2{
     z-index: 2;
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper1 .icon span{
+.wrapper1 .icon1 span{
     display: block;
     height: 60px;
     width: 60px;
@@ -187,11 +187,11 @@ h2{
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper1 .icon span i{
+.wrapper1 .icon1 span i{
     line-height: 60px;
     font-size: 25px;
 }
-.wrapper1 .icon .tooltip{
+.wrapper1 .icon1 .tooltip{
     position: absolute;
     top: 0;
     z-index: 1;
@@ -206,12 +206,12 @@ h2{
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper1 .icon:hover .tooltip{
+.wrapper1 .icon1:hover .tooltip{
     top: -70px;
     opacity: 1;
     pointer-events: auto;
 }
-.icon .tooltip:before{
+.icon1 .tooltip:before{
     position: absolute;
     content: "";
     height: 15px;
@@ -222,11 +222,11 @@ h2{
     transform: translateX(-50%) rotate(45deg);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper1 .icon:hover span{
+.wrapper1 .icon1:hover span{
     color: #fff;
 }
-.wrapper1 .icon:hover span,
-.wrapper1 .icon:hover .tooltip{
+.wrapper1 .icon1:hover span,
+.wrapper1 .icon1:hover .tooltip{
     text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
 }
 .wrapper1 .facebook:hover span,
@@ -234,20 +234,15 @@ h2{
 .wrapper1 .facebook:hover .tooltip:before{
     background: #3B5999;
 }
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
+.wrapper1 .twitter:hover span,
+.wrapper1 .twitter:hover .tooltip,
+.wrapper1 .twitter:hover .tooltip:before{
     background: #46C1F6;
 }
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before{
+.wrapper1 .instagram:hover span,
+.wrapper1 .instagram:hover .tooltip,
+.wrapper1 .instagram:hover .tooltip:before{
     background: #e1306c;
-}
-.wrapper1 .github:hover span,
-.wrapper1 .github:hover .tooltip,
-.wrapper1 .github:hover .tooltip:before{
-    background: #333;
 }
 .wrapper1 .youtube:hover span,
 .wrapper1 .youtube:hover .tooltip,
