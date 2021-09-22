@@ -2,9 +2,7 @@
 :root {
     --box-sizing: border-box;
 }
-=======
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
->>>>>>> 24dfbb5a989910af66e651958bbbab99f45c62bf
 
 * {
     margin: 0;
@@ -12,9 +10,7 @@
 <<<<<<< HEAD
     box-sizing: var(--box-sizing);
     scroll-behavior: smooth;
-=======
     box-sizing: border-box;
->>>>>>> 24dfbb5a989910af66e651958bbbab99f45c62bf
 }
 
 body,
