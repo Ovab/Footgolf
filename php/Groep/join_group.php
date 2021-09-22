@@ -18,9 +18,11 @@
 
                 <?php
                 session_start();
-                $errors=isset($_SESSION['Errors']);
+                if (isset($_SESSION)){
+                    error_reporting(E_ERROR | E_PARSE);
+                    $errors=$_SESSION['Errors'];
+                }
                 if (isset($_SESSION['Errors'])) {echo "<div class='error-text'>".$errors.". <br></div>";}
-                //echo print_r($_SESSION);
                 $errors=' ';
                 unset($_SESSION['Errors']);
                 ?>

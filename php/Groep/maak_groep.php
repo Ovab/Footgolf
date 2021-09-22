@@ -17,7 +17,7 @@ echo ("<link rel='stylesheet' href='style.css'>
     }
     else {
         //maak een session variable van het random nummer
-        $_SESSION['groepID'] = $random;
+        $_SESSION['groupID'] = $random;
         //Maak ID-maker de leider van de groep
         $_SESSION['groepLead'] = true;
         //

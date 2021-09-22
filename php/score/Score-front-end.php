@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php include('../connect.php');print_r($_SESSION);
+
 ?>
 <p id="score"></p>
 <form action="score_register.php" method="post">
