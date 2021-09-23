@@ -25,6 +25,6 @@ else{
         header('Location:login-front-end.php');
     } else {
         //Header naar index
-        header('Location:../index.html');
+        header('Location:../../index.html');
     }
 }

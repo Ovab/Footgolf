@@ -19,11 +19,10 @@
 <?php
 include '../connect.php';
 //Kan je weg halen als je het form heb geremaked, is mainly voor testing
-if($_SERVER['REQUEST_METHOD'] != 'POST'){
-} else{
     $naam1=$_SESSION['user_name'];
     //Genereer 5 digit random nummer
     $random= mt_rand(1000,99999);
+    mysqli_query($conn,"DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
     $insert=mysqli_query($conn,"insert into groep(groupID, Aanmaak_datum, `Speler_aantal`, Speler1) VALUES ($random, NOW(), 1, '$naam1')");
     if(!$insert){
         echo mysqli_error($conn)."<br>";
@@ -38,14 +37,15 @@ if($_SERVER['REQUEST_METHOD'] != 'POST'){
         $_SESSION['Speler_pos'] = 1;
         //Print het session variable, success met dit goed in de HTML zetten Lotfi ;)
         echo '<h3>Game Code:</h3>';
-    }
 }
 ?>
 
 <div class="input-field">
     <i class="fas fa-lock"></i>
     <?php
-    echo '<input type="text" placeholder="' . $random . '" readonly <input/>';
+        if (isset($random)) {
+            echo '<input type="text" placeholder="' . $random . '" readonly <input/>';
+        }
     ?>
 </div>
 <input type="submit" class="btn" value="Genereer" />
