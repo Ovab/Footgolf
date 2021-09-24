@@ -28,7 +28,7 @@
                 ?>
 <div class="input-field">
     <i class="fas fa-lock"></i>
-    <input type="text" placeholder="GameCode" name="GroepID"/>
+    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="GameCode" name="GroepID"/>
 </div>
 <input type="submit" class="btn" value="Log in" />
                 <div class="panel right-panel">
