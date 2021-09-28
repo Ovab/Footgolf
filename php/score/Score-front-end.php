@@ -26,7 +26,7 @@ if (isset($_SESSION['errors'])) {
 ?>
 <form action="score_register.php" method="post">
     <label>Voer uw score in:</label>
-    <input type="text" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
+    <input type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
     <input type="submit">
 </form>
 <p id="score"></p>

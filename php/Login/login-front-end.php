@@ -18,13 +18,11 @@
                  //resume / start sessie
                  session_start();
                  //zet php error reporting uit
-                 error_reporting(E_ERROR | E_PARSE);
-                 //maar het session variable een normale voor reasons
-                 $errors=$_SESSION['errors'];
+                 //error_reporting(E_ERROR | E_PARSE);
                  //Check of de session array bestaat, als dat zo is print de error
-                 if (isset($_SESSION['errors'])) {echo "<div class='error-text'>".$errors."</div>";}
+                 if (isset($_SESSION['errors'])) {$errors=$_SESSION['errors'];echo "<div class='error-text'>".$errors."</div>";}
                  //variablen leeg maken just in case
-                 $errors=' ';
+                 unset($errors);
                  unset($_SESSION['errors'])
                  //eind PHP code
                  ?>

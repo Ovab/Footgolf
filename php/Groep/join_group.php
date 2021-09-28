@@ -23,7 +23,7 @@
                     $errors=$_SESSION['Errors'];
                 }
                 if (isset($_SESSION['Errors'])) {echo "<div class='error-text'>".$errors.". <br></div>";}
-                $errors=' ';
+                unset($errors);
                 unset($_SESSION['Errors']);
                 ?>
 <div class="input-field">
