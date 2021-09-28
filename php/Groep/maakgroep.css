@@ -2,6 +2,7 @@
 :root {
     --box-sizing: border-box;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
@@ -157,6 +158,7 @@ form.sign-in-form {
 .btn:hover {
     background-color: #EC1C24;
 }
+
 .panels-container {
     position: absolute;
     height: 100%;
@@ -181,7 +183,7 @@ form.sign-in-form {
     z-index: 6;
 }
 
-.image{
+.image {
     position: absolute;
     top: 12em;
     left: 0;
@@ -196,7 +198,8 @@ form.sign-in-form {
     transition: transform 1.1s ease-in-out;
     transition-delay: 0.4s;
 }
-.error-text{
+
+.error-text {
     color: #721c24;
     padding: 8px 10px;
     text-align: center;
@@ -207,7 +210,7 @@ form.sign-in-form {
 
 }
 
-.sign-in-form{
+.sign-in-form {
     color: #EC1C24;
 }
 
@@ -306,6 +309,7 @@ form.sign-in-form {
         min-height: 800px;
         height: 100vh;
     }
+
     .signin-signup {
         width: 100%;
         top: 95%;
@@ -387,7 +391,7 @@ form.sign-in-form {
         transform: translateY(0px);
     }
 
-    .right-panel ,
+    .right-panel,
     .right-panel .content {
         transform: translateY(300px);
     }
@@ -406,6 +410,7 @@ form.sign-in-form {
     .panel .content {
         padding: 0.5rem 1rem;
     }
+
     .container {
         padding: 1.5rem;
     }

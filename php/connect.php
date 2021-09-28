@@ -8,7 +8,7 @@ $username = "root";
 //server wachtwoord
 $password = "";
 
-$database= 'footgolf';
+$database = 'footgolf';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database, 3306);
