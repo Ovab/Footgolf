@@ -244,8 +244,4 @@ h2{
 .wrapper1 .instagram:hover .tooltip:before{
     background: #e1306c;
 }
-.wrapper1 .youtube:hover span,
-.wrapper1 .youtube:hover .tooltip,
-.wrapper1 .youtube:hover .tooltip:before{
-    background: #DE463B;
-}
+
