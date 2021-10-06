@@ -54,8 +54,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fas fa-phone"></i>
-                    <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="06-nummer"
-                           name="speler-nummer"/>
+                    <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="06-nummer" name="speler-nummer"/>
                 </div>
                 <input type="submit" class="btn" value="Registreer"/>
                 <img src="../../img/footgolf5.png" class="image2" alt="Footgolf logo">

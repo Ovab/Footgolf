@@ -17,32 +17,33 @@
                 <h2 class="title">Genereer uw game code</h2>
                 <?php
                 include '../connect.php';
-                //Kan je weg halen als je het form heb geremaked, is mainly voor testing
-                $naam1 = $_SESSION['user_name'];
-                //Genereer 5 digit random nummer
-                $random = mt_rand(1000, 99999);
-                mysqli_query($conn, "DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
-                $insert = mysqli_query($conn, "insert into groep(groupID, Aanmaak_datum, `Speler_aantal`, Speler1) VALUES ($random, NOW(), 1, '$naam1')");
-                if (!$insert) {
-                    echo mysqli_error($conn) . "<br>";
-                    echo 'Oeps er ging iets fout, probeer aub opnieuw';
-                } else {
-                    //maak een session variable van het random nummer
-                    $_SESSION['groupID'] = $random;
-                    //Maak ID-maker de leider van de groep
-                    $_SESSION['groepLead'] = true;
-                    //
-                    $_SESSION['Speler_pos'] = 1;
-                    //Print het session variable, success met dit goed in de HTML zetten Lotfi ;)
-                    echo '<h3>Game Code:</h3>';
+                if (isset($_SESSION['user_name'])) {
+                    $naam1 = $_SESSION['user_name'];
+                    //Genereer 5 digit random nummer
+                    $random = mt_rand(1000, 99999);
+                    $holes=$_POST['holes'];
+                    $naam1s=$naam1."s team";
+                    mysqli_query($conn, "DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
+                    $insert = mysqli_query($conn, "insert into groep(GroepNaam, groupID, Aanmaak_datum, `Speler_aantal`, Speler1, num_holes) VALUES ('$naam1s',$random, NOW(), 1, '$naam1', $holes)");
+                    if (!$insert) {
+                        echo mysqli_error($conn) . "<br>";
+                        echo 'Oeps er ging iets fout, probeer aub opnieuw';
+                    } else {
+                        //maak een session variable van het random nummer
+                        $_SESSION['groupID'] = $random;
+                        //Maak ID-maker de leider van de groep
+                        $_SESSION['groepLead'] = true;
+                        //
+                        $_SESSION['Speler_pos'] = 1;
+                    }
                 }
                 ?>
-
+                <h3>Game Code:</h3>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
                     <?php
                     if (isset($random)) {
-                        echo '<input type="text" placeholder="' . $random . '" readonly <input/>';
+                        echo '<input type="text" placeholder="' . $random . '" readonly <input/> <br>';
                     }
                     ?>
                 </div>

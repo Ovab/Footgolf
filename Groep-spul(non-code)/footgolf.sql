@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 21, 2021 at 07:16 AM
+-- Generation Time: Oct 06, 2021 at 11:38 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -29,24 +29,24 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `groep`;
 CREATE TABLE IF NOT EXISTS `groep` (
+  `GroepNaam` varchar(69) DEFAULT NULL,
   `groupID` int(11) NOT NULL AUTO_INCREMENT,
   `Aanmaak_datum` datetime NOT NULL,
   `Speler_aantal` int(11) NOT NULL,
-  `Speler1` varchar(69) NOT NULL,
+  `Speler1` varchar(69) DEFAULT NULL,
   `Speler2` varchar(69) DEFAULT NULL,
   `Speler3` varchar(69) DEFAULT NULL,
   `Speler4` varchar(69) DEFAULT NULL,
-  `Speler5` varchar(69) DEFAULT NULL,
+  `num_holes` int(11) NOT NULL,
   PRIMARY KEY (`groupID`)
-) ENGINE=MyISAM AUTO_INCREMENT=93014 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=97241 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `groep`
 --
 
-INSERT INTO `groep` (`groupID`, `Aanmaak_datum`, `Speler_aantal`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `Speler5`) VALUES
-(64773, '2021-09-21 09:16:09', 1, 'ovab', NULL, NULL, NULL, NULL),
-(93013, '2021-09-21 09:02:14', 1, 'Ovab', NULL, NULL, NULL, NULL);
+INSERT INTO `groep` (`GroepNaam`, `groupID`, `Aanmaak_datum`, `Speler_aantal`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `num_holes`) VALUES
+('ovabs team', 58769, '2021-10-06 13:34:40', 1, 'ovab', NULL, NULL, NULL, 27);
 
 -- --------------------------------------------------------
 
@@ -68,6 +68,8 @@ CREATE TABLE IF NOT EXISTS `spelers` (
 
 INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES
 ('bavo.famknol@gmail.com', 'ovab', 619541435),
+('Nick@snickers.nl', 'Nick', 698764321),
+('Parker@penis.nl', 'Penis Parker', 623456789),
 ('Pietjan@gmail.com', 'Pieter', 612345678);
 
 -- --------------------------------------------------------
@@ -79,8 +81,8 @@ INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES
 DROP TABLE IF EXISTS `spellen`;
 CREATE TABLE IF NOT EXISTS `spellen` (
   `SpelID` int(11) NOT NULL AUTO_INCREMENT,
-  `Hole` int(11) DEFAULT NULL,
-  `Speler1` int(11) NOT NULL,
+  `Hole` int(11) NOT NULL,
+  `Speler1` int(11) DEFAULT NULL,
   `Speler2` int(11) DEFAULT NULL,
   `Speler3` int(11) DEFAULT NULL,
   `Speler4` int(11) DEFAULT NULL,
