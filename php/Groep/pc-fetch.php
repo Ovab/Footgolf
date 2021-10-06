@@ -3,7 +3,7 @@ include_once "../connect.php";
 $groepID = $_SESSION['groupID'];
 //if(isset( $_SESSION['groepID'])) {
     $sql = "SELECT Speler_aantal FROM groep where groupID=$groepID";
-    $sql2 = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4, Speler5, groupID FROM spellen where groupID=$groepID";
+    $sql2 = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4, groupID FROM spellen where groupID=$groepID";
     $result = $conn->query($sql);
     $result2 = $conn->query($sql2);
 
@@ -13,7 +13,6 @@ $groepID = $_SESSION['groupID'];
         $naam2 = $row2['SPELER2'];
         $naam3 = $row2['SPELER3'];
         $naam4 = $row2['SPELER4'];
-        $naam5 = $row2['SPELER5'];
     }
     if ($result->num_rows > 0) {
 // output data
@@ -32,10 +31,6 @@ $groepID = $_SESSION['groupID'];
 
             if ($speler_aantal >= 4) {
                 echo $naam4 . "<br>";
-            }
-
-            if ($speler_aantal >= 5) {
-                echo $naam5 . "<br>";
             }
         }
     } else {

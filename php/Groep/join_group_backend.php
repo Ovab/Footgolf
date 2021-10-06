@@ -11,7 +11,7 @@ if (!empty($user_input)) {
             $player_aantal = $row['Speler_aantal'];
         }
         //Als speler aantal groter of gelijk is aan 5 dan geeft hij die error
-        if ($player_aantal >= 5) {
+        if ($player_aantal >= 4) {
             $_SESSION['Errors'] = "Sorry deze groep zit vol";
             header('location:join_group.php');
         } else {
