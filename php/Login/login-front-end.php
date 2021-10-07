@@ -20,6 +20,7 @@
                 //zet php error reporting uit
                 //error_reporting(E_ERROR | E_PARSE);
                 //Check of de session array bestaat, als dat zo is print de error
+                print_r($_SESSION);
                 if (isset($_SESSION['errors'])) {
                     $errors = $_SESSION['errors'];
                     echo "<div class='error-text'>" . $errors . "</div>";

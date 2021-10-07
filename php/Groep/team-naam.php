@@ -13,7 +13,7 @@
 include_once '../connect.php';
 error_reporting(E_ERROR | E_PARSE);
 $groupID=$_SESSION['groupID'];
-$insert = mysqli_query($conn, "Select GroepNaam from groep where groupID=$groupID");
+$select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$groupID");
 ?>
 <div class="container">
     <div class="forms-container">
@@ -23,10 +23,21 @@ $insert = mysqli_query($conn, "Select GroepNaam from groep where groupID=$groupI
                     <!--TODO:Haal slotje nog weg -->
                     <i class="fas fa-lock"></i>
                     <?php
-                    if (!$insert) {
+                    session_start();
+                    if (isset($_SESSION)) {
+                        error_reporting(E_ERROR | E_PARSE);
+                        $errors = $_SESSION['Errors'];
+                    }
+                    if (isset($_SESSION['Errors'])) {
+                        echo "<div class='error-text'>" . $errors . ". <br></div>";
+                    }
+                    unset($errors);
+                    unset($_SESSION['Errors']);
+
+                    if (!$select_naam) {
                         echo 'Oeps er ging iets fout, probeer aub opnieuw';
                     } else {
-                        while($row = mysqli_fetch_assoc($result)){
+                        while($row = mysqli_fetch_assoc($select_naam)){
                             $GroepNaam=$row['GroepNaam'];
                         }
                         echo $GroepNaam;

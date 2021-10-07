@@ -4,10 +4,9 @@ Op letten:
 Stappen systeem, guided tour achig iets
 Minste punten wint
 
-
 Done (back-end wise):
 >18 holes, naar 27 holes upgrade is mogelijk
-
+>Team naam invullen/editen
 
 Done (Full-stack)
 >Email en 06 is genoeg
@@ -20,10 +19,8 @@ Einde van het spel de scores opvragen dmv de groeps code.
 Multi-taal mode, NL en ENG (Frans would be epic)
 
 Aan het werk (back-end):
-Team naam invullen.
 
 Optional:
 Groep editing/manager
-Ook nog een Mega-groep systeem zou epic zijn.
 Iets cools voor de winnaar
 (mogelijk)Iets grappigs voor de verliezer
