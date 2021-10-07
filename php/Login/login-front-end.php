@@ -39,7 +39,7 @@
                     <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="06-nummer"
                            name="speler-nummer"/>
                 </div>
-                <input type="submit" class="btn" value="Log in"/>
+                <input type="submit" class="btn" value="Log in" style="background-color: #23A455"/>
             </form>
             <!-- Signup form  -->
             <form action="signup.php" class="sign-up-form" method="post">
@@ -56,7 +56,7 @@
                     <i class="fas fa-phone"></i>
                     <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="06-nummer" name="speler-nummer"/>
                 </div>
-                <input type="submit" class="btn" value="Registreer"/>
+                <input type="submit" class="btn" value="Registreer" style="background-color: #23A455"/>
                 <img src="../../img/footgolf5.png" class="image2" alt="Footgolf logo">
             </form>
         </div>

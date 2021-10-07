@@ -13,11 +13,10 @@ Done (Full-stack)
 >Email en 06 is genoeg
 >Groepjes van 4
 >Limiet van 10
-
+>Registreer en login knop in groen
 
 To do:
 Einde van het spel de scores opvragen dmv de groeps code.
-Registreer en login knop in groen
 Multi-taal mode, NL en ENG (Frans would be epic)
 
 Aan het werk (back-end):
