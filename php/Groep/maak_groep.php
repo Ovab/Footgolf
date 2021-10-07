@@ -11,9 +11,8 @@
 <body>
 <div class="container">
     <div class="forms-container">
-        <!--Sign in form -->
         <div class="signin-signup">
-            <form action="maak_groep.php" class="maak-groep" method="post">
+            <form action="team-naam.php" class="maak-groep" method="post">
                 <h2 class="title">Genereer uw game code</h2>
                 <?php
                 include '../connect.php';
@@ -47,15 +46,13 @@
                     }
                     ?>
                 </div>
+                    <input type="submit" value="Next" class="btn"/>
                 <div class="panel right-panel">
                     <div class="content">
                         <h3>Een van ons?</h3>
                         <p>
                             Log in, om weer de leukste ervaring te beleven!
                         </p>
-                        <button class="btn transparent" id="sign-in-btn">
-                            Log in
-                        </button>
 
 </body>
 <script src='../../Javascript/jquery.min.js'></script>

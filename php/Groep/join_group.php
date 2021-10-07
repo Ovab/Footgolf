@@ -45,6 +45,7 @@
                         <script src="../../Javascript/app.js"></script>
 </body>
 <script src='../../Javascript/jquery.min.js'></script>
+<!--
 <script>
     //maak functie aan.
     function update_var() {
@@ -67,4 +68,5 @@
         update_var()
     }, 2700);
 </script>
+-->
 </html>
