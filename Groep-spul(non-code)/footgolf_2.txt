@@ -1,21 +1,30 @@
 Footgolf notes
 
+Op letten:
+Stappen systeem, guided tour achig iets
+Minste punten wint
+
+
+Done (back-end wise):
+>18 holes, naar 27 holes upgrade is mogelijk
+
+
+Done (Full-stack)
 >Email en 06 is genoeg
 >Groepjes van 4
->Ook nog een Mega-groep systeem zou epic zijn.
 >Limiet van 10
 
+
+To do:
 Einde van het spel de scores opvragen dmv de groeps code.
-18 holes, naar 27 holes upgrade is mogelijk, bij inlog kan je kiezen 27 of 18 holes
-Team naam invullen ook nog.
-Multi-taal mode, liefst NL en ENG (Frans would be epic)
-Minste punten wint
-Iets cools voor de winnaar
-(mogelijk)Iets grappigs voor de verliezer
 Registreer en login knop in groen
+Multi-taal mode, NL en ENG (Frans would be epic)
 
-Stappen systeem, guided tour achig iets
-
+Aan het werk (back-end):
+Team naam invullen.
 
 Optional:
-Groep editing?
+Groep editing/manager
+Ook nog een Mega-groep systeem zou epic zijn.
+Iets cools voor de winnaar
+(mogelijk)Iets grappigs voor de verliezer
