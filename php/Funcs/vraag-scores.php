@@ -27,47 +27,59 @@
                 }
                 unset($errors);
                 unset($_SESSION['Errors']);
-                $GID=$_POST['GameCode'];
-                //print_r($_POST);
-                $sql2 = "SELECT * FROM groep where groupID=$GID";
-                $result2 = $conn->query($sql2);
-                while ($row2 = $result2->fetch_assoc()) {
-                    $speler_aantal = $row2['SPELER_AANTAL'];
-                    $groepnaam = $row2['GroepNaam'];
-                    $naam1 = $row2['Speler1'];
-                    $naam2 = $row2['Speler2'];
-                    $naam3 = $row2['Speler3'];
-                    $naam4 = $row2['Speler4'];
-                }
+                if (isset($_POST['GameCode'])) {
+                    $GID = $_POST['GameCode'];
+                    //print_r($_POST);
+                    $sql2 = "SELECT * FROM groep where groupID=$GID";
+                    $result2 = $conn->query($sql2);
+                    while ($row2 = $result2->fetch_assoc()) {
+                        $speler_aantal = $row2['SPELER_AANTAL'];
+                        $groepnaam = $row2['GroepNaam'];
+                        $naam1 = $row2['Speler1'];
+                        $naam2 = $row2['Speler2'];
+                        $naam3 = $row2['Speler3'];
+                        $naam4 = $row2['Speler4'];
+                    }
 
-                $spellen=mysqli_query($conn, "select * from spellen where groupID = $GID");
-                echo "                        <table border='3'>
-                                                                                                <th colspan='100%'>Groep-naam: $groepnaam </th><tr></tr>
+                    $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4, Speler5 from spellen where groupID = $GID and Aanmaak_datum=curdate()");
+                    echo "<style>
+                          table{
+                          color: #555555;
+                          text-align: center;
+                          border: solid red;
+                          }
+                         th{
+                          border: solid red;
+                          border-width: 2px;
+                          }
+                          td{
+                          border: solid red;
+                          border-width: 2px;
+                          }
+                          </style>
+                          
+                             <table>
+                             <th colspan='100%'>Groep-naam: $groepnaam </th><tr></tr>
                             <th>Hole</th>
-                            <th>&nbsp$naam1&nbsp</th>
-                            <th>&nbsp$naam2&nbsp</th>
-                            <th>&nbsp$naam3&nbsp</th>
-                            <th>&nbsp$naam4&nbsp</th>
-                            <tr>
-                ";
-                				while($row = mysqli_fetch_assoc($spellen)) {
-                    echo'   <style>
-                              td{
-                              text-align: center;
-                              color: black;
-                              }
-                              th{
-                              color: #333333;
-                              }
-                              
-                            </style>
+                            <th>&nbsp$naam1&nbsp</th>";
+                    if(isset($naam2)){echo "<th>&nbsp$naam2&nbsp</th>";}
+                    if(isset($naam3)){echo "<th>&nbsp$naam3&nbsp</th>";}
+                    if(isset($naam4)){echo "<th>&nbsp$naam4&nbsp</th>";}
+                           echo "<tr>";
+                    while ($row = mysqli_fetch_assoc($spellen)) {
+                        $speler2=$row['Speler2'];
+                        $speler3=$row['Speler3'];
+                        $speler4=$row['Speler4'];
+                        echo '
 							<td>' . $row['Hole'] . '</td>
 							<td>' . $row['Speler1'] . '</td>
-							<td>' . $row['Speler2'] . '</td>
-		                    <td>' . $row['Speler3'] . '</td>
-							<td>' . $row['Speler4'] . '</td>
-						  </tr>';
-			    }
+							';
+                        if(isset($speler2)) {echo "<td> $speler2 </td>";}
+                        if(isset($speler3)) {echo "<td> $speler3 </td>";}
+                        if(isset($speler4)) {echo "<td> $speler4 </td>";}
+						  echo "</tr>";
+                    }
+                }
                 ?>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>

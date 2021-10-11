@@ -24,7 +24,7 @@ else {
         }
     } else {
         $spelerQ = "Speler" . $spelerPos;
-        $student = mysqli_query($conn, "INSERT INTO spellen(Hole, $spelerQ, groupID) values ($hole ,$score, $groepID);");
+        $student = mysqli_query($conn, "INSERT INTO spellen(Hole, $spelerQ, groupID, Aanmaak_datum) values ($hole ,$score, $groepID, curdate());");
         if (!$student) {
             $_SESSION['errors'] = 'Er ging iets fout, probeer aub opnieuw <br>';
             header('location:Score-front-end.php');

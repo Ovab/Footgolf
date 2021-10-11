@@ -41,8 +41,11 @@
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
                     <?php
-                    if (isset($random)) {
+                    if (isset($random) && isset($holes)) {
                         echo '<input type="text" placeholder="' . $random . '" readonly <input/> <br>';
+                    }
+                    if (!isset($random) && !isset($holes)) {
+                        echo '<input type="text" placeholder="Weet je zeker dat je bent ingelogd? " readonly <input/> <br>';
                     }
                     ?>
                 </div>
