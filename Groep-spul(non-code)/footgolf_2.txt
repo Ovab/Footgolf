@@ -19,8 +19,8 @@ To do:
 Multi-taal mode, NL en ENG (Frans would be epic)
 
 Aan het werk (back-end):
+Groep editing/manager
 
 Optional:
-Groep editing/manager
 Iets cools voor de winnaar
 (mogelijk)Iets grappigs voor de verliezer

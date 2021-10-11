@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylegroep.css"/>
-    <title>Footgolf - Vraag scores</title>
+    <title>Footgolf - Groep manager</title>
 </head>
 
 <body>
@@ -13,8 +13,7 @@
     <div class="forms-container">
         <!--Sign in form -->
         <div class="signin-signup">
-            <form action="#" class="sign-in-form" method="post">
-                <h2 class="title">Voer groepscode in van het team van wie je de scores wilt </h2>
+                <h2 class="title">Groep manager </h2>
 
                 <?php
                 include_once '../connect.php';
@@ -27,8 +26,8 @@
                 }
                 unset($errors);
                 unset($_SESSION['Errors']);
-                if (isset($_POST['GameCode'])) {
-                    $GID = $_POST['GameCode'];
+                if (isset($_SESSION['groupID'])) {
+                    $GID = $_SESSION['groupID'];
                     //print_r($_POST);
                     $sql2 = "SELECT * FROM groep where groupID=$GID";
                     $result2 = $conn->query($sql2);
@@ -40,10 +39,9 @@
                         $naam3 = $row2['Speler3'];
                         $naam4 = $row2['Speler4'];
                     }
-
-                    $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4, Speler5 from spellen where groupID = $GID and Aanmaak_datum=curdate()");
                     echo "<style>
                           table{
+                          margin: 10px;
                           color: #555555;
                           text-align: center;
                           border: solid red;
@@ -59,37 +57,34 @@
                           </style>
                           
                              <table>
-                             <th colspan='100%'>Groep-naam: $groepnaam </th><tr></tr>
-                            <th>Hole</th>
-                            <th>&nbsp$naam1&nbsp</th>";
-                    if(isset($naam2)){echo "<th>&nbsp$naam2&nbsp</th>";}
-                    if(isset($naam3)){echo "<th>&nbsp$naam3&nbsp</th>";}
-                    if(isset($naam4)){echo "<th>&nbsp$naam4&nbsp</th>";}
-                           echo "<tr>";
-                    while ($row = mysqli_fetch_assoc($spellen)) {
-                        $speler2=$row['Speler2'];
-                        $speler3=$row['Speler3'];
-                        $speler4=$row['Speler4'];
-                        echo '
-							<td>' . $row['Hole'] . '</td>
-							<td>' . $row['Speler1'] . '</td>
-							';
-                        if(isset($speler2)) {echo "<td> $speler2 </td>";}
-                        if(isset($speler3)) {echo "<td> $speler3 </td>";}
-                        if(isset($speler4)) {echo "<td> $speler4 </td>";}
-						  echo "</tr>";
-                    }
+                             <th colspan='80%'>Groep-naam: $groepnaam </th>
+                             <th colspan='20%'><a href='../Groep/team-naam.php'>Edit</a></th>
+                             <tr>
+                             <th colspan='100%'>Groep-code: $GID </th><tr>
+                             <th colspan='100%'>&nbsp</th><tr>
+                            <th colspan='50%'>&nbsp$naam1&nbsp</th>
+                            <td>De leider kan niet verwijderd worden</td>
+                            <tr>";
+                    if(isset($naam2)){echo "<th colspan='50%'>&nbsp$naam2&nbsp</th>
+                    <td><a href='delAcc.php?player=2'>Delete</a> </td>
+                    <tr>";}
+                    echo "<tr>";
+                    if(isset($naam3)){echo "<th colspan='50%'>&nbsp$naam3&nbsp</th>
+                    <td><a href='delAcc.php?player=3'>Delete</a> </td>
+                    <tr>";}
+
+                    if(isset($naam4)){echo "<th colspan='50%'>&nbsp$naam4&nbsp</th>
+                    <td><a href='delAcc.php?player=4'>Delete</a> </td>
+                    <tr>";}
+                }
+                else{
+                    $_SESSION['Errors']="Weet u zeker dat u in een groep zit?";
                 }
                 ?>
-                <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="GameCode" name="GameCode"/>
                 </div>
-                <input type="submit" class="btn" value="Vraag scores"/>
-
-                <p id="pc"></p>
-
-                <div class="panel right-panel">
+            </div>
+        </div>
+<div class="panel right-panel">
                     <div class="content">
                         <h3>Een van ons?</h3>
                         <p>
@@ -97,7 +92,5 @@
                         </p>
                         <button class="btn transparent" id="sign-in-btn">Join</button>
 
-                        <script src="../../Javascript/app.js"></script>
 </body>
-<script src='../../Javascript/jquery.min.js'></script>
 </html>
