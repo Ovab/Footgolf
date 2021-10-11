@@ -8,6 +8,7 @@ Done (back-end wise):
 >18 holes, naar 27 holes upgrade is mogelijk
 >Team naam invullen/editen
 >Einde van het spel de scores opvragen dmv de groeps code.
+>Groep editing/manager
 
 Done (Full-stack)
 >Email en 06 is genoeg
@@ -19,7 +20,6 @@ To do:
 Multi-taal mode, NL en ENG (Frans would be epic)
 
 Aan het werk (back-end):
-Groep editing/manager
 
 Optional:
 Iets cools voor de winnaar
