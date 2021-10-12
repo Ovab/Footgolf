@@ -18,7 +18,7 @@ if (isset($_SESSION['groupID'])) {
             printf($insert);
             echo "<br>";
             print_r($_SESSION);
-            header('location:../../index.html');
+            header('location:../../index.php');
         }
     } else {
         header('location:team-naam.php');

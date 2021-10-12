@@ -2,8 +2,7 @@
 include_once "../connect.php";
 $score = $_POST['speler_score'];
 $spelerPos = $_SESSION['Speler_pos'];
-//$hole=$_GET['hole'];
-$hole = 1;//test line, moet weg in echte code en line er boven moet gebruikt worden
+$hole=$_GET['hole'];
 $groepID = $_SESSION['groupID'];
 if($score>=10){
     $_SESSION['errors'] = 'Je mag niet meer dan 10 keer slaan <br>';

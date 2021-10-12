@@ -15,8 +15,14 @@
     <div class="btns-wrapper">
         <div class="btn" onclick="toggleSpelregels()"><img class="icon" src="icons/golfer.png"><br>
             <p>Spelregels</p></div>
-        <div class="btn" onclick="toggleGholes()"><img class="icon" src="icons/holes.png"><br>
+        <?php
+        session_start();
+        if (isset($_SESSION['groupID'])) {
+            echo "<div class='btn' onclick='toggleGholes()'><img class='icon' src='icons/holes.png'><br>
             <p>Gholes</p></div>
+            ";
+        }
+        ?>
         <div class="btn" onclick="toggleReservation()"><img class="icon" src="icons/reservation.png"><br>
             <p>Groepen</p></div>
     </div>
@@ -47,9 +53,14 @@
     </div>
 
     <div class="container" id="gholes">
-        <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
-            <p>Gholes
-            </p>
+        <div class="scrolling-wrapper">
+            <?php
+            if (isset($_SESSION['groupID'])) {
+                for ($i = 0; $i > $_SESSION['holes']; $i++) {
+                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=.$i.'>Hole .$i.</a> </div>";
+                }
+            }
+            ?>
         </div>
     </div>
 
@@ -60,7 +71,7 @@
             </div>
         </a>
 
-        <a href="php/Groep/maak_groep.php" style="text-decoration: none">
+        <a href="php/Groep/Holes_aantal.php" style="text-decoration: none">
             <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
                 <p>Maak groep</p>
             </div>

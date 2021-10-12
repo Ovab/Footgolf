@@ -20,8 +20,9 @@ if (isset($_SESSION['errors'])) {
     }
     //variablen leeg maken zodat hij bij reload geen error meer heeft
     print_r($_SESSION);
-    $errors = ' ';
+    unset($errors);
     unset($_SESSION['errors']);
+    $hole=$_GET['hole'];
 }
 ?>
 <form action="score_register.php" method="post">
@@ -39,6 +40,9 @@ if (isset($_SESSION['errors'])) {
         jQuery.ajax({
             url: 'score_fetch.php', //Script URL.
             method: 'POST', //Methode data doorgeven
+            data:{
+                hole:<?php echo $_GET['hole']?>
+            }
             success: function (answer) {
                 jQuery('#score').html(answer);//update your div with new content ....
             },

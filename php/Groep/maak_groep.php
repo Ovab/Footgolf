@@ -28,6 +28,7 @@
                         echo mysqli_error($conn) . "<br>";
                         echo 'Oeps er ging iets fout, probeer aub opnieuw';
                     } else {
+                        $_SESSION['holes']=$holes;
                         //maak een session variable van het random nummer
                         $_SESSION['groupID'] = $random;
                         //Maak ID-maker de leider van de groep

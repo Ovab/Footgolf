@@ -239,6 +239,33 @@ h2{
 .wrapper1 .twitter:hover .tooltip:before{
     background: #46C1F6;
 }
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.card{
+    padding: 1em;
+    font-weight: 600;
+    line-height: 1.2;
+    position: relative;
+    width: 200px;
+    height: 230px;
+    background: #EC1C24;
+    border-radius: 20px;
+    box-shadow: -6px -6px 20px rgba(255,255,255,1),
+    6px 6px 20px rgba(0,0,0,0.1);
+    border: 1px solid white;
+    margin: 10px;
+    transition: 0.2s ease-in;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
 .wrapper1 .instagram:hover span,
 .wrapper1 .instagram:hover .tooltip,
 .wrapper1 .instagram:hover .tooltip:before{

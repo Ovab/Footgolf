@@ -24,7 +24,7 @@ if (empty($errors)) {
         if ($stmt->execute()) {
             $_SESSION['signed_in'] = true;
             $_SESSION['user_name'] = $speler;
-            header('Location:../../index.html');
+            header('Location:../../index.php');
         } else {
             $_SESSION['errors'] = 'Er is iets fout gegaan met het account in de database zetten, probeer aub opnieuw';
             header('Location:login-front-end.php');

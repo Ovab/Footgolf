@@ -17,7 +17,7 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
             while ($row = mysqli_fetch_assoc($result)) {
                 $_SESSION['signed_in'] = true;
                 $_SESSION['user_name'] = $row['Speler-naam'];
-                header("location:../../index.html");
+                header("location:../../index.php");
             }
         } else {
             // Incorrect telefoon nummer
