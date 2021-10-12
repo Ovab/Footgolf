@@ -4,11 +4,11 @@ Op letten:
 Stappen systeem, guided tour achig iets
 Minste punten wint
 
-Done (back-end wise):
->18 holes, naar 27 holes upgrade is mogelijk
->Team naam invullen/editen
->Einde van het spel de scores opvragen dmv de groeps code.
->Groep editing/manager
+Done (back-end wise) & TODO: front-end:
+>Groep manager
+>Vraag Scores
+>Hole aantal kies
+>Scores invoeren
 
 Done (Full-stack)
 >Email en 06 is genoeg
