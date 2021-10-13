@@ -6,7 +6,7 @@ Minste punten wint
 
 Done (back-end wise) & TODO: front-end:
 >Groep manager
->Vraag Scores
+>Vraag Scores - done
 >Hole aantal kies
 >Scores invoeren
 
