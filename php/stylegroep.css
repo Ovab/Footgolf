@@ -177,6 +177,31 @@ form.sign-in-form {
     color: #EC1C24;
 }
 
+table {
+    color: #555555;
+    text-align: center;
+    border: solid red;
+    min-width: 70%;
+    min-height: 100px;
+    max-height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px #555555;
+    padding: 0.5em;
+}
+
+th{
+    border: solid red;
+    border-width: 2px;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+td {
+    border-radius: 10px;
+    border: solid red;
+    border-width: 2px;
+}
+
 .panel {
     display: flex;
     flex-direction: column;

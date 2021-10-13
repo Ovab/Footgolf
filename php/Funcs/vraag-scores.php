@@ -42,25 +42,10 @@
                     }
 
                     $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4 from spellen where groupID = $GID and Aanmaak_datum=curdate()");
-                    echo "<style>
-                          table{
-                          color: #555555;
-                          text-align: center;
-                          border: solid red;
-                          }
-                         th{
-                          border: solid red;
-                          border-width: 2px;
-                          }
-                          td{
-                          border: solid red;
-                          border-width: 2px;
-                          }
-                          </style>
-                          
-                             <table>
+                    echo "
+                            <table>
                              <th colspan='100%'>Groep-naam: $groepnaam </th><tr></tr>
-                            <th>Hole</th>
+                            <th>Hole:</th>
                             <th>&nbsp$naam1&nbsp</th>";
                     if(isset($naam2)){echo "<th>&nbsp$naam2&nbsp</th>";}
                     if(isset($naam3)){echo "<th>&nbsp$naam3&nbsp</th>";}
