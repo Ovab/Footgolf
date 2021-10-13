@@ -5,7 +5,6 @@ Stappen systeem, guided tour achig iets
 Minste punten wint
 
 Done (back-end wise) & TODO: front-end:
->Groep manager
 >Vraag Scores - done
 >Hole aantal kies
 >Scores invoeren
@@ -15,6 +14,7 @@ Done (Full-stack)
 >Groepjes van 4
 >Limiet van 10
 >Registreer en login knop in groen
+>Groep manager
 
 To do:
 Multi-taal mode, NL en ENG (Frans would be epic)

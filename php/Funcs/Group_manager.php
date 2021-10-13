@@ -13,7 +13,7 @@
     <div class="forms-container">
         <!--Sign in form -->
         <div class="signin-signup">
-                <h2 class="title">Groep manager </h2>
+                <h2 class="title"  style="margin-left: 3%">Groep manager </h2>
 
                 <?php
                 include_once '../connect.php';
@@ -57,24 +57,24 @@
                           </style>
                           
                              <table>
-                             <th colspan='80%'>Groep-naam: $groepnaam </th>
-                             <th colspan='20%'><a href='../Groep/team-naam.php'>Edit</a></th>
+                             <th colspan='90%'>Groep-naam: $groepnaam </th>
+                             <th colspan='10%'><a href='../Groep/team-naam.php'>Edit</a></th>
                              <tr>
                              <th colspan='100%'>Groep-code: $GID </th><tr>
-                             <th colspan='100%'>&nbsp</th><tr>
+                             <th colspan='100%' style='border: none'>&nbsp</th><tr>
                             <th colspan='50%'>&nbsp$naam1&nbsp</th>
-                            <td>De leider kan niet verwijderd worden</td>
+                            <td colspan='50%'>De leider kan niet verwijderd worden</td>
                             <tr>";
                     if(isset($naam2)){echo "<th colspan='50%'>&nbsp$naam2&nbsp</th>
-                    <td><a href='delAcc.php?player=2'>Delete</a> </td>
+                    <td><a href='delAccGroep.php?player=2'>Delete</a> </td>
                     <tr>";}
                     echo "<tr>";
                     if(isset($naam3)){echo "<th colspan='50%'>&nbsp$naam3&nbsp</th>
-                    <td><a href='delAcc.php?player=3'>Delete</a> </td>
+                    <td><a href='delAccGroep.php?player=3'>Delete</a> </td>
                     <tr>";}
 
                     if(isset($naam4)){echo "<th colspan='50%'>&nbsp$naam4&nbsp</th>
-                    <td><a href='delAcc.php?player=4'>Delete</a> </td>
+                    <td><a href='delAccGroep.php?player=4'>Delete</a> </td>
                     <tr>";}
                 }
                 else{

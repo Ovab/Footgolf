@@ -54,7 +54,7 @@
                     if(isset($random)) {
                         echo "<input type='submit' value='Volgende' class='btn'/>";
                     }
-                    echo "<a href='../Login/login-front-end.php' class='btn'/>";
+                    echo "<a style='text-align: center; text-decoration: none' href='../Login/login-front-end.php' class='btn'>Ga naar login</a>";
                     ?>
                 <div class="panel right-panel">
                     <div class="content">

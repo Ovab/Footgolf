@@ -1,7 +1,8 @@
 <?php
 include_once "../connect.php";
 $groepID = $_SESSION['groupID'];
-$sql = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4, groupID FROM spellen where groupID=$groepID";
+$hole=$_SESSION['cur_hole'];
+$sql = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4, groupID FROM spellen where groupID=$groepID and Hole=$hole";
 $sql2 = "select SPELER_AANTAL, SPELER1, SPELER2, SPELER3, SPELER4 from groep where groupID=$groepID";
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
@@ -36,10 +37,6 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
 
     if ($speler_aantal >= 4) {
         echo $naam4 . ": " . $Score4 . "<br>";
-    }
-
-    if ($speler_aantal >= 5) {
-        echo $naam5 . ": " . $Score5 . "<br>";
     }
 } else {
     echo "Nog geen scores ingevoerd";

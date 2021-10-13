@@ -55,10 +55,17 @@
     <div class="container" id="gholes">
         <div class="scrolling-wrapper">
             <?php
-            if (isset($_SESSION['groupID'])) {
-                for ($i = 0; $i > $_SESSION['holes']; $i++) {
-                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=.$i.'>Hole .$i.</a> </div>";
-                }
+            if (isset($_SESSION['holes'])) {
+                unset($_SESSION["cur_hole"]);
+                $holes=$_SESSION['holes'];
+                $i=0;
+                    while ($i<$holes) {
+                        $i++;
+                        echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";
+                        if($i==ceil(($holes/2))){
+                            echo "<br>";
+                        }
+                    }
             }
             ?>
         </div>
@@ -75,6 +82,16 @@
             <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
                 <p>Maak groep</p>
             </div>
+            <?php
+            if ($_SESSION['groepLead']) {
+                echo "
+            <a href='php/Funcs/Group_manager.php' style='text-decoration: none'>
+                <div class='box'><img class='icon' src='img/Footgolf-Badge-1.png'><br>
+                    <p>Groep Manager</p>
+                </div>";
+            }
+                ?>
+            </a>
         </a>
     </div>
 

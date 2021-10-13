@@ -9,6 +9,8 @@
 <?php
 //resume / start sessie
 session_start();
+$hole=$_GET['hole'];
+$_SESSION["cur_hole"]=$hole;
 //zet php error reporting uit
 //error_reporting(E_ERROR | E_PARSE);
 //maar het session variable een normale voor reasons
@@ -19,13 +21,11 @@ if (isset($_SESSION['errors'])) {
         echo "<div class='error-text'>" . $errors . "</div>";
     }
     //variablen leeg maken zodat hij bij reload geen error meer heeft
-    print_r($_SESSION);
     unset($errors);
     unset($_SESSION['errors']);
-    $hole=$_GET['hole'];
 }
+echo "<form action='score_register.php?hole=$hole' method='post'>";
 ?>
-<form action="score_register.php" method="post">
     <label>Voer uw score in:</label>
     <input type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
     <input type="submit">
@@ -39,10 +39,7 @@ if (isset($_SESSION['errors'])) {
     function update_var() {
         jQuery.ajax({
             url: 'score_fetch.php', //Script URL.
-            method: 'POST', //Methode data doorgeven
-            data:{
-                hole:<?php echo $_GET['hole']?>
-            }
+            method: 'GET', //Methode data doorgeven
             success: function (answer) {
                 jQuery('#score').html(answer);//update your div with new content ....
             },
@@ -52,7 +49,6 @@ if (isset($_SESSION['errors'])) {
             }
         });
     }
-
     update_var()
     //Call de functie elke ~2.7 sec
     setInterval(function () {

@@ -14,7 +14,7 @@
         <!--Sign in form -->
         <div class="signin-signup">
             <form action="join_group_backend.php" class="sign-in-form" method="post">
-                <h2 class="title">Voer Game Code </h2>
+                <h2 class="title">Voer Game Code in</h2>
 
                 <?php
                 session_start();
