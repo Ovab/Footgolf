@@ -50,7 +50,12 @@
                     }
                     ?>
                 </div>
-                    <input type="submit" value="Next" class="btn"/>
+                    <?php
+                    if(isset($random)) {
+                        echo "<input type='submit' value='Volgende' class='btn'/>";
+                    }
+                    echo "<a href='../Login/login-front-end.php' class='btn'/>";
+                    ?>
                 <div class="panel right-panel">
                     <div class="content">
                         <h3>Een van ons?</h3>

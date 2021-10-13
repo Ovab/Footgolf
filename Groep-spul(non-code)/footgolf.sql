@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 06, 2021 at 11:38 AM
+-- Generation Time: Oct 13, 2021 at 06:55 AM
 -- Server version: 5.7.31
--- PHP Version: 7.3.21
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `groep`;
 CREATE TABLE IF NOT EXISTS `groep` (
   `GroepNaam` varchar(69) DEFAULT NULL,
-  `groupID` int(11) NOT NULL AUTO_INCREMENT,
+  `groupID` int(11) NOT NULL,
   `Aanmaak_datum` datetime NOT NULL,
   `Speler_aantal` int(11) NOT NULL,
   `Speler1` varchar(69) DEFAULT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `groep` (
 --
 
 INSERT INTO `groep` (`GroepNaam`, `groupID`, `Aanmaak_datum`, `Speler_aantal`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `num_holes`) VALUES
-('ovabs team', 58769, '2021-10-06 13:34:40', 1, 'ovab', NULL, NULL, NULL, 27);
+('Gamers', 67892, '2021-10-13 08:53:56', 4, 'Willem', 'Peiter', 'Jan', 'Piet', 27);
 
 -- --------------------------------------------------------
 
@@ -86,10 +86,17 @@ CREATE TABLE IF NOT EXISTS `spellen` (
   `Speler2` int(11) DEFAULT NULL,
   `Speler3` int(11) DEFAULT NULL,
   `Speler4` int(11) DEFAULT NULL,
-  `Speler5` int(11) DEFAULT NULL,
   `groupID` int(11) NOT NULL,
+  `Aanmaak_datum` date NOT NULL,
   PRIMARY KEY (`SpelID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `spellen`
+--
+
+INSERT INTO `spellen` (`SpelID`, `Hole`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `groupID`, `Aanmaak_datum`) VALUES
+(1, 1, 3, 2, 7, 9, 67892, '2021-10-13');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

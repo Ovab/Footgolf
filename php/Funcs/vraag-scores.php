@@ -41,7 +41,7 @@
                         $naam4 = $row2['Speler4'];
                     }
 
-                    $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4, Speler5 from spellen where groupID = $GID and Aanmaak_datum=curdate()");
+                    $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4 from spellen where groupID = $GID and Aanmaak_datum=curdate()");
                     echo "<style>
                           table{
                           color: #555555;
