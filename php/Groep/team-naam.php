@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../stylegroep.css"/>
+    <link rel="stylesheet" href="team-naam.css"/>
     <title>Footgolf - Voer team-naam in</title>
 </head>
 
@@ -16,12 +16,9 @@ $groupID=$_SESSION['groupID'];
 $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$groupID");
 ?>
 <div class="container">
-    <div class="forms-container">
-        <div class="signin-signup">
-                <h2 class="title">Voer Team naam in</h2>
+        <div class="wrapper">
+                <h2 class="title">Voer team naam in:</h2>
                 <div class="input-field">
-                    <!--TODO:Haal slotje nog weg -->
-                    <i class="fas fa-lock"></i>
                     <?php
                     session_start();
                     if (isset($_SESSION)) {
@@ -44,17 +41,14 @@ $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$g
                     }
                     ?>
                     <form action="Team-naam-back.php" method="post">
-                        <input type="text" placeholder='Team-naam' name="TeamNaam" <input/> <br>
-                        <input type="submit" value="Submit"/>
+                            <input class="input-text" type="text" placeholder='Team-naam' name="TeamNaam" />
+                        <div class="fast-wrapper">
+                            <input class="btn" type="submit" value="Submit"/>
+                        </div>
                     </form>
                 </div>
-                <div class="panel right-panel">
-                    <div class="content">
-                        <h3>Een van ons?</h3>
-                        <p>
-                            Log in, om weer de leukste ervaring te beleven!
-                        </p>
-
+        </div>
+</div>
 </body>
-<script src='../../Javascript/jquery.min.js'></script>
+<!--<script src='../../Javascript/jquery.min.js'></script>-->
 </html>
