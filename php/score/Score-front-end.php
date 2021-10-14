@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Footgolf - Score</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_score.css">
 </head>
 <body>
+<div class="wrapper">
 <?php
 //resume / start sessie
 session_start();
@@ -55,5 +56,7 @@ echo "<form action='score_register.php?hole=$hole' method='post'>";
         update_var()
     }, 2700);
 </script>
+<script src="../../Javascript/index.js"></script>
+</div>
 </body>
 </html>

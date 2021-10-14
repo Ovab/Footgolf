@@ -83,7 +83,7 @@
                 <p>Maak groep</p>
             </div>
             <?php
-            if ($_SESSION['groepLead']) {
+            if (isset($_SESSION['groepLead'])) {
                 echo "
             <a href='php/Funcs/Group_manager.php' style='text-decoration: none'>
                 <div class='box'><img class='icon' src='img/Footgolf-Badge-1.png'><br>
