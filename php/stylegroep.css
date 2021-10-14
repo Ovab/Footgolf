@@ -104,8 +104,9 @@ form.sign-in-form {
 
 
 .btn {
+    margin: auto;
     width: 150px;
-    background-color: greenyellow;
+    background-color: #23A455;
     border: none;
     outline: none;
     height: 49px;
@@ -113,14 +114,16 @@ form.sign-in-form {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 10px 0;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .btn:hover {
-    background-color: #EC1C24;
+    background-color: #fff;
+    color: #23A455;
 }
+
+
 
 .panels-container {
     position: absolute;

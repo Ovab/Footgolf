@@ -14,7 +14,7 @@
         <!--Sign in form -->
         <div class="signin-signup">
             <form action="join_group_backend.php" class="sign-in-form" method="post">
-                <h2 class="title">Voer Game Code in</h2>
+                <h2 class="title">Voer game code in:</h2>
 
                 <?php
                 session_start();
@@ -30,7 +30,7 @@
                 ?>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="GameCode" name="GroepID"/>
+                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Game Code" name="GroepID"/>
                 </div>
                 <input type="submit" class="btn" value="Join groep"/>
                 <p id="pc"></p>
