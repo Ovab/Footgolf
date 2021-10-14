@@ -72,7 +72,7 @@
                 <button class="btn transparent" id="sign-up-btn">
                     Registreer
                 </button>
-                <img src="../../img/Footgolf-logo.png" class="image" alt=""/>
+                <img src="../../img/Footgolf-logo.png" class="image" id="image" alt=""/>
             </div>
         </div>
         <div class="panel right-panel">
