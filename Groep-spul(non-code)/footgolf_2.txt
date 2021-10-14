@@ -5,9 +5,9 @@ Stappen systeem, guided tour achig iets
 Minste punten wint
 
 Done (back-end wise) & TODO: front-end:
->Vraag Scores - done
 >Hole aantal kies
 >Scores invoeren
+
 
 Done (Full-stack)
 >Email en 06 is genoeg
@@ -15,6 +15,7 @@ Done (Full-stack)
 >Limiet van 10
 >Registreer en login knop in groen
 >Groep manager
+>Vraag Scores - done
 
 To do:
 Multi-taal mode, NL en ENG (Frans would be epic)
