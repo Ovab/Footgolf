@@ -28,7 +28,7 @@ else {
             header('location:Score-front-end.php?hole='.$hole);
         } else {
             //Header naar score front end
-            $_SESSION['errors'] = 'Er ging iets fout, probeer aub opnieuw <br>'.mysqli_error($conn).'<br>';
+            $_SESSION['errors'] = 'Er ging iets fout, probeer aub opnieuw <br>';
             header('location:Score-front-end.php?hole='.$hole);
         }
     }

@@ -33,45 +33,29 @@ h2{
     padding-top: 70px;
 }
 .title{
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-.title::after{
-    content: '';
-    background: #EC1C24;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
 }
 
 .btn {
+    margin: auto;
+    width: 150px;
+    background-color: #23A455;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
     font-weight: 600;
-    line-height: 1.2;
-    position: relative;
-    width: 100px;
-    height: 59px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: -6px -6px 20px rgba(255,255,255,1),
-    6px 6px 20px rgba(0,0,0,0.1);
-    border: 1px solid white;
-    margin: 10px;
-    transition: 0.2s ease-in;
-    color: #333;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .btn:hover {
-    cursor: pointer;
-    background: white;
-    color: #EC1C24;
-    box-shadow: 0 0 20px #EC1C24;
+    background-color: #fff;
+    color: #23A455;
 }
 
 .icon {
@@ -91,6 +75,65 @@ h2{
 }
 h2{
     padding-top: 70px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: auto;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    margin: 0 10px;
+    min-width: 360px;
+    max-width: 375px;
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.error-text {
+    color: #721c24;
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px black;
+
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+    width: 100%;
 }
 
 .box{
@@ -270,5 +313,16 @@ h2{
 .wrapper1 .instagram:hover .tooltip,
 .wrapper1 .instagram:hover .tooltip:before{
     background: #e1306c;
+}
+
+@media (max-width: 870px) {
+    .input-field {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 570px) {
+
 }
 

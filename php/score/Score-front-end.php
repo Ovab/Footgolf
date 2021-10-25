@@ -27,9 +27,11 @@ if (isset($_SESSION['errors'])) {
 }
 echo "<form action='score_register.php?hole=$hole' method='post'>";
 ?>
-    <label>Voer uw score in:</label>
-    <input type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
-    <input type="submit">
+    <h2 class="title">Voer uw score in:</h2>
+    <div class="input-field">
+    <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
+    </div> <br>
+    <input class="btn" type="submit" value="Verzenden">
 </form>
 <p id="score"></p>
 <!--Import jQuery -->
