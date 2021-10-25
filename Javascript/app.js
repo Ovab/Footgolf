@@ -19,10 +19,10 @@ function sleep(ms) {
 }
 
 function imageAnimation() {
-    if(sign_up_btn) {
-image.style.display = "none";
-    } else if (sign_in_btn){
+    if (sign_up_btn) {
+        image.style.display = "none";
+    } else if (sign_in_btn) {
         sleep(100)
-image.style.display = "block";
+        image.style.display = "block";
     }
 }

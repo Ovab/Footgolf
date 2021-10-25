@@ -1,7 +1,7 @@
 <?php
 include_once "../connect.php";
 $groepID = $_SESSION['groupID'];
-$hole=$_SESSION['cur_hole'];
+$hole = $_SESSION['cur_hole'];
 $sql = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4, groupID FROM spellen where groupID=$groepID and Hole=$hole";
 $sql2 = "select SPELER_AANTAL, SPELER1, SPELER2, SPELER3, SPELER4 from groep where groupID=$groepID";
 $result = $conn->query($sql);

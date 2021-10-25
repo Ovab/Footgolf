@@ -12,9 +12,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT = @@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS = @@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION = @@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
@@ -28,25 +28,29 @@ SET time_zone = "+00:00";
 --
 
 DROP TABLE IF EXISTS `groep`;
-CREATE TABLE IF NOT EXISTS `groep` (
-  `GroepNaam` varchar(69) DEFAULT NULL,
-  `groupID` int(11) NOT NULL,
-  `Aanmaak_datum` datetime NOT NULL,
-  `Speler_aantal` int(11) NOT NULL,
-  `Speler1` varchar(69) DEFAULT NULL,
-  `Speler2` varchar(69) DEFAULT NULL,
-  `Speler3` varchar(69) DEFAULT NULL,
-  `Speler4` varchar(69) DEFAULT NULL,
-  `num_holes` int(11) NOT NULL,
-  PRIMARY KEY (`groupID`)
-) ENGINE=MyISAM AUTO_INCREMENT=97241 DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `groep`
+(
+    `GroepNaam`     varchar(69) DEFAULT NULL,
+    `groupID`       int(11)  NOT NULL,
+    `Aanmaak_datum` datetime NOT NULL,
+    `Speler_aantal` int(11)  NOT NULL,
+    `Speler1`       varchar(69) DEFAULT NULL,
+    `Speler2`       varchar(69) DEFAULT NULL,
+    `Speler3`       varchar(69) DEFAULT NULL,
+    `Speler4`       varchar(69) DEFAULT NULL,
+    `num_holes`     int(11)  NOT NULL,
+    PRIMARY KEY (`groupID`)
+) ENGINE = MyISAM
+  AUTO_INCREMENT = 97241
+  DEFAULT CHARSET = latin1;
 
 --
 -- Dumping data for table `groep`
 --
 
-INSERT INTO `groep` (`GroepNaam`, `groupID`, `Aanmaak_datum`, `Speler_aantal`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `num_holes`) VALUES
-('Gamers', 67892, '2021-10-13 08:53:56', 4, 'Willem', 'Peiter', 'Jan', 'Piet', 27);
+INSERT INTO `groep` (`GroepNaam`, `groupID`, `Aanmaak_datum`, `Speler_aantal`, `Speler1`, `Speler2`, `Speler3`,
+                     `Speler4`, `num_holes`)
+VALUES ('Gamers', 67892, '2021-10-13 08:53:56', 4, 'Willem', 'Peiter', 'Jan', 'Piet', 27);
 
 -- --------------------------------------------------------
 
@@ -55,22 +59,24 @@ INSERT INTO `groep` (`GroepNaam`, `groupID`, `Aanmaak_datum`, `Speler_aantal`, `
 --
 
 DROP TABLE IF EXISTS `spelers`;
-CREATE TABLE IF NOT EXISTS `spelers` (
-  `Speler-email` varchar(45) NOT NULL,
-  `Speler-naam` varchar(45) NOT NULL,
-  `Speler-telefoon` int(11) DEFAULT NULL,
-  PRIMARY KEY (`Speler-email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `spelers`
+(
+    `Speler-email`    varchar(45) NOT NULL,
+    `Speler-naam`     varchar(45) NOT NULL,
+    `Speler-telefoon` int(11) DEFAULT NULL,
+    PRIMARY KEY (`Speler-email`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
 
 --
 -- Dumping data for table `spelers`
 --
 
-INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES
-('bavo.famknol@gmail.com', 'ovab', 619541435),
-('Nick@snickers.nl', 'Nick', 698764321),
-('Parker@penis.nl', 'Penis Parker', 623456789),
-('Pietjan@gmail.com', 'Pieter', 612345678);
+INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-telefoon`)
+VALUES ('bavo.famknol@gmail.com', 'ovab', 619541435),
+       ('Nick@snickers.nl', 'Nick', 698764321),
+       ('Parker@penis.nl', 'Penis Parker', 623456789),
+       ('Pietjan@gmail.com', 'Pieter', 612345678);
 
 -- --------------------------------------------------------
 
@@ -79,26 +85,29 @@ INSERT INTO `spelers` (`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES
 --
 
 DROP TABLE IF EXISTS `spellen`;
-CREATE TABLE IF NOT EXISTS `spellen` (
-  `SpelID` int(11) NOT NULL AUTO_INCREMENT,
-  `Hole` int(11) NOT NULL,
-  `Speler1` int(11) DEFAULT NULL,
-  `Speler2` int(11) DEFAULT NULL,
-  `Speler3` int(11) DEFAULT NULL,
-  `Speler4` int(11) DEFAULT NULL,
-  `groupID` int(11) NOT NULL,
-  `Aanmaak_datum` date NOT NULL,
-  PRIMARY KEY (`SpelID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `spellen`
+(
+    `SpelID`        int(11) NOT NULL AUTO_INCREMENT,
+    `Hole`          int(11) NOT NULL,
+    `Speler1`       int(11) DEFAULT NULL,
+    `Speler2`       int(11) DEFAULT NULL,
+    `Speler3`       int(11) DEFAULT NULL,
+    `Speler4`       int(11) DEFAULT NULL,
+    `groupID`       int(11) NOT NULL,
+    `Aanmaak_datum` date    NOT NULL,
+    PRIMARY KEY (`SpelID`)
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 2
+  DEFAULT CHARSET = utf8;
 
 --
 -- Dumping data for table `spellen`
 --
 
-INSERT INTO `spellen` (`SpelID`, `Hole`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `groupID`, `Aanmaak_datum`) VALUES
-(1, 1, 3, 2, 7, 9, 67892, '2021-10-13');
+INSERT INTO `spellen` (`SpelID`, `Hole`, `Speler1`, `Speler2`, `Speler3`, `Speler4`, `groupID`, `Aanmaak_datum`)
+VALUES (1, 1, 3, 2, 7, 9, 67892, '2021-10-13');
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT = @OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS = @OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION = @OLD_COLLATION_CONNECTION */;

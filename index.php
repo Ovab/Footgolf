@@ -22,10 +22,19 @@
             <p>Gholes</p></div>
             ";
         }
+        if (isset($_SESSION['signed_in'])) {
+            echo "<div class='btn' onclick='toggleReservation()' ><img class='icon' src = 'icons/reservation.png' ><br >
+            <p > Groepen</p ></div>";
+        }
+        if (!isset($_SESSION['signed_in'])) {
+            echo "<a href='php/Login/login-front-end.php' style='text-decoration: none'>
+<!--Icon van fontaswome-->
+        <div class='btn'><img class='icon' src='icons/users.svg'><br>
+            <p>Login</p></div>";
+        }
         ?>
-        <div class="btn" onclick="toggleReservation()"><img class="icon" src="icons/reservation.png"><br>
-            <p>Groepen</p></div>
     </div>
+    </a>
 
     <h2 class="title" id="title">Spelregels</h2>
 
@@ -57,15 +66,15 @@
             <?php
             if (isset($_SESSION['holes'])) {
                 unset($_SESSION["cur_hole"]);
-                $holes=$_SESSION['holes'];
-                $i=0;
-                    while ($i<$holes) {
-                        $i++;
-                        echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";
-                        if($i==ceil(($holes/2))){
-                            echo "<br>";
-                        }
+                $holes = $_SESSION['holes'];
+                $i = 0;
+                while ($i < $holes) {
+                    $i++;
+                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";
+                    if ($i == ceil(($holes / 2))) {
+                        echo "<br>";
                     }
+                }
             }
             ?>
         </div>
@@ -90,8 +99,8 @@
                     <p>Groep Manager</p>
                 </div>";
             }
-                ?>
-            </a>
+            ?>
+        </a>
         </a>
     </div>
 

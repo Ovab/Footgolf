@@ -20,15 +20,15 @@
                     $naam1 = $_SESSION['user_name'];
                     //Genereer 5 digit random nummer
                     $random = mt_rand(1000, 99999);
-                    $holes=$_POST['holes'];
-                    $naam1s=$naam1."s team";
+                    $holes = $_POST['holes'];
+                    $naam1s = $naam1 . "s team";
                     mysqli_query($conn, "DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
                     $insert = mysqli_query($conn, "insert into groep(GroepNaam, groupID, Aanmaak_datum, `Speler_aantal`, Speler1, num_holes) VALUES ('$naam1s',$random, NOW(), 1, '$naam1', $holes)");
                     if (!$insert) {
                         echo mysqli_error($conn) . "<br>";
                         echo 'Oeps er ging iets fout, probeer aub opnieuw';
                     } else {
-                        $_SESSION['holes']=$holes;
+                        $_SESSION['holes'] = $holes;
                         //maak een session variable van het random nummer
                         $_SESSION['groupID'] = $random;
                         //Maak ID-maker de leider van de groep
@@ -50,14 +50,13 @@
                     }
                     ?>
                 </div>
-                    <?php
-                    if(isset($random) && isset($holes)) {
-                        echo "<input style='background-color: #74AE6A' type='submit' value='Volgende' class='btn' />";
-                    }
-                    else {
-                        echo "<a style='text-align: center; text-decoration: none; background-color: #74AE6A' href='../Login/login-front-end.php' class='btn'>Ga naar login</a>";
-                    }
-                    ?>
+                <?php
+                if (isset($random) && isset($holes)) {
+                    echo "<input style='background-color: #74AE6A' type='submit' value='Volgende' class='btn' />";
+                } else {
+                    echo "<a style='text-align: center; text-decoration: none; background-color: #74AE6A' href='../Login/login-front-end.php' class='btn'>Ga naar login</a>";
+                }
+                ?>
                 <div class="panel right-panel">
                     <div class="content">
                         <h3>Een van ons?</h3>

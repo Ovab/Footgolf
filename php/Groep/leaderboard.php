@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="vraagscores.css"/>
+    <link rel="stylesheet" href="../Funcs/vraagscores.css"/>
     <title>Footgolf - Vraag scores</title>
 </head>
 
@@ -13,8 +13,7 @@
     <div class="forms-container">
         <!--Sign in form -->
         <div class="signin-signup">
-            <form action="#" class="sign-in-form" method="post">
-                <h2 class="title">Voer groepscode in van het team van wie je de scores wilt </h2>
+                <form action="#" class="sign-in-form" method="post">
 
                 <?php
                 include_once '../connect.php';
@@ -27,7 +26,6 @@
                 }
                 unset($errors);
                 unset($_SESSION['Errors']);
-                if (isset($_POST['GameCode'])) {
                     $GID = $_POST['GameCode'];
                     //print_r($_POST);
                     $sql2 = "SELECT * FROM groep where groupID=$GID";
@@ -79,14 +77,7 @@
                         echo "</tr>";
                     }
                     $_SESSION ['tablepost'] = true;
-                }
                 ?>
-                <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Game Code" name="GameCode"/>
-                </div>
-                <input type="submit" class="btn" value="Vraag scores"/>
-            </form>
         </div>
     </div>
 </div>

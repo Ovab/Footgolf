@@ -23,7 +23,8 @@ else {
         }
     } else {
         $spelerQ = "Speler" . $spelerPos;
-        $student = mysqli_query($conn, "INSERT INTO spellen(Hole, $spelerQ, groupID, Aanmaak_datum) values ($hole ,$score, $groepID, curdate());");
+        $naam=mysqli_query($conn, "select groepnaam from groep where groupID=$groepID");
+        $student = mysqli_query($conn, "INSERT INTO spellen(Hole, $spelerQ, groupID, Aanmaak_datum, GroepNaam) values ($hole ,$score, $groepID, curdate(), );");
         if ($student) {
             header('location:Score-front-end.php?hole='.$hole);
         } else {

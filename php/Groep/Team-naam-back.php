@@ -1,6 +1,6 @@
 <?php
 include_once '../connect.php';
-$userinput=$_POST['TeamNaam'];
+$userinput = $_POST['TeamNaam'];
 if (isset($_SESSION['groupID'])) {
     $groupID = $_SESSION['groupID'];
     $insert = "UPDATE `groep` SET `GroepNaam` = '$userinput' WHERE groupID = $groupID";

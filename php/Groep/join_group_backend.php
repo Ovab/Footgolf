@@ -9,14 +9,14 @@ if (!empty($user_input)) {
         //loop door de $row resultaten heen en doe het in $row
         while ($row = mysqli_fetch_assoc($res)) {
             $player_aantal = $row['Speler_aantal'];
-            $holes=$row['num_holes'];
+            $holes = $row['num_holes'];
         }
         //Als speler aantal groter of gelijk is aan 5 dan geeft hij die error
         if ($player_aantal >= 4) {
             $_SESSION['Errors'] = "Sorry deze groep zit vol";
             header('location:join_group.php');
         } else {
-            $_SESSION['holes']=$holes;
+            $_SESSION['holes'] = $holes;
             $naam = $_SESSION['user_name'];
             $speler_count = 'Speler' . $player_aantal += 1;
             //verhoog player aantal
@@ -26,7 +26,7 @@ if (!empty($user_input)) {
             //Zet groepID
             $_SESSION['groupID'] = $user_input;
             $_SESSION['Speler_pos'] = $player_aantal;
-            header('location:join_group.php');
+            header('location:../../index.php');
             //Geef aantal spelers weer
         }
     } else {

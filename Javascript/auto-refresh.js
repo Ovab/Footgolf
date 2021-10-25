@@ -12,6 +12,9 @@ function update_var() {
         }
     });
 }
+
 update_var()
 //Call de functie elke ~2.7 sec
-setInterval(function(){ update_var() }, 2700);
+setInterval(function () {
+    update_var()
+}, 2700);

@@ -35,7 +35,7 @@ form {
 }
 
 .title {
-    text-align: center ;
+    text-align: center;
     font-size: 2.2rem;
     color: #444;
     margin-bottom: 10px;
@@ -95,7 +95,6 @@ form {
     background-color: #fff;
     color: #23A455;
 }
-
 
 
 .container:before {
