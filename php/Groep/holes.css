@@ -50,11 +50,10 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0rem 5rem;
+    padding: 0 5rem;
     transition: all 0.2s 0.7s;
     overflow: hidden;
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
 }
 
 form.sign-up-form {
@@ -75,15 +74,16 @@ form.sign-in-form {
 
 
 .btn{
-    width: 150px;
+    width: 100%;
     background-color: #EC1C24;
     border: none;
     outline: none;
-    height: 49px;
+    height: 24vh;
     border-radius: 49px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 96px;
     margin: 10px 0;
     cursor: pointer;
     transition: 0.5s;
