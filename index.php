@@ -28,7 +28,7 @@
         }
         if (!isset($_SESSION['signed_in'])) {
             echo "<a href='php/Login/login-front-end.php' style='text-decoration: none'>
-<!--Icon van fontaswome-->
+<!--Icon van fontaswome  -->
         <div class='btn'><img class='icon' src='icons/users.svg'><br>
             <p>Login</p></div>";
         }

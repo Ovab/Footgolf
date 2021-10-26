@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <meta charset="UTF-8">
     <title>Footgolf - Score</title>
@@ -29,40 +30,15 @@
     //variablen leeg maken zodat hij bij reload geen error meer heeft
     unset($errors);
     unset($_SESSION['errors']);
-echo "<form action='score_register.php?hole=$hole' method='post'>";
-?>
+    echo "<form action='score_register.php?hole=$hole' method='post'>";
+    ?>
     <h2 class="title">Voer uw score in:</h2>
     <div class="input-field">
-    <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
-    </div> <br>
+        <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score"
+               id="spelerScore">
+    </div>
+    <br>
     <input class="btn" type="submit" value="Verzenden">
-</form>
-<p id="score"></p>
-<!--Import jQuery -->
-<script src="../../Javascript/jquery.min.js"></script>
-<!--auto refresh script -->
-<script>
-    //maak functie aan.
-    function update_var() {
-        jQuery.ajax({
-            url: 'score_fetch.php', //Script URL.
-            method: 'GET', //Methode data doorgeven
-            success: function (answer) {
-                jQuery('#score').html(answer);//update your div with new content ....
-            },
-            error: function () {
-                //Iets ging fout, niet sure wat tho
-                alert("Onbekende error met refreshen, refresh weer over 2.7 sec");
-            }
-        });
-    }
-    update_var()
-    //Call de functie elke ~2.7 sec
-    setInterval(function () {
-    <?php echo "<form action='score_register.php?hole=$hole' method='post'>"; ?>
-    <label>Voer uw score in:</label>
-    <input type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score" id="spelerScore">
-    <input type="submit">
     </form>
     <p id="score"></p>
     <!--Import jQuery -->
@@ -83,14 +59,13 @@ echo "<form action='score_register.php?hole=$hole' method='post'>";
                 }
             });
         }
-        update_var()
 
+        update_var()
         //Call de functie elke ~2.7 sec
         setInterval(function () {
             update_var()
         }, 2700);
     </script>
-    <script src="../../Javascript/index.js"></script>
 </div>
 </body>
 </html>

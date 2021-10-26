@@ -72,8 +72,7 @@ form.sign-in-form {
 }
 
 
-
-.btn{
+.btn {
     width: 100%;
     background-color: #EC1C24;
     border: none;
@@ -116,7 +115,6 @@ form.sign-in-form {
     border-radius: 50%;
     z-index: 6;
 }
-
 
 
 .panel {

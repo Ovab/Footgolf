@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<div>
+<div class="container">
     <div class="forms-container">
         <!--Sign in form -->
         <div class="signin-signup">
@@ -41,7 +41,7 @@
                         $naam4 = $row2['Speler4'];
                     }
 
-                    $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4 from spellen where groupID = $GID and Aanmaak_datum=curdate()");
+                    $spellen = mysqli_query($conn, "select Hole, Speler1, Speler2, Speler3, Speler4 from spellen where groupID = $GID and Aanmaak_datum=curdate() order by Hole");
 
                     echo "
                             <table>
@@ -59,13 +59,13 @@
                     }
                     echo "<tr>";
                     while ($row = mysqli_fetch_assoc($spellen)) {
-                        $speler1=$row['Speler1'] ;
+                        $speler1 = $row['Speler1'];
                         $speler2 = $row['Speler2'];
                         $speler3 = $row['Speler3'];
                         $speler4 = $row['Speler4'];
                         echo '
 							<td>' . $row['Hole'] . '</td>
-							<td>' .$speler1 . '</td>
+							<td>' . $speler1 . '</td>
 							';
                         if (isset($speler2)) {
                             echo "<td> $speler2 </td>";
