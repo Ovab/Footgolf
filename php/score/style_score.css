@@ -332,7 +332,6 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 870px) {
     .input-field {
-        margin: 0;
         width: 100%;
     }
 }

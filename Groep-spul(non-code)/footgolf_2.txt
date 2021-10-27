@@ -1,7 +1,7 @@
 Footgolf notes
 
 Op letten:
-Stappen systeem, guided tour achig iets
+Stappen systeem, guided tour achtig iets
 Minste punten wint
 
 Done (back-end wise) & TODO: front-end:
