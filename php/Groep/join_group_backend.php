@@ -4,7 +4,7 @@ include_once '../connect.php';
 $user_input = $_POST['GroepID'];
 //Check of data is doorgekomen
 if (!empty($user_input)) {
-    $res = mysqli_query($conn, "select groupID, `Speler_aantal`, `num_holes` from groep where groupID=$user_input limit 1");
+    $res = mysqli_query($conn, "select groupID, `Speler_aantal`, `num_holes`, GroepNaam from groep where groupID=$user_input limit 1");
     if ($res) {
         //loop door de $row resultaten heen en doe het in $row
         while ($row = mysqli_fetch_assoc($res)) {
@@ -23,7 +23,8 @@ if (!empty($user_input)) {
             $speler_q = "update groep set $speler_count = '$naam' where groupID=$user_input";
             mysqli_query($conn, "update groep set `Speler_aantal`= Speler_aantal+1, $speler_count = '$naam' where groupID=$user_input");
             mysqli_query($conn, $speler_q);
-            //Zet groepID
+            //Zet groepID/c[.,;gdn,;
+            $_SESSION['teamnaam']=$row['GroepNaam'];
             $_SESSION['groupID'] = $user_input;
             $_SESSION['Speler_pos'] = $player_aantal;
             header('location:../../index.php');

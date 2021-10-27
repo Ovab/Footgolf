@@ -27,7 +27,7 @@
         unset($_SESSION['errors']);
     }
 
-    //variablen leeg maken zodat hij bij reload geen error meer heeft
+    //variablen leeg makenca zodat hij bij reload geen error meer heeft
     unset($errors);
     unset($_SESSION['errors']);
     echo "<form action='score_register.php?hole=$hole' method='post'>";
