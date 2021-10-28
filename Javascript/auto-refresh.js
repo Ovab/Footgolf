@@ -8,7 +8,6 @@ function update_var() {
         },
         error: function () {
             //Iets ging fout, niet sure wat tho
-            alert("shit brokey");
         }
     });
 }

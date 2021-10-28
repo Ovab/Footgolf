@@ -37,7 +37,7 @@ function hideGholes() {
 }
 
 function showReservation() {
-    title.innerHTML = "Reservering";
+    title.innerHTML = "Groepen";
     title.style.display = "block";
     reservation.style.display = "flex";
 }
