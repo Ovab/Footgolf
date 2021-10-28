@@ -6,7 +6,6 @@ Minste punten wint
 
 Done (back-end wise) & TODO: front-end:
 >Hole aantal kies - (soort van gefixed btns moeten het liefst nog naast elkaar.)
->Scores invoeren - (moet alleen vergroot worden)
 
 
 Done (Full-stack)
