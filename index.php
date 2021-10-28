@@ -33,8 +33,9 @@
             <p>Login</p></div>";
         }
         ?>
+        <div class="btn" onclick="toggleLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
+            <p>Top scores</p></div>
     </div>
-    </a>
 
     <h2 class="title" id="title">Spelregels</h2>
 
@@ -58,25 +59,6 @@
                 Als de bal via het ongemaaide gras weer in de baan komt:
                 Leg dan de bal terug waar deze de baan verliet
             </p>
-        </div>
-    </div>
-
-    <div class="container" id="gholes">
-        <div class="scrolling-wrapper">
-            <?php
-            if (isset($_SESSION['holes'])) {
-                unset($_SESSION["cur_hole"]);
-                $holes = $_SESSION['holes'];
-                $i = 0;
-                while ($i < $holes) {
-                    $i++;
-                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";
-                    if ($i == ceil(($holes / 2))) {
-                        echo "<br>";
-                    }
-                }
-            }
-            ?>
         </div>
     </div>
 
@@ -105,6 +87,38 @@
     </div>
 
 
+    <div class="container" id="leaderboard">
+        <a href="php/Funcs/leaderboard.php" style="text-decoration: none">
+            <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+                <p>Top scores 18 holes</p>
+            </div>
+        </a>
+
+        <a href="php/Funcs/leaderboard27.php" style="text-decoration: none">
+            <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+                <p>Top scores 27 holes</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="container" id="gholes">
+        <div class="scrolling-wrapper">
+            <?php
+            if (isset($_SESSION['holes'])) {
+                unset($_SESSION["cur_hole"]);
+                $holes = $_SESSION['holes'];
+                $i = 0;
+                while ($i < $holes) {
+                    $i++;
+                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";
+                    if ($i == ceil(($holes / 2))) {
+                        echo "<br>";
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
 </div>
 <script src="Javascript/index.js"></script>
 

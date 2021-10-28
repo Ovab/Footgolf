@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../Funcs/vraagscores.css"/>
+    <link rel="stylesheet" href="vraagscores.css"/>
     <title>Footgolf - Top scores</title>
 </head>
 
@@ -12,7 +12,7 @@
     <div class="signin-signup">
         <form action="#" class="sign-in-form" method="post">
             <?php
-            $req=require_once '../connect.php';
+            $req= require_once '../connect.php';
             if(!$req){
                 echo "We konden geen verbinding maken met de database, probeer aub opnieuw";
             }
@@ -27,7 +27,7 @@
             unset($_SESSION['Errors']);
             //print_r($_POST);
             $GID = $_SESSION['groupID'];
-            $spellen = mysqli_query($conn, "SELECT GroepNaam,GroepScore from `spellen` where Hole=18 order by GroepScore");
+            $spellen = mysqli_query($conn, "SELECT GroepNaam,GroepScore from `spellen` where Hole=27 order by GroepScore");
             echo mysqli_error($conn);
             echo "
                             <table border='1'>
