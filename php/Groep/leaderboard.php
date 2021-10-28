@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <!--<link rel="stylesheet" href="../Funcs/vraagscores.css"/>-->
+    <link rel="stylesheet" href="../Funcs/vraagscores.css"/>
     <title>Footgolf - Top scores</title>
 </head>
 
@@ -27,10 +27,7 @@
             unset($_SESSION['Errors']);
             //print_r($_POST);
             $GID = $_SESSION['groupID'];
-            $spellen = mysqli_query($conn, "SELECT 
-                                                Speler1+ifnull(Speler2,0)+ifnull(Speler3,0)+ifnull(Speler4,0) AS scores, 
-                                                `GroepNaam` from `spellen`
-                                                order by scores");
+            $spellen = mysqli_query($conn, "SELECT GroepNaam,GroepScore from `spellen` where Hole=18 order by GroepScore");
             echo mysqli_error($conn);
             echo "
                             <table border='1'>
@@ -39,9 +36,12 @@
                             <th>Totale score</th>";
             echo "<tr>";
             $i = 1;
+            $Groepnamen[0]="jghdjghsighsdigohsrvbckvjsioeg3yiry34thdjhvdh";
+            $j=1;
             while ($row = mysqli_fetch_assoc($spellen)) {
-                $scores=$row['scores'];
-                if(!isset($row['GroepNaam'])) {
+                $scores=$row['GroepScore'];
+                $j++;
+                if(isset($row['GroepNaam']) && !in_array($row['GroepNaam'],$Groepnamen)) {
                     echo '
                             <td>' . $i . '</td>
 							<td>' . $row['GroepNaam'] . '</td>
@@ -49,10 +49,8 @@
 							</tr>
 							';
                     $i++;
-                }
-                else{
-                    echo "i=".$i." al gepost team? ".$row['GroepNaam']."<br> score:".$scores."<br> <br>";
-                    $i++;
+                    $Groepnamen[$j]=$row['GroepNaam'];
+                    if ($i>10){break;}
                 }
             }
             ?>

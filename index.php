@@ -96,7 +96,7 @@
                 echo "
             <a href='php/Funcs/Group_manager.php' style='text-decoration: none'>
                 <div class='box'><img class='icon' src='img/Footgolf-Badge-1.png'><br>
-                    <p>Groep Manager</p>
+                    <p>Groep Beheer</p>
                 </div>";
             }
             ?>
