@@ -1,0 +1,5 @@
+
+.idea/sqldialects.xml
+*.xml
+*.meta
+php/connect.php

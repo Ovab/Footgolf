@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NL/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/Javascript/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/Javascript/auto-refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/Javascript/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/Javascript/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/Group_manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/delAccGroep.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/vraag-scores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/vraagscores.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/Holes_aantal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/holes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/join_group.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/maakgroep.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/pc-fetch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/team-naam.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Groep/team-naam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Login/signout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/Login/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/score/score_fetch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/score/score_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/score/style_score.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/php/stylegroep.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NL/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javascript/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javascript/auto-refresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javascript/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javascript/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/crown-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/golfer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/holes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/reservation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/users.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/users.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/users.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Footgolf-Badge-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Footgolf-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fetch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/footgolf5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/golf-icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/join_groep.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/tw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Funcs/Group_manager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Funcs/delAccGroep.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Funcs/leaderboard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Funcs/leaderboard27.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Funcs/vraag-scores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Funcs/vraagscores.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/Holes_aantal.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/Team-naam-back.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/holes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/join_group.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/join_group_backend.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/maak_groep.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/maakgroep.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/pc-fetch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/team-naam.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Groep/team-naam.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Login/login-front-end.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Login/signin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Login/signout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Login/signup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/connect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/score/Score-front-end.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/score/score_fetch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/score/score_register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/score/style_score.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/stylegroep.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1xkhGgYISGTYIXmWB8KW070rwc5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Funcs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Funcs" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Groep" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="" />
+      <created>1630904900069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630904900069</updated>
+      <workItem from="1630904901408" duration="2834000" />
+      <workItem from="1630909332818" duration="149000" />
+      <workItem from="1630909506122" duration="49000" />
+      <workItem from="1630909572469" duration="10803000" />
+      <workItem from="1630996701229" duration="14045000" />
+      <workItem from="1631012277898" duration="2318000" />
+      <workItem from="1631019539546" duration="1118000" />
+      <workItem from="1631083711724" duration="10095000" />
+      <workItem from="1631098351672" duration="1826000" />
+      <workItem from="1631102513086" duration="5460000" />
+      <workItem from="1631169454094" duration="18444000" />
+      <workItem from="1631514685475" duration="13712000" />
+      <workItem from="1631530707561" duration="6316000" />
+      <workItem from="1631601067495" duration="9229000" />
+      <workItem from="1631687975400" duration="5278000" />
+      <workItem from="1631774330241" duration="1597000" />
+      <workItem from="1631775959805" duration="13393000" />
+      <workItem from="1631866640247" duration="1215000" />
+      <workItem from="1632119871716" duration="8131000" />
+      <workItem from="1632205914120" duration="8691000" />
+      <workItem from="1632224336810" duration="4107000" />
+      <workItem from="1632292960652" duration="770000" />
+      <workItem from="1632294964001" duration="26000" />
+      <workItem from="1632295025464" duration="483000" />
+      <workItem from="1632303862797" duration="4077000" />
+      <workItem from="1632379179880" duration="12210000" />
+      <workItem from="1632717651966" duration="2298000" />
+      <workItem from="1632739423499" duration="1481000" />
+      <workItem from="1632810925531" duration="8650000" />
+      <workItem from="1632826860336" duration="1096000" />
+      <workItem from="1632897820953" duration="42000" />
+      <workItem from="1633502475645" duration="1914000" />
+      <workItem from="1633504525136" duration="8663000" />
+      <workItem from="1633581545081" duration="12357000" />
+      <workItem from="1633604667139" duration="6717000" />
+      <workItem from="1633708724846" duration="634000" />
+      <workItem from="1633934487296" duration="12827000" />
+      <workItem from="1633950483267" duration="4881000" />
+      <workItem from="1634025666496" duration="10004000" />
+      <workItem from="1634106955736" duration="11063000" />
+      <workItem from="1634123394380" duration="3621000" />
+      <workItem from="1634186012663" duration="3551000" />
+      <workItem from="1634189633523" duration="4945000" />
+      <workItem from="1634207541429" duration="6134000" />
+      <workItem from="1635144665265" duration="5858000" />
+      <workItem from="1635151508524" duration="7852000" />
+      <workItem from="1635230772103" duration="4707000" />
+      <workItem from="1635235935747" duration="8250000" />
+      <workItem from="1635317663985" duration="8451000" />
+      <workItem from="1635331458360" duration="739000" />
+      <workItem from="1635333146284" duration="5806000" />
+      <workItem from="1635402918307" duration="9583000" />
+      <workItem from="1635416898458" duration="1958000" />
+      <workItem from="1635419026362" duration="299000" />
+      <workItem from="1635419387111" duration="4304000" />
+      <workItem from="1635752203475" duration="7044000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
