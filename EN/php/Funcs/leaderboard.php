@@ -16,7 +16,7 @@
             if ($holes==18 || $holes==27){
                 $req = require_once '../connect.php';
                 if (!$req) {
-                    echo "We konden geen verbinding maken met de database, probeer aub opnieuw";
+                    echo "We couldn't connect to the database, please try again";
                 }
                 if (isset($_SESSION)) {
                     error_reporting(E_ERROR | E_PARSE);

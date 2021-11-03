@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="  https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylegroep.css"/>
-    <title>Footgolf - Groep manager</title>
+    <title>Footgolf - Group manager</title>
 </head>
 
 <body>
@@ -94,9 +94,9 @@
 </div>
 <div class="panel right-panel">
     <div class="content">
-        <h3>Een van ons?</h3>
+        <h3>One of us?</h3>
         <p>
-            Log in, om weer de leukste ervaring te beleven!
+            Log in, to get the most of your experience!
         </p>
         <button class="btn transparent" id="sign-in-btn">Join</button>
 

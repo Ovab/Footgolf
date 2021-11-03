@@ -36,7 +36,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fas fa-phone"></i>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="06-number"
+                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="phone-number"
                            name="speler-nummer"/>
                 </div>
                 <input type="submit" class="btn" value="Log in" style="background-color: #23A455"/>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fas fa-phone"></i>
-                    <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="06-number"
+                    <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="phone-number"
                            name="speler-nummer"/>
                 </div>
                 <input type="submit" class="btn" value="Register" style="background-color: #23A455"/>
@@ -68,7 +68,7 @@
             <div class="content">
                 <h3>New here?</h3>
                 <p>
-                    Register to use the digital score card
+                    Register to use the app.
                 </p>
                 <button class="btn transparent" id="sign-up-btn">
                     Register

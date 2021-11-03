@@ -26,11 +26,11 @@ if (empty($errors)) {
             $_SESSION['user_name'] = $speler;
             header('Location:../../index.php');
         } else {
-            $_SESSION['errors'] = 'Something went wrong trying to insert into the datebase, please try again';
+            $_SESSION['errors'] = 'Something went wrong trying to insert into the database, please try again';
             header('Location:login-front-end.php');
         }
     } else {
-        $_SESSION['errors'] = 'Something went wrong trying to insert into the datebase, please try again';
+        $_SESSION['errors'] = 'Something went wrong trying to insert into the database, please try again';
         header('Location:login-front-end.php');
     }
 }

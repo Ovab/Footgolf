@@ -38,5 +38,5 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
         echo $naam4 . ": " . $Score4 . "<br>";
     }
 } else {
-    echo "Nog geen scores ingevoerd";
+    echo "No scores yet.";
 }

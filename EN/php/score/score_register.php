@@ -5,7 +5,7 @@ $spelerPos = $_SESSION['Speler_pos'];
 $hole = $_GET['hole'];
 $groepID = $_SESSION['groupID'];
 if ($score > 10) {
-    $_SESSION['errors'] = "You can't kick the ball more then then 1 times <br>";
+    $_SESSION['errors'] = "You can't kick the ball more then 10 times <br>";
     header('location:Score-front-end.php?hole=' . $hole);
 }
 if ($score <= 0) {
@@ -21,7 +21,7 @@ if ($score <= 0) {
         $res3 = mysqli_query($conn, $selectyBoi);
         if (!$res or !$res3) {
             //something went wrong, display the error
-            $_SESSION['errors'] = 'Something went wrong please try again <br>';
+            $_SESSION['errors'] = 'Something went wrong, please try again <br>';
             header('location:Score-front-end.php?hole=' . $hole);
         } else {
             $totP1=0;

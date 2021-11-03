@@ -31,7 +31,7 @@ if (!empty($user_input)) {
             //Geef aantal spelers weer
         }
     } else {
-        $_SESSION['Errors'] = "This group doesn't seem to be in the database, group codes are only saved for 24hrs";
+        $_SESSION['Errors'] = "This group doesn't seem to be in the database, (group codes are only saved for 24 hours)";
         header('location:join_group.php');
     }
 } else {

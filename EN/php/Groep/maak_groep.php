@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylegroep.css"/>
-    <title>Footgolf - maak group</title>
+    <title>Footgolf - Create group</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                     $insert = mysqli_query($conn, "insert into groep(GroepNaam, groupID, Aanmaak_datum, `Speler_aantal`, Speler1, num_holes) VALUES ('$naam1s',$random, NOW(), 1, '$naam1', $holes)");
                     if (!$insert) {
                         echo mysqli_error($conn) . "<br>";
-                        echo 'Oeps er ging iets fout, probeer aub opnieuw';
+                        echo 'Oops something went wrong, try again later';
                     } else {
                         $_SESSION['holes'] = $holes;
                         //maak een session variable van het random nummer
@@ -46,22 +46,22 @@
                         echo '<input type="text" placeholder="' . $random . '" readonly /> <br>';
                     }
                     if (!isset($random) && !isset($holes)) {
-                        echo '<input type="text" placeholder="Weet je zeker dat je bent ingelogd? " readonly /> <br>';
+                        echo '<input type="text" placeholder="Are you sure you are logged in? " readonly /> <br>';
                     }
                     ?>
                 </div>
                 <?php
                 if (isset($random) && isset($holes)) {
-                    echo "<input style='background-color: #74AE6A' type='submit' value='Volgende' class='btn' />";
+                    echo "<input style='background-color: #74AE6A' type='submit' value='Next' class='btn' />";
                 } else {
-                    echo "<a style='text-align: center; text-decoration: none; background-color: #74AE6A' href='../Login/login-front-end.php' class='btn'>Ga naar login</a>";
+                    echo "<a style='text-align: center; text-decoration: none; background-color: #74AE6A' href='../Login/login-front-end.php' class='btn'>Log in</a>";
                 }
                 ?>
                 <div class="panel right-panel">
                     <div class="content">
-                        <h3>Een van ons?</h3>
+                        <h3>One of us?</h3>
                         <p>
-                            Log in, om weer de leukste ervaring te beleven!
+                            Log in, to get the most out of your experience!
                         </p>
 
 </body>

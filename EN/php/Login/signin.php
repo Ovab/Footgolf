@@ -2,7 +2,7 @@
 include_once '../connect.php';
 
 if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
-    $_SESSION['errors'] = 'You are already logged in you can <a href="signout.php">log out</a> if you want.';
+    $_SESSION['errors'] = 'You are already logged in, you can <a href="signout.php">log out</a> if you want.';
     header('Location:login-front-end.php');
 } else {
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.

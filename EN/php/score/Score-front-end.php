@@ -38,7 +38,7 @@
                id="spelerScore">
     </div>
     <br>
-    <input class="btn" type="submit" value="Verzenden">
+    <input class="btn" type="submit" value="Submit">
     </form>
     <p id="score"></p>
     <!--Import jQuery -->
@@ -68,13 +68,13 @@
 
     <?php $holes = $_SESSION['holes']; $nextHole=$hole+1; $prevHole=$hole-1;
     if ($holes-1>=$hole && $holes-1<=1) {
-        echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Vorige Hole' style='margin-top: 30%'></a>";
+        echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Previous Hole' style='margin-top: 30%'></a>";
     }
     if ($holes-1>=$hole) {
-        echo "<a href='Score-front-end.php?hole=$nextHole' ><input class='btn' type='submit' value='Volgende Hole'></a>";
+        echo "<a href='Score-front-end.php?hole=$nextHole' ><input class='btn' type='submit' value='Next Hole'></a>";
     }
     else{
-        echo "<a href='../../index.php'> <input class='btn' type='submit' value='Naar Home pagina'> </a> ";
+        echo "<a href='../../index.php'> <input class='btn' type='submit' value='Home Page'> </a> ";
     }
     ?>
 </div>
