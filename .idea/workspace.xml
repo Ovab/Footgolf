@@ -5,97 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NL/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/Javascript/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/Javascript/auto-refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/Javascript/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/Javascript/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/Group_manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/delAccGroep.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/vraag-scores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Funcs/vraagscores.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/Holes_aantal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/holes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/join_group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/maakgroep.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/pc-fetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/team-naam.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Groep/team-naam.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Login/signout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/Login/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/score/score_fetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/score/score_register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/score/style_score.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/php/stylegroep.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NL/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javascript/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javascript/auto-refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javascript/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javascript/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/crown-solid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/golfer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/holes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/reservation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/users.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/users.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/users.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Footgolf-Badge-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Footgolf-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fetch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/footgolf5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/golf-icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/join_groep.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Funcs/Group_manager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Funcs/delAccGroep.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Funcs/leaderboard.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Funcs/leaderboard27.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Funcs/vraag-scores.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Funcs/vraagscores.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/Holes_aantal.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/Team-naam-back.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/holes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/join_group.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/join_group_backend.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/maak_groep.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/maakgroep.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/pc-fetch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/team-naam.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Groep/team-naam.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Login/login-front-end.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Login/signin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Login/signout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Login/signup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/connect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/score/Score-front-end.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/score/score_fetch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/score/score_register.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/score/style_score.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/stylegroep.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Footgolf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Footgolf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -118,7 +40,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1xkhGgYISGTYIXmWB8KW070rwc5" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -223,6 +150,7 @@
       <workItem from="1635419026362" duration="299000" />
       <workItem from="1635419387111" duration="4304000" />
       <workItem from="1635752203475" duration="7044000" />
+      <workItem from="1636024801679" duration="2794000" />
     </task>
     <servers />
   </component>

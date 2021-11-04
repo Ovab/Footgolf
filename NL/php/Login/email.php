@@ -11,17 +11,17 @@ require '../../../vendor/autoload.php';
 $mail = new PHPMailer(true);
 try {
     include_once "../connect.php";
-    $speler=$_SESSION['user_name'];
     $email=$_SESSION['email'];
-    $telnummer=$_SESSION['telefoon'];
     $i=0;
     while ($i==$i) {
+        mysqli_query($conn, "DELETE  FROM emailverify WHERE SpelerEmail=$email)");
         mysqli_query($conn, "DELETE  FROM emailverify WHERE Creation_dateTime<=DATE_SUB(NOW(), INTERVAL 5 minute)");
         $rand = mt_rand(1000, 99999);
         $stmt = $conn->prepare("INSERT INTO `emailverify`(SpelerEmail, verifyCode) VALUES (?,?)");
         $stmt->bind_param("si",$email, $rand);
-        if ($stmt->execute()) {echo "Yeet". $rand. $email;break;}
-        if ($i<50){break;}
+        if ($stmt->execute()) {break;}
+        if ($i<5000){break;}
+        $i++;
     }
 
     //Setup
@@ -63,8 +63,10 @@ try {
     $mail->AltBody = $altMSG;
 
     $mail->send();
-
-    //Zet hier je HTML
+    header ("location: code_enter.php");
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: $mail->ErrorInfo";
+    session_destroy();
+    session_start();
+    $_SESSION['errors']="Er ging iets fout met het verzenden van de email, probeer aub opnieuw";
+    header("login-front-end.php");
 }
