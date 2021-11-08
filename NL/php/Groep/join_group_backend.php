@@ -24,7 +24,7 @@ if (!empty($user_input)) {
             mysqli_query($conn, "update groep set `Speler_aantal`= Speler_aantal+1, $speler_count = '$naam' where groupID=$user_input");
             mysqli_query($conn, $speler_q);
             //Zet groepID
-            $_SESSION['teamnaam']=$row['GroepNaam'];
+            $_SESSION['teamnaam'] = $row['GroepNaam'];
             $_SESSION['groupID'] = $user_input;
             $_SESSION['Speler_pos'] = $player_aantal;
             header('location:../../index.php');

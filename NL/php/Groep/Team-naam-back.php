@@ -12,13 +12,15 @@ if (isset($_SESSION['groupID'])) {
         if ($stmt->num_rows > 0) {
             echo mysqli_error($conn) . "<br>";
             echo 'Oeps er ging iets fout, probeer aub opnieuw';
-            header('Location:team-naam.php');
+            //header('Location:team-naam.php');
+            $_SESSION['Errors'] = 'Oeps er ging iets fout, probeer aub opnieuw';
         } else {
             $_SESSION['teamnaam'] = $userinput;
             printf($insert);
             echo "<br>";
             print_r($_SESSION);
-            header('location:../../index.php');
+            echo "<br>" . mysqli_error($conn);
+            //header('location:../../index.php');
         }
     } else {
         header('location:team-naam.php');

@@ -9,7 +9,7 @@ const title = document.getElementById('title');
 //title.style.display = "none";
 gholes.style.display = "none";
 reservation.style.display = "none";
-leaderboard.style.display="none"
+leaderboard.style.display = "none"
 
 let regels = false
 let res = true
@@ -21,6 +21,7 @@ function showRegels() {
     title.style.display = "block";
     spelRegels.style.display = "flex";
 }
+
 function hideRegels() {
     spelRegels.style.display = "none";
     title.style.display = "none";
@@ -31,6 +32,7 @@ function showGholes() {
     title.style.display = "block";
     gholes.style.display = "flex";
 }
+
 function hideGholes() {
     title.style.display = "none";
     gholes.style.display = "none";
@@ -41,6 +43,7 @@ function showReservation() {
     title.style.display = "block";
     reservation.style.display = "flex";
 }
+
 function hideReservation() {
     title.style.display = "none";
     reservation.style.display = "none";
@@ -51,6 +54,7 @@ function showLeaderboard() {
     title.style.display = "block";
     leaderboard.style.display = "flex";
 }
+
 function hideLeaderboard() {
     title.style.display = "none";
     leaderboard.style.display = "none";

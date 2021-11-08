@@ -24,21 +24,21 @@ if ($score <= 0) {
             $_SESSION['errors'] = 'Something went wrong, please try again <br>';
             header('location:Score-front-end.php?hole=' . $hole);
         } else {
-            $totP1=0;
-            $totP2=0;
-            $totP3=0;
-            $totP4=0;
+            $totP1 = 0;
+            $totP2 = 0;
+            $totP3 = 0;
+            $totP4 = 0;
 
             while ($row = mysqli_fetch_assoc($res3)) {
-                $totP1= $row['Speler1']+$totP1;
-                $totP2= $row['Speler2']+$totP2;
-                $totP3= $row['Speler3']+$totP3;
-                $totP4= $row['Speler4']+$totP4;
-                }
-            $totTot=$totP1+$totP2+$totP3+$totP4;
-            $teamnaam=$_SESSION['teamnaam'];
+                $totP1 = $row['Speler1'] + $totP1;
+                $totP2 = $row['Speler2'] + $totP2;
+                $totP3 = $row['Speler3'] + $totP3;
+                $totP4 = $row['Speler4'] + $totP4;
+            }
+            $totTot = $totP1 + $totP2 + $totP3 + $totP4;
+            $teamnaam = $_SESSION['teamnaam'];
 
-            for ($p=0; $p<27; $p++) {
+            for ($p = 0; $p < 27; $p++) {
                 $update_query = "update spellen set GroepScore = $totTot where groupID=$groepID and GroepNaam='$teamnaam'";
                 //$update_query2="update spellen set GroepScore = case when groupID=$groepID and GroepNaam='Parker' and Aanmaak_datum=CURDATE() then $totTot END;";
                 mysqli_query($conn, $update_query);
@@ -46,8 +46,8 @@ if ($score <= 0) {
 
             //Header naar score front end
             header('location:Score-front-end.php?hole=' . $hole);
-            }
-        } else {
+        }
+    } else {
         $spelerQ = "Speler" . $spelerPos;
         $naam = mysqli_query($conn, "select groepnaam from groep where groupID=$groepID");
         while ($row2 = $naam->fetch_assoc()) {

@@ -16,16 +16,18 @@
                 <h2 class="title">Genereer uw game code</h2>
                 <?php
                 include '../connect.php';
+                error_reporting(E_ALL);
                 if (isset($_SESSION['user_name'])) {
                     $naam1 = $_SESSION['user_name'];
                     //Genereer 5 digit random nummer
-                    $i=0;
-                    while ($i==$i+1) {
+                    $i = 0;
+                    while ($i != 10) {
                         $random = mt_rand(1000, 99999);
                         $holes = $_POST['holes'];
                         $naam1s = $naam1 . "s team";
+                        $q = "insert into groep(GroepNaam, groupID, Aanmaak_datum, `Speler_aantal`, Speler1, num_holes) VALUES ('$naam1s',$random, NOW(), 1, '$naam1', $holes)";
                         mysqli_query($conn, "DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
-                        $insert = mysqli_query($conn, "insert into groep(GroepNaam, groupID, Aanmaak_datum, `Speler_aantal`, Speler1, num_holes) VALUES ('$naam1s',$random, NOW(), 1, '$naam1', $holes)");
+                        $insert = mysqli_query($conn, $q);
                         if (!$insert) {
                             echo mysqli_error($conn) . "<br>";
                             echo 'Oeps er ging iets fout, probeer aub opnieuw';
@@ -49,6 +51,8 @@
                     if (isset($random) && isset($holes)) {
                         echo '<input type="text" placeholder="' . $random . '" readonly /> <br>';
                     }
+                    //print_r($_POST);
+                    //print $random;
                     if (!isset($random) && !isset($holes)) {
                         echo '<input type="text" placeholder="Weet je zeker dat je bent ingelogd? " readonly /> <br>';
                     }

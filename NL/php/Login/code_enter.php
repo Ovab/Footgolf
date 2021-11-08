@@ -19,7 +19,7 @@
 
                 <?php
                 session_start();
-                echo"<p>Verstuurd naar: </p>".$_SESSION['email']. " Deze code is minimaal 5m geldig";
+                echo "<p>Verstuurd naar: </p>" . $_SESSION['email'] . " Deze code is minimaal 5m geldig";
                 if (isset($_SESSION)) {
                     error_reporting(E_ERROR | E_PARSE);
                     $errors = $_SESSION['Errors'];
@@ -32,7 +32,7 @@
                 ?>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Code" name="Vcode"/>
+                    <input type="text" placeholder="Code" name="Vcode"/>
                 </div>
                 <input type="submit" class="btn" value="Submit"/>
                 <p id="pc"></p>

@@ -4,6 +4,18 @@
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
+function RandomString($length)
+{
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+
 //Load Composer's autoloader
 require '../../../vendor/autoload.php';
 
@@ -11,16 +23,18 @@ require '../../../vendor/autoload.php';
 $mail = new PHPMailer(true);
 try {
     include_once "../connect.php";
-    $email=$_SESSION['email'];
-    $i=0;
-    while ($i==$i) {
+    $email = $_SESSION['email'];
+    $i = 0;
+    while ($i != 50) {
         mysqli_query($conn, "DELETE  FROM emailverify WHERE SpelerEmail=$email)");
         mysqli_query($conn, "DELETE  FROM emailverify WHERE Creation_dateTime<=DATE_SUB(NOW(), INTERVAL 5 minute)");
-        $rand = mt_rand(1000, 99999);
+        $rand = RandomString(15);
+        //$rand = mt_rand(1000, 99999);
         $stmt = $conn->prepare("INSERT INTO `emailverify`(SpelerEmail, verifyCode) VALUES (?,?)");
-        $stmt->bind_param("si",$email, $rand);
-        if ($stmt->execute()) {break;}
-        if ($i<5000){break;}
+        $stmt->bind_param("ss", $email, $rand);
+        if ($stmt->execute()) {
+            break;
+        }
         $i++;
     }
 
@@ -35,9 +49,8 @@ try {
     //Reciever
     $reciever_naam = $reciever;
     //Content
-    $msgHTML = "Uw verificatie code is: " . $rand. "<br>Deze code is 5 minuten geldig";
-    $altMSG = "Uw verificatie code is: " . $rand. " deze code is 5 minuten geldig";
-
+    $msgHTML = "Klik deze link om uw email te bevestigen<br> footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand";
+    $altMSG = "Uw verificatie code is: " . $rand . " deze code is 5 minuten geldig";
 
 
     //Server settings
@@ -61,12 +74,13 @@ try {
     $mail->Subject = 'Bevestig email Footgolf';
     $mail->Body = $msgHTML;
     $mail->AltBody = $altMSG;
+    print $rand;
 
     $mail->send();
-    header ("location: code_enter.php");
+    //header ("location: code_enter.php");
 } catch (Exception $e) {
     session_destroy();
     session_start();
-    $_SESSION['errors']="Er ging iets fout met het verzenden van de email, probeer aub opnieuw";
+    $_SESSION['errors'] = "Er ging iets fout met het verzenden van de email, probeer aub opnieuw";
     header("login-front-end.php");
 }

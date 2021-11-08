@@ -41,7 +41,8 @@
 
     <div class="container" id="spelregels">
         <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
-            <p>The goal of the game is to kick the ball past various obstacles into the holes in as little tries as possible.<br>
+            <p>The goal of the game is to kick the ball past various obstacles into the holes in as little tries as
+                possible.<br>
                 The ball furthest away from the ghole is played first with a maximum of 10 per hole
             </p>
         </div>
@@ -52,7 +53,8 @@
 
         <div class="box3"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
             <p>
-                If an obstacle is missed put the ball 3m before the obstacle <br>If the ball lands in the un mowed grass put the ball where it left the hole
+                If an obstacle is missed put the ball 3m before the obstacle <br>If the ball lands in the un mowed grass
+                put the ball where it left the hole
             </p>
         </div>
     </div>
