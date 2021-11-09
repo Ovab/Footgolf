@@ -29,8 +29,4 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
         $_SESSION['errors'] = "We konden geen email of telefoonnummer vinden van dit account";
         header('Location:login-front-end.php');
     }
-
-    $stmt->close();
-
-
 }

@@ -13,23 +13,23 @@
     <div class="forms-container">
         <!--Sign in form -->
         <div class="signin-signup">
-            <form action="../Login/code_enter-back.php" class="sign-in-form" method="post">
-                <h2 class="title">Wat is het email wat ge linkt is aan het account?</h2>
-
-
+            <form action="del-back.php" class="sign-in-form" method="post">
+                <h2 class="title">Account verwijderen</h2>
+                    <h3 style="color: #444">Jammer dat je je account wilt verwijderen, voer aub het email in wat verbonden is met het account</h3>
                 <?php
                 session_start();
-                if (isset($_SESSION['Errors'])) {
-                    echo "<div class='error-text'>" . $_SESSION['Errors'] . ". <br></div>";
+                if (isset($_SESSION['errors'])) {
+                    echo "<div class='error-text'>" . $_SESSION['errors'] . ". <br></div>";
                 }
-                unset($_SESSION['Errors']);
+                unset($_SESSION['errors']);
                 ?>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <form method="post" action="del-acc-mail.php">
-                        <input type="text" placeholder="E-mail" name="email"/>
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="email" name="email"/>
                 </div>
-                <input type="submit" class="btn" value="Submit"/>
+                <label>Bevestig verijderen</label><input type="checkbox" class="btn" value="false" name="confirm">
+                <br>
+                <input type="submit" class="btn" value="Verwijder account"/>
             </form>
             <p id="pc"></p>
             <div class="panel right-panel">

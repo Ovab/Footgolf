@@ -19,8 +19,6 @@ if ($stmt = $conn->prepare("select verifyCode, SpelerEmail from `emailverify` wh
                 if ($stmt2->execute()) {
                     $_SESSION['signed_in'] = true;
                     $_SESSION['user_name'] = $speler;
-                    $_SESSION['email'] = $email;
-                    $_SESSION['telefoon'] = $telnummer;
                     $stmt3 = $conn->prepare("DELETE FROM emailverify WHERE SpelerEmail=?");
                     $stmt3->bind_param('s', $email);
                     $stmt3->execute();

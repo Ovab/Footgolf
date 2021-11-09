@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/Del_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/Del_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/del-acc-mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/del-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/del-back.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/yeet.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN/php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,6 +76,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN\php" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Funcs" />
@@ -157,6 +162,7 @@
       <workItem from="1636443389576" duration="6530000" />
       <workItem from="1636450711050" duration="6353000" />
       <workItem from="1636463086052" duration="2058000" />
+      <workItem from="1636483069942" duration="3315000" />
     </task>
     <servers />
   </component>
