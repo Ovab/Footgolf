@@ -45,13 +45,12 @@ try {
     $mailServer = "mail.mijndomein.nl";
     $port = 587;//Is een int
 
-    $reciever = $email;
     //Reciever
+    $reciever = $email;
     $reciever_naam = $reciever;
     //Content
-    $msgHTML = "<a href='footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand'>Klik deze link om uw email te bevestigen<br></a>";
-    $altMSG = "Klik deze link om uw email te bevestigen
-    footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand";
+    $msgHTML = "Jammer dat je je account wilt verwijderen<br><a href='footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand'>Klik op deze link om je account te verwijderen</a>";
+    $altMSG = "Jammer dat je je account wilt verwijderen, klik op deze link om door te gaan footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand";
 
 
     //Server settings

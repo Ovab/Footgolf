@@ -6,28 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/Javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/EN/Javascript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/icons/crown-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/EN/icons/crown-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/Funcs/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/Funcs/leaderboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/Groep/Holes_aantal.html" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/Groep/Holes_aantal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/Groep/join_group_backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/Groep/join_group_backend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/Login/login-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/Login/login-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/score/Score-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/score/score_register.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/score/score_register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Groep-spul(non-code)/footgolf.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Groep-spul(non-code)/footgolf.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/Javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NL/Javascript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/icons/crown-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/NL/icons/crown-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NL/php/Login/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/score_register.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/score_register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +68,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -173,6 +154,9 @@
       <workItem from="1636358736769" duration="4588000" />
       <workItem from="1636372334432" duration="286000" />
       <workItem from="1636372651009" duration="5389000" />
+      <workItem from="1636443389576" duration="6530000" />
+      <workItem from="1636450711050" duration="6353000" />
+      <workItem from="1636463086052" duration="2058000" />
     </task>
     <servers />
   </component>

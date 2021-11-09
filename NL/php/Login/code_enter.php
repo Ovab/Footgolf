@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylegroep.css"/>
-    <title>Footgolf - Verify email</title>
+    <title>Footgolf - Bevestig email</title>
 </head>
 
 <body>
@@ -13,13 +13,9 @@
     <div class="forms-container">
         <!--Sign in form -->
         <div class="signin-signup">
-            <form action="code_enter-back.php" class="sign-in-form" method="post">
-                <h2 class="title">Voer die je kreeg in je email in:</h2>
-
-
-                <?php
+            <?php
+                echo "<h2 class='title'>Je hebt een link in </h2>". $_POST['email']. " <h2 class='title'> gekregen om je account te activeren.</h2>";
                 session_start();
-                echo "<p>Verstuurd naar: </p>" . $_SESSION['email'] . " Deze code is minimaal 5m geldig";
                 if (isset($_SESSION)) {
                     error_reporting(E_ERROR | E_PARSE);
                     $errors = $_SESSION['Errors'];
@@ -30,11 +26,7 @@
                 unset($errors);
                 unset($_SESSION['Errors']);
                 ?>
-                <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <input type="text" placeholder="Code" name="Vcode"/>
-                </div>
-                <input type="submit" class="btn" value="Submit"/>
+
                 <p id="pc"></p>
                 <div class="panel right-panel">
                     <div class="content">
@@ -47,28 +39,4 @@
                         <script src="../../Javascript/app.js"></script>
 </body>
 <script src='../../Javascript/jquery.min.js'></script>
-<!--
-<script>
-    //maak functie aan.
-    function update_var() {
-        jQuery.ajax({
-            url: 'pc-fetch.php', //Script URL.
-            method: 'POST', //Methode data doorgeven
-            success: function (answer) {
-                jQuery('#pc').html(answer);//update your div with new content ....
-            },
-            error: function () {
-                //Iets ging fout, niet sure wat tho
-                alert("Onbekende error met refreshen, refresh weer over 2.7 sec");
-            }
-        });
-    }
-
-    update_var()
-    //Call de functie elke ~2.7 sec
-    setInterval(function () {
-        update_var()
-    }, 2700);
-</script>
--->
 </html>
