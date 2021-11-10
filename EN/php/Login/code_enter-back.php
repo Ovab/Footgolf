@@ -30,49 +30,49 @@ if ($stmt = $conn->prepare("select `Speler-email` from `spelers` where `Speler-e
                             } else {
                                 session_destroy();
                                 session_start();
-                                $_SESSION['errors'] = "We konden het account niet in de databse zetten probeer aub opnieuw";
+                                $_SESSION['errors'] = "Something went wrong inserting the account in the database, please try again";
                                 header("location:login-front-end.php");
                             }
                         } else {
                             session_destroy();
                             session_start();
-                            $_SESSION['errors'] = "We konden het account niet in de databse zetten probeer aub opnieuw";
+                            $_SESSION['errors'] = "Something went wrong inserting the account in the database, please try again";
                             header("location:login-front-end.php");
                         }
                     } else {
                         session_destroy();
                         session_start();
-                        $_SESSION['errors'] = "Het lijkt er op dat deze link al verlopen is";
+                        $_SESSION['errors'] = "Your link might be expired, please try again";
                         header("location:login-front-end.php");
                     }
                 } else {
                     session_destroy();
                     session_start();
-                    $_SESSION['errors'] = "We konden uw link niet bevestigen";
+                    $_SESSION['errors'] = "Something went wrong verifying your link";
                     header("location:login-front-end.php");
                 }
 
             } else {
                 session_destroy();
                 session_start();
-                $_SESSION['errors'] = "Onbekende error met uw code bevestigen";
+                $_SESSION['errors'] = "Unknown error checking your code";
                 header("location:login-front-end.php");
             }
         } else {
             session_destroy();
             session_start();
-            $_SESSION['errors'] = $email . " staat al in onze database";
+            $_SESSION['errors'] = $email . " is already in the database";
             header("location:login-front-end.php");
         }
     } else {
         session_destroy();
         session_start();
-        $_SESSION['errors'] = "We konden niet bevestigen of het account al in onze database staat";
+        $_SESSION['errors'] = "We couldn't check if the account is already in the database";
         header("location:login-front-end.php");
     }
 } else {
     session_destroy();
     session_start();
-    $_SESSION['errors'] = "We konden niet bevestigen of het account al in de database staat";
+    $_SESSION['errors'] = "We couldn't check if the account is already in the database";
     header("location:login-front-end.php");
 }
