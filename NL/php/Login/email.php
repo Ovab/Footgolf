@@ -23,8 +23,7 @@ require '../../../vendor/autoload.php';
 $mail = new PHPMailer(true);
 try {
     include_once "../connect.php";
-    $email = $_POST['speler-email'];
-    $_SESSION['email']=$email;
+    $email = $_SESSION['email'];
     $i = 0;
     while ($i != 50) {
         mysqli_query($conn, "DELETE  FROM emailverify WHERE SpelerEmail=$email)");
@@ -44,7 +43,7 @@ try {
     $send_from = "fg@bavoknol.nl";//probs ook username
     $pass = "Footgolf2%21";
     $mailServer = "mail.mijndomein.nl";
-    $port = 465;//Is een int
+    $port = 587;//Is een int
 
     $reciever = $email;
     //Reciever
@@ -76,12 +75,10 @@ try {
     $mail->Subject = 'Bevestig email Footgolf';
     $mail->Body = $msgHTML;
     $mail->AltBody = $altMSG;
-    print $rand. "<br>";
-    print $email;
-    print_r($_SESSION, $mail);
+    print $rand;
+
     $mail->send();
-    echo "<br> sent";
-    //header ("location: code_enter.php");
+    header ("location: code_enter.php");
 } catch (Exception $e) {
     session_destroy();
     session_start();

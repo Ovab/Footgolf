@@ -42,7 +42,7 @@
                 <input type="submit" class="btn" value="Log in" style="background-color: #23A455"/>
             </form>
             <!-- Signup form  -->
-            <form action="email.php" class="sign-up-form" method="post">
+            <form action="signup.php" class="sign-up-form" method="post">
                 <h2 class="title">Register</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>

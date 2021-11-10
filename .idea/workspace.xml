@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/Login/login-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/Login/login-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/.idea/Login.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/Del_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/Del_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/del-acc-mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/del-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/del-back.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/yeet.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN/php/Funcs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN/php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -75,16 +72,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/EN/php/Login/signup.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN\php\Funcs" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Funcs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf" />

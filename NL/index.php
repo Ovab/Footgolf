@@ -104,7 +104,6 @@
     <div class="container" id="gholes">
         <div class="scrolling-wrapper">
             <?php
-            include_once '/php/';
             if (isset($_SESSION['holes'])) {
                 unset($_SESSION["cur_hole"]);
                 $holes = $_SESSION['holes'];

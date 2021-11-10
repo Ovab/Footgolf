@@ -14,8 +14,8 @@
         <!--Sign in form -->
         <div class="signin-signup">
             <?php
-            session_start();
-                echo "<h2 class='title'>Je hebt een link in </h2>". $_SESSION['email']. " <h2 class='title'> gekregen om je account te activeren.</h2>";
+                echo "<h2 class='title'>Je hebt een link in </h2>". $_POST['email']. " <h2 class='title'> gekregen om je account te activeren.</h2>";
+                session_start();
                 if (isset($_SESSION)) {
                     error_reporting(E_ERROR | E_PARSE);
                     $errors = $_SESSION['Errors'];
