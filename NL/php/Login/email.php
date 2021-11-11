@@ -23,7 +23,11 @@ require '../../../vendor/autoload.php';
 $mail = new PHPMailer(true);
 try {
     include_once "../connect.php";
-    $email = $_SESSION['email'];
+    $email = $_POST['speler-email'];
+    $_SESSION['user_name']=$_POST['speler-naam'];
+    $_SESSION['telefoon']=$_POST['speler-nummer'];
+print_r($_POST);
+    $_SESSION['email']=$email;
     $i = 0;
     while ($i != 50) {
         mysqli_query($conn, "DELETE  FROM emailverify WHERE SpelerEmail=$email)");

@@ -3,19 +3,16 @@ include_once "../connect.php";
 $speler = $_SESSION['user_name'];
 $verify = $_GET['c'];
 $email = $_SESSION['email'];
-echo $verify . "<br>";
-echo $email . "<br>";
 $telnummer = (int)$_SESSION['telefoon'];
 if ($stmt = $conn->prepare("select verifyCode, SpelerEmail from `emailverify` where verifyCode=? and SpelerEmail=?")) {
     $stmt->bind_param("ss", $verify, $email);
-    echo "bound <br>";
     if ($stmt->execute()) {
         $stmt->store_result();
         $row_cnt = $stmt->num_rows;
         if ($row_cnt == 1) {
             $stmt->free_result();
-            if ($stmt2 = $conn->prepare("INSERT INTO spelers(`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES(?,?,?)")) {
-                $stmt2->bind_param('ssi', $email, $speler, $telnummer);
+            if ($stmt2 = $conn->prepare("INSERT INTO spelers(`Speler-email`, `Speler-naam`, `Speler-telefoon`) VALUES(?,?,$telnummer)")) {
+                $stmt2->bind_param('ss', $email, $speler);
                 if ($stmt2->execute()) {
                     $_SESSION['signed_in'] = true;
                     $_SESSION['user_name'] = $speler;
@@ -32,7 +29,7 @@ if ($stmt = $conn->prepare("select verifyCode, SpelerEmail from `emailverify` wh
             } else {
                 session_destroy();
                 session_start();
-                $_SESSION['errors'] = "Er ging iets fout met het params binden, probeer aub opnieuw";
+                $_SESSION['errors'] = "Er ging iets fout met het account in de database zetten, probeer aub opnieuw";
                 header("location:login-front-end.php");
             }
         } else {

@@ -1,6 +1,5 @@
 <?php
 include_once '../connect.php';
-
 if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
     $_SESSION['errors'] = 'Je bent al ingelogd, je kan <a href="signout.php">uitloggen</a> als je wilt.';
     header('Location:login-front-end.php');

@@ -20,7 +20,7 @@ if (isset($_SESSION['groupID'])) {
             echo "<br>";
             print_r($_SESSION);
             echo "<br>" . mysqli_error($conn);
-            //header('location:../../index.php');
+            header('location:../../index.php');
         }
     } else {
         header('location:team-naam.php');
