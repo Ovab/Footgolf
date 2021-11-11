@@ -27,9 +27,10 @@
             }
             unset($errors);
             unset($_SESSION['Errors']);
+            $random = mt_rand(8, $holes);
             //print_r($_POST);
             $GID = $_SESSION['groupID'];
-            $spellen = mysqli_query($conn, "SELECT GroepNaam,GroepScore from `spellen` where Hole=$holes order by GroepScore");
+            $spellen = mysqli_query($conn, "SELECT GroepNaam,GroepScore from `spellen` where Hole=$holes and GroepScore>=36 order by GroepScore");
             echo mysqli_error($conn);
             echo "
                             <table border='1'>
@@ -56,9 +57,10 @@
                         break;
                     }
                 }
+                echo "<a href='../../index.php' class='btn' style='text-decoration: none; text-align: center; font-size: large'>Naar home</a>";
             }
         } else {
-            echo "<h1>Uuhhh, hoe kwam je hier?</h1>";
+            echo "<h1>Dat hoorde je niet te doen, je hoort uberhaupt terug gestuurd te worden naar de home pagina</h1>";
             header("location:../../index.php");
         }
         ?>

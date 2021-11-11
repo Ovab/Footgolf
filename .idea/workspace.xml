@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter-back.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,12 @@
       <workItem from="1636483069942" duration="3315000" />
       <workItem from="1636540480379" duration="513000" />
       <workItem from="1636545385003" duration="3070000" />
-      <workItem from="1636616402182" duration="1268000" />
+      <workItem from="1636616402182" duration="1498000" />
+      <workItem from="1636617968922" duration="2444000" />
+      <workItem from="1636626011759" duration="3910000" />
+      <workItem from="1636633601097" duration="966000" />
+      <workItem from="1636635304983" duration="22000" />
+      <workItem from="1636635356520" duration="502000" />
     </task>
     <servers />
   </component>

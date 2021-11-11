@@ -45,7 +45,6 @@
     <script src="../../Javascript/jquery.min.js"></script>
     <!--auto refresh script -->
     <script>
-        //maak functie aan.
         function update_var() {
             jQuery.ajax({
                 url: 'score_fetch.php', //Script URL.
@@ -70,7 +69,7 @@
     <?php $holes = $_SESSION['holes'];
     $nextHole = $hole + 1;
     $prevHole = $hole - 1;
-    if ($holes - 1 >= $hole && $holes - 1 <= 1) {
+    if ($hole != 1) {
         echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Vorige Hole' style='margin-top: 30%'></a>";
     }
     if ($holes - 1 >= $hole) {
