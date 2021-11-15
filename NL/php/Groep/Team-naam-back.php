@@ -16,10 +16,6 @@ if (isset($_SESSION['groupID'])) {
             $_SESSION['Errors'] = 'Oeps er ging iets fout, probeer aub opnieuw';
         } else {
             $_SESSION['teamnaam'] = $userinput;
-            printf($insert);
-            echo "<br>";
-            print_r($_SESSION);
-            echo "<br>" . mysqli_error($conn);
             header('location:../../index.php');
         }
     } else {

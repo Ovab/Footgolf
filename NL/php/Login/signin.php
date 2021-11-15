@@ -5,8 +5,8 @@ if (isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) {
     header('Location:login-front-end.php');
 } else {
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-    if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `Speler-telefoon` FROM spelers WHERE `Speler-email` = ?')) {
-        $stmt->bind_param('s', $_POST['speler-email']);
+    if ($stmt = $conn->prepare('SELECT `speler-email`, `speler-naam`, `Speler-telefoon` FROM spelers WHERE `Speler-email` = ? and `Speler-telefoon` = ?')) {
+        $stmt->bind_param('si', $_POST['speler-email'], $_POST['speler-nummer']);
         $stmt->execute();
         // Store the result so we can check if the account exists in the database.
         $stmt->store_result();

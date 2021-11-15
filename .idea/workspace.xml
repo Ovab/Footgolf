@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/Team-naam-back.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN/php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -169,6 +167,12 @@
       <workItem from="1636633601097" duration="966000" />
       <workItem from="1636635304983" duration="22000" />
       <workItem from="1636635356520" duration="502000" />
+      <workItem from="1636794612401" duration="1724000" />
+      <workItem from="1636796990798" duration="389000" />
+      <workItem from="1636797708925" duration="1191000" />
+      <workItem from="1636805086718" duration="11000" />
+      <workItem from="1636805433693" duration="622000" />
+      <workItem from="1636961976235" duration="3924000" />
     </task>
     <servers />
   </component>
