@@ -22,11 +22,10 @@ require '../../../vendor/autoload.php';
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 try {
-    include_once "../connect.php";
+    include_once "../../connect.php";
     $email = $_POST['speler-email'];
     $_SESSION['user_name']=$_POST['speler-naam'];
     $_SESSION['telefoon']=$_POST['speler-nummer'];
-print_r($_POST);
     $_SESSION['email']=$email;
     $i = 0;
     while ($i != 50) {

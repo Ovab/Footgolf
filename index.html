@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Choose language</title>
-    <link href="Lang%20choose.css" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+            src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign in & Sign up Form</title>
 </head>
 <body>
 <div class="container">
     <div class="forms-container">
         <div class="signin-signup">
-            <h2 class="title">Choose language</h2>
-            <form action="NL/index.php" method="post">
-                <input type="image" value="NL" src="nl.png" style="width: 100%"/>
+            <form action="#" class="sign-in-form">
+                <h2 class="title">English</h2>
             </form>
-            <form action="EN/index.php" method="post">
-                <input type="image" value="ENG" src="eng.png" style="width: 100%"/>
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Nderlands</h2>
+
             </form>
         </div>
     </div>
+
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Choose your language</h3>
+                <p>
+                    stay here if you want english, click Nederlands if you want dutch
+                </p>
+                <button class="btn transparent" id="sign-up-btn">
+                    Nederlands
+                </button>
+            </div>
+        </div>
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>kies je taal</h3>
+                <p>
+                    Toch geen nederlands, klik op english voor engels
+                </p>
+                <button class="btn transparent" id="sign-in-btn">
+                    english
+                </button>
+            </div>
+            <img src="img/register.svg" class="image" alt="" />
+        </div>
+    </div>
 </div>
+
+<script src="app.js"></script>
 </body>
 </html>

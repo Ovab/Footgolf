@@ -58,7 +58,7 @@
                            name="speler-nummer"/>
                 </div>
                 <input type="submit" class="btn" value="Registreer" style="background-color: #23A455"/>
-                <img src="../../../img/footgolf5.png" class="image2" alt="Footgolf logo">
+                <img src="../../img/footgolf5.png" class="image2" alt="Footgolf logo">
             </form>
         </div>
     </div>
@@ -73,7 +73,7 @@
                 <button class="btn transparent" id="sign-up-btn">
                     Registreer
                 </button>
-                <img src="../../../img/Footgolf-logo.png" class="image" id="image" alt=""/>
+                <img src="../../img/Footgolf-logo.png" class="image" id="image" alt=""/>
             </div>
         </div>
         <div class="panel right-panel">
