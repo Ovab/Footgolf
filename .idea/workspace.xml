@@ -22,14 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jQuery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jQuery.xml" afterDir="false" />
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="update vlaggen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lang choose.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/login-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +191,14 @@
       <workItem from="1636805433693" duration="622000" />
       <workItem from="1636961976235" duration="3924000" />
     </task>
+    <task id="LOCAL-00001" summary="update vlaggen">
+      <created>1637062208666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637062208667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +215,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update vlaggen" />
+    <option name="LAST_COMMIT_MESSAGE" value="update vlaggen" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637062219619">
+      <screen x="0" y="25" width="1792" height="1021" />
+    </state>
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637062219619" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
