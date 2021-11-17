@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Footgolf - Home</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -29,7 +30,7 @@
             <p > Groepen</p ></div>";
         }
         if (!isset($_SESSION['signed_in'])) {
-            echo "<a href='php/Login/login-front-end.php' style='text-decoration: none'>
+            echo "<a style='text-decoration: none'>
         <!--Icon van fontaswome  -->
         <div class='btn'><img class='icon' src='icons/users.svg'><br>
             <p>Login</p></div>";
