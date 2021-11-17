@@ -38,7 +38,48 @@ input {
     grid-template-columns: 1fr;
     z-index: 5;
 }
-
+.signin-signup::after {
+    content: '';
+    background: #EC1C24;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+i{
+    height: 1000%;
+}
+.buttonnl{
+    position: absolute;
+    top: 310%;
+    border: 2px solid #fff;
+    border-radius: 49px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 49px;
+    background: #ec1c24;
+    color: white;
+}
+.buttoneng{
+    position: absolute;
+    top: 310%;
+    border: 2px solid #fff;
+    border-radius: 49px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 49px;
+    background: #ec1c24;
+    color: white;
+}
 form {
     display: flex;
     align-items: center;
