@@ -22,12 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="update vlaggen">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="talen kiezen is nu af">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eng.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -215,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637063476719</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="talen kiezen is nu af">
+      <created>1637136201212</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637136201212</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,13 +239,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update vlaggen" />
-    <option name="LAST_COMMIT_MESSAGE" value="update vlaggen" />
+    <MESSAGE value="talen kiezen is nu af" />
+    <option name="LAST_COMMIT_MESSAGE" value="talen kiezen is nu af" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637063483627">
-      <screen x="0" y="25" width="1792" height="1021" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637136207740">
+      <screen x="0" y="25" width="1792" height="1023" />
     </state>
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637063483627" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1637136207740" />
     <state x="310" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1637134676856">
       <screen x="0" y="25" width="1792" height="1024" />
     </state>
