@@ -4,7 +4,7 @@
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-function RandomString($length)
+function RandomString($length): string
 {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
@@ -15,27 +15,45 @@ function RandomString($length)
     return $randomString;
 }
 
-
+include_once "../../connect.php";
+$email = $_POST['speler-email'];
+$stmt = $conn->prepare("select `Speler-email` from spelers where `Speler-email`=?");
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$stmt->store_result();
+$row_cnt = $stmt->num_rows;
+if ($row_cnt >= 1) {
+    session_destroy();
+    session_start();
+    $_SESSION['errors'] = "Het lijkt er op dat een account met dit email adres al in de database staat";
+    header("location: login-front-end.php");
+    exit;
+}
 //Load Composer's autoloader
 require '../../../vendor/autoload.php';
-
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 try {
-    include_once "../../connect.php";
     $email = $_POST['speler-email'];
-    $_SESSION['user_name']=$_POST['speler-naam'];
-    $_SESSION['telefoon']=$_POST['speler-nummer'];
-    $_SESSION['email']=$email;
+    $_SESSION['user_name'] = $_POST['speler-naam'];
+    $_SESSION['telefoon'] = $_POST['speler-nummer'];
+    $_SESSION['email'] = $email;
     $i = 0;
     while ($i != 50) {
         mysqli_query($conn, "DELETE  FROM emailverify WHERE SpelerEmail=$email)");
         mysqli_query($conn, "DELETE  FROM emailverify WHERE Creation_dateTime<=DATE_SUB(NOW(), INTERVAL 5 minute)");
         $rand = RandomString(15);
-        //$rand = mt_rand(1000, 99999);
+        $stmt->free_result();
         $stmt = $conn->prepare("INSERT INTO `emailverify`(SpelerEmail, verifyCode) VALUES (?,?)");
         $stmt->bind_param("ss", $email, $rand);
         if ($stmt->execute()) {
+            break;
+        }
+        if ($i == 49) {
+            session_destroy();
+            session_start();
+            $_SESSION['errors'] = "We kunnen op dit moment niet de verificatie mail juist verzenden" . mysqli_error($conn);
+            header("location: login-front-end.php");
             break;
         }
         $i++;
@@ -81,10 +99,10 @@ try {
     print $rand;
 
     $mail->send();
-    header ("location: code_enter.php");
+    header("location: code_enter.php");
 } catch (Exception $e) {
     session_destroy();
     session_start();
-    $_SESSION['errors'] = "Er ging iets fout met het verzenden van de email, probeer aub opnieuw";
-    header("login-front-end.php");
+    $_SESSION['errors'] = "Er ging iets fout met het verzenden van de email, probeer aub opnieuw" . $mail->ErrorInfo;
+    header("location: login-front-end.php");
 }

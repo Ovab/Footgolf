@@ -1,5 +1,5 @@
 <?php
-include_once "../connect.php";
+include_once "../../connect.php";
 $speler = $_SESSION['user_name'];
 $verify = $_GET['c'];
 $email = $_SESSION['email'];
