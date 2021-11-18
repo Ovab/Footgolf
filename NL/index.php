@@ -10,7 +10,10 @@
 
 
 <div class="wrapper">
-
+    <?php
+    session_start();
+    echo "<div class='gebruikersnaam'> welkom ".$_SESSION['user_name'] ."<div>";
+    ?>
     <h2 class="title">Categories</h2>
     <div class="btns-wrapper">
         <div class="btn" onclick="toggleSpelregels()"><img class="icon" src="icons/golfer.png"><br>
@@ -18,7 +21,6 @@
         <div class="btn" onclick="toggleLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
             <p>Top scores</p></div>
         <?php
-        session_start();
         if (isset($_SESSION['groupID'])) {
             echo "<div class='btn' onclick='toggleGholes()'><img class='icon' src='icons/holes.png'><br>
             <p>Gholes</p></div>

@@ -22,9 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="talen kiezen is nu af">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="laad scherm bij talen kiezen af">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3309d5ff-2d80-4f04-8881-9c9d7666d90d.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/code_enter.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/code_enter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Login/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Login/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +43,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -88,19 +93,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NL/icons" />
+      <recent name="$PROJECT_DIR$/NL/img" />
+      <recent name="$PROJECT_DIR$/NL" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf" />
+      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EN" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Funcs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf" />
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Funcs" />
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php" />
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\php\Groep" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -219,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637136201212</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="laad scherm bij talen kiezen af">
+      <created>1637140156527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637140156527</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,14 +252,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update vlaggen" />
     <MESSAGE value="talen kiezen is nu af" />
-    <option name="LAST_COMMIT_MESSAGE" value="talen kiezen is nu af" />
+    <MESSAGE value="laad scherm bij talen kiezen af" />
+    <option name="LAST_COMMIT_MESSAGE" value="laad scherm bij talen kiezen af" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637136207740">
+    <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637228828672">
+      <screen x="0" y="25" width="1792" height="1026" />
+    </state>
+    <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1026@0.25.1792.1026" timestamp="1637228828672" />
+    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1637228808053">
+      <screen x="0" y="25" width="1792" height="1026" />
+    </state>
+    <state width="228" height="457" key="HiddenNamespacesPopup/0.25.1792.1026@0.25.1792.1026" timestamp="1637228808053" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637140161918">
       <screen x="0" y="25" width="1792" height="1023" />
     </state>
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637063483627" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1637136207740" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1637140161918" />
     <state x="310" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1637134676856">
       <screen x="0" y="25" width="1792" height="1024" />
     </state>
