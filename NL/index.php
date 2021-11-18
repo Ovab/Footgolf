@@ -13,7 +13,7 @@
 <div class="wrapper">
     <?php
     session_start();
-    echo "<div class='gebruikersnaam'> welkom ".$_SESSION['user_name'] ."<div>";
+    echo "<div class='gebruikersnaam'> welkom ".$_SESSION['user_name'] ."<a href='php/Login/signout.php'> Log uit</a> <div>";
     ?>
     <h2 class="title">Categories</h2>
     <div class="btns-wrapper">
