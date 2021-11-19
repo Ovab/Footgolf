@@ -32,10 +32,10 @@
             <p > Groepen</p ></div>";
         }
         if (!isset($_SESSION['signed_in'])) {
-            echo "<a style='text-decoration: none'>
+            echo "<a style='text-decoration: none' href='php/Login/login-front-end.php'>
         <!--Icon van fontaswome  -->
         <div class='btn'><img class='icon' src='icons/users.svg'><br>
-            <p>Login</p></div>";
+            <p>Login</p></div></a>";
         }
         ?>
     </div>

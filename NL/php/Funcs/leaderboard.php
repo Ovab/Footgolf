@@ -14,7 +14,7 @@
         <?php
         $holes = $_GET['holes'];
         if ($holes == 18 || $holes == 27) {
-            $req = require_once '../connect.php';
+            $req = require_once '../../connect.php';
             if (!$req) {
                 echo "We konden geen verbinding maken met de database, probeer aub opnieuw";
             }
