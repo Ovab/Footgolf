@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="aantal gholes kiezen">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="leader fixen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Funcs/leaderboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EN/img/Footgolf-Badge-1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -191,7 +190,7 @@
       <workItem from="1636805086718" duration="11000" />
       <workItem from="1636805433693" duration="622000" />
       <workItem from="1636961976235" duration="3924000" />
-      <workItem from="1637230213903" duration="5782000" />
+      <workItem from="1637230213903" duration="6736000" />
     </task>
     <task id="LOCAL-00001" summary="update vlaggen">
       <created>1637062208666</created>
@@ -249,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637235543621</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="leader fixen">
+      <created>1637320132783</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637320132783</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +279,8 @@
     <MESSAGE value="laad scherm bij talen kiezen af" />
     <MESSAGE value="inbox design gefixt" />
     <MESSAGE value="aantal gholes kiezen" />
-    <option name="LAST_COMMIT_MESSAGE" value="aantal gholes kiezen" />
+    <MESSAGE value="leader fixen" />
+    <option name="LAST_COMMIT_MESSAGE" value="leader fixen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637228828672">
@@ -284,13 +291,13 @@
       <screen x="0" y="25" width="1792" height="1026" />
     </state>
     <state width="228" height="457" key="HiddenNamespacesPopup/0.25.1792.1026@0.25.1792.1026" timestamp="1637228808053" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637318152820">
-      <screen x="0" y="25" width="1792" height="1024" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1637320138278">
+      <screen x="0" y="25" width="1792" height="1026" />
     </state>
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637063483627" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1637235547649" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1637318152820" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1637229826844" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1637320138278" />
     <state x="310" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1637134676856">
       <screen x="0" y="25" width="1792" height="1024" />
     </state>
