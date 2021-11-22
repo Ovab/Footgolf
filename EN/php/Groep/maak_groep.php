@@ -20,7 +20,7 @@
                     $naam1 = $_SESSION['user_name'];
                     //Genereer 5 digit random nummer
                     $random = mt_rand(1000, 99999);
-                    $holes = $_POST['holes'];
+                    $holes = $_GET['holes'];
                     $naam1s = $naam1 . "s team";
                     mysqli_query($conn, "DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
                     $insert = mysqli_query($conn, "insert into groep(GroepNaam, groupID, Aanmaak_datum, `Speler_aantal`, Speler1, num_holes) VALUES ('$naam1s',$random, NOW(), 1, '$naam1', $holes)");
