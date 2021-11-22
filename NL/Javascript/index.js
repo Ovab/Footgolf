@@ -17,6 +17,7 @@ let gholesB = true
 let lead = true
 
 function showRegels() {
+    hideAll()
     title.innerHTML = "Spelregels";
     title.style.display = "block";
     spelRegels.style.display = "flex";
@@ -28,6 +29,7 @@ function hideRegels() {
 }
 
 function showGholes() {
+    hideAll()
     title.innerHTML = "Gholes";
     title.style.display = "block";
     gholes.style.display = "flex";
@@ -39,6 +41,7 @@ function hideGholes() {
 }
 
 function showReservation() {
+    hideAll()
     title.innerHTML = "Groepen";
     title.style.display = "block";
     reservation.style.display = "flex";
@@ -50,6 +53,7 @@ function hideReservation() {
 }
 
 function showLeaderboard() {
+    hideAll()
     title.innerHTML = "Top scores";
     title.style.display = "block";
     leaderboard.style.display = "flex";

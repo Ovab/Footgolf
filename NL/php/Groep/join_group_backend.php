@@ -1,5 +1,5 @@
 <?php
-include_once '../connect.php';
+include_once '../../connect.php';
 //error_reporting(E_ERROR | E_PARSE);
 $user_input = $_POST['GroepID'];
 //Check of data is doorgekomen

@@ -13,22 +13,24 @@
 <div class="wrapper">
     <?php
     session_start();
-    echo "<div class='gebruikersnaam'> welkom ".$_SESSION['user_name'] ."<a href='php/Login/signout.php'> Log uit</a> <div>";
+    if (isset($_SESSION['user_name'])){
+        echo "<div class='gebruikersnaam'> welkom " . $_SESSION['user_name'] . "<a href='php/Login/signout.php'> Log uit</a> <div>";
+    }
     ?>
     <h2 class="title">Categories</h2>
     <div class="btns-wrapper">
-        <div class="btn" onclick="toggleSpelregels()"><img class="icon" src="icons/golfer.png"><br>
+        <div class="btn" onclick="showRegels()"><img class="icon" src="icons/golfer.png"><br>
             <p>Spelregels</p></div>
-        <div class="btn" onclick="toggleLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
+        <div class="btn" onclick="showLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
             <p>Top scores</p></div>
         <?php
         if (isset($_SESSION['groupID'])) {
-            echo "<div class='btn' onclick='toggleGholes()'><img class='icon' src='icons/holes.png'><br>
+            echo "<div class='btn' onclick='showGholes()'><img class='icon' src='icons/holes.png'><br>
             <p>Gholes</p></div>
             ";
         }
         if (isset($_SESSION['signed_in'])) {
-            echo "<div class='btn' onclick='toggleReservation()' ><img class='icon' src = 'icons/reservation.png' ><br >
+            echo "<div class='btn' onclick='showReservation()' ><img class='icon' src = 'icons/reservation.png' ><br >
             <p > Groepen</p ></div>";
         }
         if (!isset($_SESSION['signed_in'])) {

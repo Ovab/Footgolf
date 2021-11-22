@@ -1,5 +1,5 @@
 <?php
-include_once "../connect.php";
+include_once "../../connect.php";
 $groepID = $_SESSION['groupID'];
 //if(isset( $_SESSION['groepID'])) {
 $sql = "SELECT Speler_aantal FROM groep where groupID=$groepID";

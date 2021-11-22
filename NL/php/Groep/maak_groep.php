@@ -15,13 +15,13 @@
             <form action="team-naam.php" class="maak-groep" method="post">
                 <h2 class="title">Genereer uw game code</h2>
                 <?php
-                include '../connect.php';
+                include '../../connect.php';
                 error_reporting(E_ALL);
                 if (isset($_SESSION['user_name'])) {
                     $naam1 = $_SESSION['user_name'];
                     //Genereer 5 digit random nummer
                     $i = 0;
-                    while ($i != 10) {
+                    while ($i != 5) {
                         $random = mt_rand(1000, 99999);
                         $holes = $_POST['holes'];
                         $naam1s = $naam1 . "s team";
@@ -41,6 +41,7 @@
                             $_SESSION['Speler_pos'] = 1;
                             break;
                         }
+                        $i++;
                     }
                 }
                 ?>

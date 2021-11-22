@@ -1,5 +1,5 @@
 <?php
-include_once '../connect.php';
+include_once '../../connect.php';
 $userinput = $_POST['TeamNaam'];
 if (isset($_SESSION['groupID'])) {
     $groupID = $_SESSION['groupID'];

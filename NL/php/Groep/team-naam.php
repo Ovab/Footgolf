@@ -10,7 +10,7 @@
 
 <body>
 <?php
-include_once '../connect.php';
+include_once '../../connect.php';
 error_reporting(E_ERROR | E_PARSE);
 $groupID = $_SESSION['groupID'];
 $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$groupID");
