@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Footgolf - Home</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -10,34 +11,38 @@
 
 
 <div class="wrapper">
-
+    <?php
+    session_start();
+    if (isset($_SESSION['user_name'])){
+        echo "<div class='gebruikersnaam'> welcome " . $_SESSION['user_name'] . "<a href='../EN/php/Login/signout.php'> Log uit</a> <div>";
+    }
+    ?>
     <h2 class="title">Categories</h2>
     <div class="btns-wrapper">
-        <div class="btn" onclick="toggleSpelregels()"><img class="icon" src="icons/golfer.png"><br>
-            <p>Game rules</p></div>
-        <div class="btn" onclick="toggleLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
+        <div class="btn" onclick="showRegels()"><img class="icon" src="icons/golfer.png"><br>
+            <p>Spelregels</p></div>
+        <div class="btn" onclick="showLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
             <p>Top scores</p></div>
         <?php
-        session_start();
         if (isset($_SESSION['groupID'])) {
-            echo "<div class='btn' onclick='toggleGholes()'><img class='icon' src='icons/holes.png'><br>
+            echo "<div class='btn' onclick='showGholes()'><img class='icon' src='../EN/icons/holes.png'><br>
             <p>Gholes</p></div>
             ";
         }
         if (isset($_SESSION['signed_in'])) {
-            echo "<div class='btn' onclick='toggleReservation()' ><img class='icon' src = 'icons/reservation.png' ><br >
+            echo "<div class='btn' onclick='showReservation()' ><img class='icon' src = '../EN/icons/reservation.png' ><br >
             <p > Groups</p ></div>";
         }
         if (!isset($_SESSION['signed_in'])) {
-            echo "<a href='php/Login/login-front-end.php' style='text-decoration: none'>
+            echo "<a style='text-decoration: none' href='../EN/php/Login/login-front-end.php'>
         <!--Icon van fontaswome  -->
-        <div class='btn'><img class='icon' src='icons/users.svg'><br>
-            <p>Login</p></div>";
+        <div class='btn'><img class='icon' src='../EN/icons/users.svg'><br>
+            <p>Login</p></div></a>";
         }
         ?>
     </div>
 
-    <h2 class="title" id="title">Rules</h2>
+    <h2 class="title" id="title">Game rules</h2>
 
     <div class="container" id="spelregels">
         <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
@@ -48,7 +53,7 @@
         </div>
 
         <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
-            <p>Good luck!</p>
+            <p>Have fun!</p>
         </div>
 
         <div class="box3"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
@@ -73,8 +78,8 @@
             <?php
             if (isset($_SESSION['groepLead'])) {
                 echo "
-            <a href='php/Funcs/Group_manager.php' style='text-decoration: none'>
-                <div class='box'><img class='icon' src='img/Footgolf-Badge-1.png'><br>
+            <a href='../NL/php/Funcs/Group_manager.php' style='text-decoration: none'>
+                <div class='box'><img class='icon' src='../EN/img/Footgolf-Badge-1.png'><br>
                     <p>Group manager</p>
                 </div>";
             }
@@ -87,13 +92,13 @@
     <div class="container" id="leaderboard">
         <a href="php/Funcs/leaderboard.php?holes=18" style="text-decoration: none">
             <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
-                <p>Leaderboard 18 holes</p>
+                <p>Top scores 18 gholes</p>
             </div>
         </a>
 
         <a href="php/Funcs/leaderboard.php?holes=27" style="text-decoration: none">
             <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
-                <p>Leaderboard 27 holes</p>
+                <p>Top scores 27 gholes</p>
             </div>
         </a>
     </div>
