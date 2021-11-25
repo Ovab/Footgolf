@@ -32,6 +32,7 @@
     unset($_SESSION['errors']);
     echo "<form action='score_register.php?hole=$hole' method='post'>";
     ?>
+
     <h2 class="title">Voer uw score in:</h2>
     <div class="input-field">
         <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score"
@@ -78,6 +79,8 @@
         echo "<a href='../../index.php'> <input class='btn' type='submit' value='Naar Home pagina'> </a> ";
     }
     ?>
+
+
 </div>
 </body>
 </html>

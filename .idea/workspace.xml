@@ -22,12 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="leaderbord fixen">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="leaderbord af, alleen php nog toevoegen 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN/php/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderbord.css" beforeDir="false" afterPath="$PROJECT_DIR$/leaderbord.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderbord.html" beforeDir="false" afterPath="$PROJECT_DIR$/leaderbord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Groep/join_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/join_group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/stylegroep.css" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/stylegroep.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +192,7 @@
       <workItem from="1636805086718" duration="11000" />
       <workItem from="1636805433693" duration="622000" />
       <workItem from="1636961976235" duration="3924000" />
-      <workItem from="1637230213903" duration="25914000" />
+      <workItem from="1637230213903" duration="29037000" />
     </task>
     <task id="LOCAL-00001" summary="update vlaggen">
       <created>1637062208666</created>
@@ -307,7 +306,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637661640702</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="leaderbord af, alleen php nog toevoegen">
+      <created>1637669261078</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1637669261078</updated>
+    </task>
+    <task id="LOCAL-00018" summary="leaderbord af, alleen php nog toevoegen 1">
+      <created>1637795383881</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637795383881</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +346,9 @@
     <MESSAGE value="aantal gholes kiezen" />
     <MESSAGE value="leader fixen" />
     <MESSAGE value="leaderbord fixen" />
-    <option name="LAST_COMMIT_MESSAGE" value="leaderbord fixen" />
+    <MESSAGE value="leaderbord af, alleen php nog toevoegen" />
+    <MESSAGE value="leaderbord af, alleen php nog toevoegen 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="leaderbord af, alleen php nog toevoegen 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637228828672">
@@ -344,14 +359,15 @@
       <screen x="0" y="25" width="1792" height="1026" />
     </state>
     <state width="228" height="457" key="HiddenNamespacesPopup/0.25.1792.1026@0.25.1792.1026" timestamp="1637228808053" />
-    <state x="219" y="272" key="Vcs.Push.Dialog.v2" timestamp="1637661646388">
-      <screen x="0" y="25" width="1792" height="1029" />
+    <state x="219" y="272" key="Vcs.Push.Dialog.v2" timestamp="1637795389594">
+      <screen x="0" y="25" width="1792" height="1030" />
     </state>
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637063483627" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1637235547649" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1637570652286" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1637583845390" />
-    <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1029@0.25.1792.1029" timestamp="1637661646388" />
+    <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1029@0.25.1792.1029" timestamp="1637669266187" />
+    <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1030@0.25.1792.1030" timestamp="1637795389594" />
     <state x="310" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1637134676856">
       <screen x="0" y="25" width="1792" height="1024" />
     </state>
