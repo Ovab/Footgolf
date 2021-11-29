@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+body {
+    background: #ececec;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    text-align: -webkit-center !important;
+    margin: auto;
+    margin-top: 10vh;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white;
+    height: 75vh;
+    width: 25%;
+    background: #3953ff;
+    border-radius: 0.1em;
+    box-shadow: 0 0 12px black;
+}
+
+.upper {
+    color: black;
+    width: 100%;
+    background: white;
+    height: 10vh;
+    padding-bottom: 2rem;
+}
+
+/*img {
+    filter: invert(100%);
+    width: 66%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}*/
+
+h1 {
+    padding-top: 0.8rem;
+}
+
+h3 {
+    margin-left: 2rem;
+    text-align: left;
+}
+
+label {
+    text-align: center;
+    color: #8397ff;
+}
+
+.codeinvoer {
+    background: #8397ff;
+    text-align: center;
+    font-size: 1em;
+    margin: 0.3em;
+    margin-top: 1.5em;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+}
+
+a {
+    color: #8397ff;
+}
+
+.vbtn {
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background: #8397ff;
+    color: white;
+    border-radius: 1em;
+    width: 300px;
+    height: 4rem;
+    margin-top: 2em;
+}
+
+i {
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+    }
+}
