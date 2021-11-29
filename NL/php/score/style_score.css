@@ -330,6 +330,8 @@ input::-webkit-inner-spin-button {
     background: #e1306c;
 }
 
+
+
 @media (max-width: 870px) {
     .input-field {
         width: 100%;
@@ -339,4 +341,5 @@ input::-webkit-inner-spin-button {
 @media (max-width: 570px) {
 
 }
+
 
