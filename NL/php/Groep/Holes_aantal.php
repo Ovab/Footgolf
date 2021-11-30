@@ -33,7 +33,7 @@
     <div class="panels-container">
         <div class="panel left-panel">
             <div class="content">
-                <h3>kies je aantal gholes</h3>
+                <h3>Kies uw aantal gholes</h3>
                 <p>
                     blijf hier als je 18 gholes hebt, klik op 27 gholes voor 27 gholes
                 </p>
@@ -44,7 +44,7 @@
         </div>
         <div class="panel right-panel">
             <div class="content">
-                <h3>kies je aantal holes</h3>
+                <h3>Kies uw aantal holes</h3>
                 <p>
                     blijf hier als je 27 gholes hebt, klik op 18 gholes voor 18 gholes
                 </p>
