@@ -18,7 +18,7 @@ let lead = true
 
 function showRegels() {
     hideAll()
-    title.innerHTML = "Spelregels";
+    title.innerHTML = "Game rules";
     title.style.display = "block";
     spelRegels.style.display = "flex";
 }
@@ -42,7 +42,7 @@ function hideGholes() {
 
 function showReservation() {
     hideAll()
-    title.innerHTML = "Groepen";
+    title.innerHTML = "Groups";
     title.style.display = "block";
     reservation.style.display = "flex";
 }
