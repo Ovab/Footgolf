@@ -83,7 +83,6 @@ p {
 /* CARD 2 */
 .card_2 {
     background: #f6f6f6;
-
     margin: 1200px;
     opacity: 0;
     transition: 1.4s;
@@ -91,7 +90,7 @@ p {
 .card_2 .image {
     background-image: url("https://png.pngtree.com/element_origin_min_pic/16/12/09/bebaea9d5a190e1a3aee6bebc3c50f23.jpg");
     width: 200px;
-    height: 175px;
+    height: 185px;
 }
 .card_2 h2 {
     color: #7c4019;
@@ -116,7 +115,7 @@ p {
 .card_3 .image {
     background-image: url("img/ghole1.png");
     width: 200px;
-    height: 175px;
+    height: 210px;
 }
 .card_3 h2 {
     color: #8b8b8b;
@@ -134,8 +133,7 @@ p {
 /* CARD 4 */
 .card_4 {
     background: #f6f6f6;
-    transform: translateX(-50%) scale(2);
-    margin: -1200px 1000px;
+    margin: -1200px;
     transition: 1.4s;
 }
 .card_4 .image {
@@ -155,6 +153,30 @@ p {
     color: #e8672e;
 }
 .card_4.active {
+    margin: 0;
+}
+
+/* CARD 5 */
+.card_5 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_5 .image {
+    background-image: url("img/ghole1.png");
+    width: 200px;
+    height: 175px;
+}
+.card_5 h2 {
+    color: #8b8b8b;
+}
+.card_5 .next {
+    color: #8b8b8b;
+}
+.card_5 .prev {
+    color: #8b8b8b;
+}
+.card_5.active {
     margin: 0;
     transform: translateX(-50%) scale(1) rotate(4deg);
 }
