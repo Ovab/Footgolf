@@ -1,112 +1,160 @@
-/* $base-background: #00CC99; */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 body {
-    background: #D18B49;
-    color: rgba(0, 0, 0, 0.6);
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1.6em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: 0.5s ease;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
 }
-
-.btn {
-    border-radius: 2px;
-    padding: 8px 12px;
-    color: #D18B49;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s ease;
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #de732d;
+    overflow: hidden;
+    transition: 1s;
 }
-
 .card {
-    background: #FFFFFF;
-    max-width: 400px;
-    margin: 100px auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    box-sizing: border-box;
-    padding: 48px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px #333;
+    padding: 20px;
+}
+.image {
+    width: 150px;
+    height: 210px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+}
+h2 {
+    font-weight: 500;
     text-align: center;
+    margin-bottom: 0;
+    user-select: none;
 }
-
-.products {
-    position: relative;
-    overflow: hidden;
-    transition: 0.5s ease;
+p {
+    margin-top: 0;
+    font-weight: 400;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.64);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    user-select: none;
 }
-
-.product {
+.next {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 50px;
+    right: 40px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.prev {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* CARD 1 */
+.card_1 {
+    background: #f6f6f6;
+    transition: 1s;
+}
+.card_1 .image {
+    background-image: url("img/ghole1.png");
+}
+.card_1 h2 {
+    color: #ac5422;
+}
+.card_1 .next {
+    color: #ac5422;
+}
+.card_1 .prev {
+    color: #ac5422;
+}
+/* CARD 2 */
+.card_2 {
+    background: #f6f6f6;
+
+    margin: 1200px;
     opacity: 0;
-    visibility: hidden;
-    transition: 0.5s ease;
+    transition: 1.4s;
 }
-.product.active {
+.card_2 .image {
+    background-image: url("https://png.pngtree.com/element_origin_min_pic/16/12/09/bebaea9d5a190e1a3aee6bebc3c50f23.jpg");
+    width: 200px;
+    height: 175px;
+}
+.card_2 h2 {
+    color: #7c4019;
+}
+.card_2 .next {
+    color: #7c4019;
+}
+.card_2 .prev {
+    color: #7c4019;
+}
+.card_2.active {
     opacity: 1;
-    visibility: visible;
+    margin: 0;
 }
 
-.thumbnail {
-    margin: 0 0 48px;
+/* CARD 3 */
+.card_3 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_3 .image {
+    background-image: url("img/ghole1.png");
+    width: 200px;
+    height: 175px;
+}
+.card_3 h2 {
+    color: #8b8b8b;
+}
+.card_3 .next {
+    color: #8b8b8b;
+}
+.card_3 .prev {
+    color: #8b8b8b;
+}
+.card_3.active {
+    margin: 0;
 }
 
-.title {
-    margin: 0 0 12px;
-    color: #D18B49;
-    font-size: 24px;
-    transition: 0.5s ease;
+/* CARD 4 */
+.card_4 {
+    background: #f6f6f6;
+    transform: translateX(-50%) scale(2);
+    margin: -1200px 1000px;
+    transition: 1.4s;
 }
-
-.description {
-    margin: 0 0 48px;
+.card_4 .image {
+    background-image: url("https://png.pngtree.com/element_origin_min_pic/16/07/09/1457809f52cac1b.jpg");
+    width: 220px;
+    margin-bottom: 0;
+    background-size: 350px 350px;
+    background-position: center;
 }
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 -12px -12px;
+.card_4 h2 {
+    color: #e8672e;
 }
-
-[ripple] {
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+.card_4 .next {
+    color: #e8672e;
 }
-[ripple] .ripple {
-    position: absolute;
-    background: #FFFFFF;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    transform: scale(0);
-    -webkit-animation: ripple 2s;
-    animation: ripple 2s;
+.card_4 .prev {
+    color: #e8672e;
 }
-
-@-webkit-keyframes ripple {
-    0% {
-        transform: scale(0);
-        opacity: 0.2;
-    }
-    100% {
-        transform: scale(20);
-        opacity: 0;
-    }
-}
-
-@keyframes ripple {
-    0% {
-        transform: scale(0);
-        opacity: 0.2;
-    }
-    100% {
-        transform: scale(20);
-        opacity: 0;
-    }
+.card_4.active {
+    margin: 0;
+    transform: translateX(-50%) scale(1) rotate(4deg);
 }

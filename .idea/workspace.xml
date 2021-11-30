@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="zelfde maar dan voor maak groep">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="holes kiezen engels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/style_score.css" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/style_score.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box.css" beforeDir="false" afterPath="$PROJECT_DIR$/box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box.html" beforeDir="false" afterPath="$PROJECT_DIR$/box.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box.js" beforeDir="false" afterPath="$PROJECT_DIR$/box.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,8 @@
       <workItem from="1636805086718" duration="11000" />
       <workItem from="1636805433693" duration="622000" />
       <workItem from="1636961976235" duration="3924000" />
-      <workItem from="1637230213903" duration="37075000" />
+      <workItem from="1637230213903" duration="39488000" />
+      <workItem from="1638257550478" duration="3236000" />
     </task>
     <task id="LOCAL-00001" summary="update vlaggen">
       <created>1637062208666</created>
@@ -340,7 +342,28 @@
       <option name="project" value="LOCAL" />
       <updated>1637859982071</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="slider maken voor de holes">
+      <created>1638181594227</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1638181594227</updated>
+    </task>
+    <task id="LOCAL-00023" summary="slider maken voor de holes">
+      <created>1638181612133</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1638181612133</updated>
+    </task>
+    <task id="LOCAL-00024" summary="holes kiezen engels">
+      <created>1638259192954</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1638259192954</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +393,9 @@
     <MESSAGE value="leaderbord af, alleen php nog toevoegen 1" />
     <MESSAGE value="de join groep mooier gemaakt, en de mappen in de juiste volgorde gezet" />
     <MESSAGE value="zelfde maar dan voor maak groep" />
-    <option name="LAST_COMMIT_MESSAGE" value="zelfde maar dan voor maak groep" />
+    <MESSAGE value="slider maken voor de holes" />
+    <MESSAGE value="holes kiezen engels" />
+    <option name="LAST_COMMIT_MESSAGE" value="holes kiezen engels" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637228828672">
@@ -381,12 +406,12 @@
       <screen x="0" y="25" width="1792" height="1026" />
     </state>
     <state width="228" height="457" key="HiddenNamespacesPopup/0.25.1792.1026@0.25.1792.1026" timestamp="1637228808053" />
-    <state x="219" y="272" key="Vcs.Push.Dialog.v2" timestamp="1637859987313">
-      <screen x="0" y="25" width="1792" height="1030" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1638259197758">
+      <screen x="0" y="25" width="1792" height="1024" />
     </state>
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637063483627" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1637235547649" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1637570652286" />
+    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1638259197758" />
     <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1637583845390" />
     <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1029@0.25.1792.1029" timestamp="1637669266187" />
     <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1030@0.25.1792.1030" timestamp="1637859987313" />
