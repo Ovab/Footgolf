@@ -20,7 +20,7 @@
     <h2 class="title">Categories</h2>
     <div class="btns-wrapper">
         <div class="btn" onclick="showRegels()"><img class="icon" src="icons/golfer.png"><br>
-            <p>Spelregels</p></div>
+            <p>Game rules</p></div>
         <div class="btn" onclick="showLeaderboard()"><img class="icon" src="icons/crown-solid.svg"><br>
             <p>Top scores</p></div>
         <?php
