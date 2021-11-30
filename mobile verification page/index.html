@@ -24,12 +24,27 @@
 
         <h3>CONFIRMATION</h3>
         <label>Please type the verification code <br> sent to +316*****893</label> <br>
-        <input type="text" class="codeinvoer" maxlength="1">
-        <input type="text" class="codeinvoer" maxlength="1">
-        <input type="text" class="codeinvoer" maxlength="1">
-        <input type="text" class="codeinvoer" maxlength="1"> <br>
+        <form method="get" action="#">
+        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required>
+        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required>
+        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required>
+        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required> <br>
         <label><a href="#">Resend code > </a></label> <br>
         <input class="vbtn" type="submit" value="Verify">
+        </form>
     </div>
+<script>
+    $(document).ready(function(){
+        $(".codeinvoer").keyup(function () {
+            $this=$(this);
+            if ($this.val().length >=$this.data("maxlength")) {
+                if($this.val().length>$this.data("maxlength")){
+                    $this.val($this.val().substring(0,4));
+                }
+                $this.next(".codeinvoer").focus();
+            }
+        });
+    });
+</script>
 </body>
 </html>
