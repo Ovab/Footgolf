@@ -4,16 +4,30 @@ let card1 = document.getElementById("card1"),
     card3 = document.getElementById("card3"),
     card4 = document.getElementById("card4"),
     card5 = document.getElementById("card5"),
+    card6 = document.getElementById("card6"),
+    card7 = document.getElementById("card7"),
+    card8 = document.getElementById("card8"),
+    card9 = document.getElementById("card9"),
+    card10 = document.getElementById("card10"),
+    card11 = document.getElementById("card11"),
+    card12 = document.getElementById("card12"),
+    card13 = document.getElementById("card13"),
+    card14 = document.getElementById("card14"),
+    card15 = document.getElementById("card15"),
+    card16 = document.getElementById("card16"),
+    card17 = document.getElementById("card17"),
+    card18 = document.getElementById("card18"),
+
     card_length = document.querySelectorAll(".card");
 
 // container
 let container = document.getElementById("container");
 
 // Card List
-let card_list = [card1, card2, card3, card4, card5];
+let card_list = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16, card17, card18,];
 
 // next function
-let counter = 1;
+let counter = 0;
 function next() {
     console.log("next:" + counter);
     if (counter < card_length.length) {
@@ -49,5 +63,8 @@ function backgroundFunc(x) {
 
     } else if (x == 4) {
     container.style.background = "#e8672e";
+    }
+    else if (x == 5) {
+        container.style.background = "#e8672e";
     }
     }
