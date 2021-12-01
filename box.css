@@ -179,3 +179,147 @@ p {
 .card_5.active {
     margin: 0;
 }
+
+/* CARD 6 */
+.card_6 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_6 .image {
+    background-image: url("img/Footgolf-Holes-GR_6.png");
+    width: 200px;
+    height: 240px;
+}
+.card_6 h2 {
+    color: #8b8b8b;
+}
+.card_6 .next {
+    color: #8b8b8b;
+}
+.card_6 .prev {
+    color: #8b8b8b;
+}
+.card_6.active {
+    margin: 0;
+}
+
+/* CARD 7 */
+.card_7 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_7 .image {
+    background-image: url("img/Footgolf-Holes-GR_7.png");
+    width: 200px;
+    height: 240px;
+}
+.card_7 h2 {
+    color: #8b8b8b;
+}
+.card_7 .next {
+    color: #8b8b8b;
+}
+.card_7 .prev {
+    color: #8b8b8b;
+}
+.card_7.active {
+    margin: 0;
+}
+
+/* CARD 8 */
+.card_8 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_8 .image {
+    background-image: url("img/Footgolf-Holes-GR_8.png");
+    width: 200px;
+    height: 240px;
+}
+.card_8 h2 {
+    color: #8b8b8b;
+}
+.card_8 .next {
+    color: #8b8b8b;
+}
+.card_8 .prev {
+    color: #8b8b8b;
+}
+.card_8.active {
+    margin: 0;
+}
+
+/* CARD 9 */
+.card_9 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_9 .image {
+    background-image: url("img/Footgolf-Holes-GR_9.png");
+    width: 200px;
+    height: 240px;
+}
+.card_9 h2 {
+    color: #8b8b8b;
+}
+.card_9 .next {
+    color: #8b8b8b;
+}
+.card_9 .prev {
+    color: #8b8b8b;
+}
+.card_9.active {
+    margin: 0;
+}
+
+/* CARD 10 */
+.card_10 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_10 .image {
+    background-image: url("img/Footgolf-Holes-GR_10.png");
+    width: 200px;
+    height: 240px;
+}
+.card_10 h2 {
+    color: #8b8b8b;
+}
+.card_10 .next {
+    color: #8b8b8b;
+}
+.card_10 .prev {
+    color: #8b8b8b;
+}
+.card_10.active {
+    margin: 0;
+}
+
+/* CARD 11 */
+.card_11 {
+    background: #f6f6f6;
+    margin: -1200px;
+    transition: 1.4s;
+}
+.card_11 .image {
+    background-image: url("img/Footgolf-Holes-GR_11.png");
+    width: 200px;
+    height: 240px;
+}
+.card_11 h2 {
+    color: #8b8b8b;
+}
+.card_11 .next {
+    color: #8b8b8b;
+}
+.card_11 .prev {
+    color: #8b8b8b;
+}
+.card_11.active {
+    margin: 0;
+}
