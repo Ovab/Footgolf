@@ -165,7 +165,7 @@ p {
 .card_5 .image {
     background-image: url("img/ghole1.png");
     width: 200px;
-    height: 175px;
+    height: 240px;
 }
 .card_5 h2 {
     color: #8b8b8b;
@@ -178,5 +178,4 @@ p {
 }
 .card_5.active {
     margin: 0;
-    transform: translateX(-50%) scale(1) rotate(4deg);
 }

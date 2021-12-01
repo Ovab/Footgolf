@@ -10,7 +10,7 @@ let card1 = document.getElementById("card1"),
 let container = document.getElementById("container");
 
 // Card List
-let card_list = [card1, card2, card3, card4];
+let card_list = [card1, card2, card3, card4, card5];
 
 // next function
 let counter = 1;
@@ -46,5 +46,8 @@ function backgroundFunc(x) {
         container.style.background = "#8b8b8b";
     } else if (x == 3) {
         container.style.background = "#e8672e";
+
+    } else if (x == 4) {
+    container.style.background = "#e8672e";
     }
-}
+    }
