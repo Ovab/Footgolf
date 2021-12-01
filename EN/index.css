@@ -169,6 +169,15 @@ h2 {
     box-shadow: 0 0 20px #EC1C24;
 }
 
+.containter2 {
+    font-size: 1.5rem;
+}
+
+.grouptings {
+    margin: auto;
+    width: 95%;
+    height: 95%;
+}
 
 .wrapper1 .icon1 {
     margin: 0 20px;
