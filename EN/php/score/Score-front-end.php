@@ -86,9 +86,9 @@
             <div class="card card_1" id="card1">
                 <div class="image"></div>
                 <h2>Ghole 1</h2>
-                <p>Speel de bal langs of over de 2 obstakels. Je mag zelf weten
-                    hoe je deze passeert. Tip: Over de grond spelen geeft de minste
-                    risico's.</p>
+                <p>Play the ball past or over the 2 obstacles. You can know yourself
+                    how to pass it. Tip: Playing on the floor gives the least
+                    risks.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -97,9 +97,9 @@
             <div class="card card_2" id="card2">
                 <div class="image"></div>
                 <h2>Ghole 2</h2>
-                <p>Speel de bal doori van de 3 betonnen ringen. HINDERNIS MOET GENOMEN WORDEN.
-                    Tip: Probeer door de middelste ring te spelen
-                    zodat de bal direct in de hole rolt.</p>
+                <p>Play the ball through the 3 concrete rings. OBSTACLE MUST BE TAKEN.
+                    Tip: Try to play through the middle ring
+                    so that the ball rolls directly into the hole.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -108,9 +108,9 @@
             <div class="card card_3" id="card3">
                 <div class="image"></div>
                 <h2>Ghole 3</h2>
-                <p>Een echte baan voor een linksbenige speler. Buitenkant
-                    rechts kan ook natuurlijk.
-                    Tip: Pas op voor de greppels.</p>
+                <p>A real job for a left footed player. exterior
+                    right is also possible of course.
+                    Tip: Watch out for the ditches.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -119,9 +119,9 @@
             <div class="card card_4" id="card4">
                 <div class="image"></div>
                 <h2>Ghole 4</h2>
-                <p>Speel de bal voorzichtig Zig Zag langs de hekjes. HINDERNIS MOET GENOMEN WORDEN.
-                    Tip: Gebruik de gehele denkbeeldige lijn van
-                    het huisje om je bal neer te leggen.</p>
+                <p>Carefully play the ball Zig Zag along the fences. OBSTACLE MUST BE TAKEN.
+                    Tip: Use the entire imaginary line of
+                    the house to put your ball down.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -129,9 +129,9 @@
             <div class="card card_5" id="card5">
                 <div class="image"></div>
                 <h2>Ghole 5</h2>
-                <p>Gewoon lekker 100 meter knallen tegen de bal.
-                    Tip: Speel de bal niet te veel langs de
-                    linkerkant.</p>
+                <p>Just hit the ball for 100 meters.
+                    Tip: Do not play the ball too much along the
+                    left hand side.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -139,9 +139,9 @@
             <div class="card card_6" id="card6">
                 <div class="image"></div>
                 <h2>Ghole 6</h2>
-                <p>Een precisie baan met 2 haakse hoeken. Speel de bal langs of over de boomstammen.
-                    Tip: Speel de bal niet te hard, met souplesse
-                    red je het..</p>
+                <p>A precision track with 2 right angles. Play the ball along or over the logs.
+                    Tip: Don't play the ball too hard, with flexibility
+                    are you okay..</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -149,9 +149,9 @@
             <div class="card card_7" id="card7">
                 <div class="image"></div>
                 <h2>Ghole 7</h2>
-                <p>Een precisie baan met 2 haakse hoeken. Speel de bal langs of over de boomstammen.
-                    Tip: Speel de bal niet te hard, met souplesse
-                    red je het.</p>
+                <p>A precision track with 2 right angles. Play the ball along or over the logs.
+                    Tip: Don't play the ball too hard, with flexibility
+                    you make it.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -159,9 +159,9 @@
             <div class="card card_8" id="card8">
                 <div class="image"></div>
                 <h2>Ghole 8</h2>
-                <p>Passeer de 3 houten schotten op je eigen manier en putt de bal in de betonnen ring.
-                    Tip: Probeer niet van een te grote afstand
-                    te loppen.</p>
+                <p>Pass the 3 wooden partitions in your own way and put the ball in the concrete ring.
+                    Tip: Do not try from too great a distance
+                    to walk.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -169,9 +169,9 @@
             <div class="card card_9" id="card9">
                 <div class="image"></div>
                 <h2>Ghole 9</h2>
-                <p>Passeer de 3 houten schotten op je eigen manier en putt de bal in de betonnen ring.
-                    Tip: Probeer niet van een te grote afstand
-                    te loppen.</p>
+                <p>Pass the 3 wooden partitions in your own way and put the ball in the concrete ring.
+                    Tip: Do not try from too great a distance
+                    to walk.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -179,9 +179,9 @@
             <div class="card card_10" id="card10">
                 <div class="image"></div>
                 <h2>Ghole 10</h2>
-                <p>Speel de bal over het water en daarna langs of over de boomstammen.
-                    Tip: Leg de bal eerst voor het water klaar,
-                    in 1 keer over het water lukt bijna niet.</p>
+                <p>Play the ball over the water and then along or over the tree trunks.
+                    Tip: First put the ball ready for the water,
+                    across the water in 1 go is almost impossible.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -189,9 +189,9 @@
             <div class="card card_11" id="card11">
                 <div class="image"></div>
                 <h2>Ghole 11</h2>
-                <p>Speel de bal door i van de 3 trekker banden. HINDERNIS MOET GENOMEN WORDEN.
-                    Tip: Een 'Goal in One' is mogelijk als je de bal
-                    hard genoeg door de middelste band speelt.</p>
+                <p>Play the ball through i of the 3 tractor tires. OBSTACLE MUST BE TAKEN.
+                    Tip: A 'Goal in One' is possible if you touch the ball
+                    plays loud enough through the middle band.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -199,8 +199,8 @@
             <div class="card card_12" id="card12">
                 <div class="image"></div>
                 <h2>Ghole 12</h2>
-                <p>Speel de bal onder alle boom- stammen door. HINDERNIS MOET GENOMEN WORDEN.
-                    Tip: Speel de bal niet te hard.</p>
+                <p>Pass the ball under all the tree trunks. OBSTACLE MUST BE TAKEN.
+                    Tip: Don't play the ball too hard.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -208,8 +208,8 @@
             <div class="card card_13" id="card13">
                 <div class="image"></div>
                 <h2>Ghole 13</h2>
-                <p>Speel de bal onder alle boomstammen door. HINDERNIS MOET GENOMEN WORDEN.
-                    Tip: Speel de bal niet te hard.</p>
+                <p>Pass the ball under all the tree trunks. OBSTACLE MUST BE TAKEN.
+                    Tip: Don't play the ball too hard.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -217,9 +217,9 @@
             <div class="card card_14" id="card14">
                 <div class="image"></div>
                 <h2>Ghole 14</h2>
-                <p>Op een verhoogd plateau aftrappen richting de green.
-                    Tip: Wees voorzichtig met schieten vanaf de
-                    verhoging.</p>
+                <p>Kick off on a raised platform towards the green.
+                    Tip: Be careful when shooting from the
+                    elevation.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -227,8 +227,8 @@
             <div class="card card_15" id="card15">
                 <div class="image"></div>
                 <h2>Ghole 15</h2>
-                <p>Speel de bal langs of over de boomstammen.
-                    Tip: Speel de bal niet te hard.</p>
+                <p>Play the ball along or over the logs.
+                    Tip: Don't play the ball too hard.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -236,9 +236,9 @@
             <div class="card card_16" id="card16">
                 <div class="image"></div>
                 <h2>Ghole 16</h2>
-                <p>De 'Goal in One' baan.
-                    Tip: Door de lucht heeft meer kans dan
-                    over de grond.</p>
+                <p>The 'Goal in One' track.
+                    Tip: By air is more likely than
+                    on the ground.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -246,8 +246,8 @@
             <div class="card card_17" id="card17">
                 <div class="image"></div>
                 <h2>Ghole 17</h2>
-                <p>Een links- en rechtsbenige baan.
-                    Tip: Gewoon knallen tegen de bal.</p>
+                <p>A left and right leg job.
+                    Tip: Just hit the ball.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
@@ -255,9 +255,9 @@
             <div class="card card_18" id="card18">
                 <div class="image"></div>
                 <h2>Ghole 18</h2>
-                <p>Speel de bal in of over het vak met de oranje paaltjes. Pak dan de bal op en leg deze op de stip.
-                    Tip: De bal dient in 1 keer de muur en de
-                    keeper te passeren.</p>
+                <p>Play the ball in or over the box with the orange posts. Then pick up the ball and place it on the dot.
+                    Tip: The ball serves the wall and the in 1 go
+                    to pass goalkeeper.</p>
                 <div class="prev" onclick="prev()">PREV</div>
                 <div class="next" onclick="next()">NEXT</div>
             </div>
