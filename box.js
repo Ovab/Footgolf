@@ -27,7 +27,7 @@ let container = document.getElementById("container");
 let card_list = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16, card17, card18,];
 
 // next function
-let counter = 0;
+let counter = 1;
 function next() {
     console.log("next:" + counter);
     if (counter < card_length.length) {
@@ -53,18 +53,18 @@ function prev() {
 // background function
 function backgroundFunc(x) {
     if (x == 0) {
-        container.style.background = "#de732d";
+        container.style.background = "#fff";
     } else if (x == 1) {
-        container.style.background = "#7c4019";
+        container.style.background = "#fff";
     } else if (x == 2) {
-        container.style.background = "#8b8b8b";
+        container.style.background = "#fff";
     } else if (x == 3) {
-        container.style.background = "#e8672e";
+        container.style.background = "#fff";
 
     } else if (x == 4) {
-    container.style.background = "#e8672e";
+    container.style.background = "#fff";
     }
     else if (x == 5) {
-        container.style.background = "#e8672e";
+        container.style.background = "#fff";
     }
     }
