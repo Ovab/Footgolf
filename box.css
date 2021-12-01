@@ -69,7 +69,7 @@ p {
     transition: 1s;
 }
 .card_1 .image {
-    background-image: url("img/ghole1.png");
+    background-image: url("img/Footgolf-Holes-GR_1_0.png");
 }
 .card_1 h2 {
     color: #ac5422;
@@ -88,7 +88,7 @@ p {
     transition: 1.4s;
 }
 .card_2 .image {
-    background-image: url("https://png.pngtree.com/element_origin_min_pic/16/12/09/bebaea9d5a190e1a3aee6bebc3c50f23.jpg");
+    background-image: url("img/Footgolf-Holes-GR_2.png");
     width: 200px;
     height: 185px;
 }
@@ -113,7 +113,7 @@ p {
     transition: 1.4s;
 }
 .card_3 .image {
-    background-image: url("img/ghole1.png");
+    background-image: url("img/Footgolf-Holes-GR_3.png");
     width: 200px;
     height: 210px;
 }
@@ -137,7 +137,7 @@ p {
     transition: 1.4s;
 }
 .card_4 .image {
-    background-image: url("https://png.pngtree.com/element_origin_min_pic/16/07/09/1457809f52cac1b.jpg");
+    background-image: url("img/Footgolf-Holes-GR_4.png");
     width: 220px;
     margin-bottom: 0;
     background-size: 350px 350px;
@@ -163,7 +163,7 @@ p {
     transition: 1.4s;
 }
 .card_5 .image {
-    background-image: url("img/ghole1.png");
+    background-image: url("img/Footgolf-Holes-GR_5.png");
     width: 200px;
     height: 240px;
 }
