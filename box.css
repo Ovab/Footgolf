@@ -21,7 +21,6 @@ body {
     width: 300px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0px 6px 15px #333;
     padding: 20px;
 }
 .image {
@@ -39,8 +38,8 @@ h2 {
 }
 p {
     margin-top: 0;
-    font-weight: 400;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.64);
     padding: 20px;
@@ -67,6 +66,7 @@ p {
 .card_1 {
     background: #f6f6f6;
     transition: 1s;
+
 }
 .card_1 .image {
     background-image: url("img/Footgolf-Holes-GR_1_0.png");
