@@ -92,15 +92,15 @@
     </div>
 
 
-    <div class="container" id="leaderboard">
+    <div class="container containter2" id="leaderboard">
         <a href="php/Funcs/leaderboard.php?holes=18" style="text-decoration: none">
-            <div class="box"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+            <div class="box grouptings"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
                 <p>Top scores 18 holes</p>
             </div>
         </a>
 
         <a href="php/Funcs/leaderboard.php?holes=27" style="text-decoration: none">
-            <div class="box2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+            <div class="box2 grouptings"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
                 <p>Top scores 27 holes</p>
             </div>
         </a>
