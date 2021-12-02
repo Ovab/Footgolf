@@ -16,7 +16,6 @@
                 <h2 class="title">Genereer uw game code</h2>
                 <?php
                 include '../../connect.php';
-                error_reporting(E_ALL);
                 if (isset($_SESSION['user_name'])) {
                     $naam1 = $_SESSION['user_name'];
                     //Genereer 5 digit random nummer
@@ -29,8 +28,7 @@
                         mysqli_query($conn, "DELETE  FROM groep WHERE Aanmaak_datum<=DATE_SUB(NOW(), INTERVAL 1 DAY)");
                         $insert = mysqli_query($conn, $q);
                         if (!$insert) {
-                            echo mysqli_error($conn) . "<br>";
-                            echo 'Oeps er ging iets fout, probeer aub opnieuw';
+                            echo 'Oeps er ging iets fout, we proberen het opnieuw';
                         } else {
                             $_SESSION['holes'] = $holes;
                             //maak een session variable van het random nummer

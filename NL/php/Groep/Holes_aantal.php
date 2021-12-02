@@ -14,14 +14,14 @@
 <div class="container">
     <div class="forms-container">
         <div class="signin-signup">
-            <form action="maak_groep.php" class="sign-in-form">
+            <form action="maak_groep.php" class="sign-in-form" method="post">
                 <h2 class="title">18 Gholes</h2>
                 <input type="hidden" value="18" name="holes">
                 <button class="buttoneng">Start</button>
             </form>
 
 
-            <form action="maak_groep.php" class="sign-up-form">
+            <form action="maak_groep.php" class="sign-up-form" method="post">
                 <h2 class="title">27 Gholes</h2>
                 <input type="hidden" value="27" name="holes">
                 <input type="submit" value="start" class="buttonnl">

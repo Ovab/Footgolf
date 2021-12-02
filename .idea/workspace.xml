@@ -22,10 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="holes bij score invoeren bij engels, moet alleen vertaald worden nog">
+    <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="de join groep mooier gemaakt, en de mappen in de juiste volgorde gezet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/score/style_score.css" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/style_score.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Groep/Holes_aantal.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/Holes_aantal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/EN" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jaspers media/vue-concept" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -193,6 +193,7 @@
       <workItem from="1636961976235" duration="3924000" />
       <workItem from="1637230213903" duration="39488000" />
       <workItem from="1638257550478" duration="14527000" />
+      <workItem from="1638435216909" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="update vlaggen">
       <created>1637062208666</created>
@@ -475,29 +476,6 @@
     <MESSAGE value="holes bij score invoeren" />
     <MESSAGE value="holes bij score invoeren bij engels, moet alleen vertaald worden nog" />
     <option name="LAST_COMMIT_MESSAGE" value="holes bij score invoeren bij engels, moet alleen vertaald worden nog" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637228828672">
-      <screen x="0" y="25" width="1792" height="1026" />
-    </state>
-    <state x="232" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1026@0.25.1792.1026" timestamp="1637228828672" />
-    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1637228808053">
-      <screen x="0" y="25" width="1792" height="1026" />
-    </state>
-    <state width="228" height="457" key="HiddenNamespacesPopup/0.25.1792.1026@0.25.1792.1026" timestamp="1637228808053" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2" timestamp="1638358920234">
-      <screen x="0" y="25" width="1792" height="1026" />
-    </state>
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1637063483627" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1023@0.25.1792.1023" timestamp="1638353592488" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1638354294323" />
-    <state x="219" y="271" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1638358920234" />
-    <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1029@0.25.1792.1029" timestamp="1637669266187" />
-    <state x="219" y="272" key="Vcs.Push.Dialog.v2/0.25.1792.1030@0.25.1792.1030" timestamp="1637859987313" />
-    <state x="310" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1637134676856">
-      <screen x="0" y="25" width="1792" height="1024" />
-    </state>
-    <state x="310" y="250" width="670" height="676" key="search.everywhere.popup/0.25.1792.1024@0.25.1792.1024" timestamp="1637134676856" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
