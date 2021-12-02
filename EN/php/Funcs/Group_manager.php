@@ -43,6 +43,7 @@
                     echo "<style>
                           table{
                           margin: 10px;
+                          margin-top: 25%;
                           color: #555555;
                           text-align: center;
                           border: solid red;

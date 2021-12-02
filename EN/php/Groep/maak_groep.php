@@ -13,7 +13,7 @@
     <div class="forms-container">
         <div class="signin-signup">
             <form action="team-naam.php" class="maak-groep" method="post">
-                <h2 class="title">Generate game code</h2>
+                <h2 class="title">Your game code, others can join via this code.</h2>
                 <?php
                 include '../connect.php';
                 if (isset($_SESSION['user_name'])) {
