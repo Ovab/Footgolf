@@ -14,7 +14,7 @@
     <?php
     session_start();
     if (isset($_SESSION['user_name'])){
-        echo "<div class='gebruikersnaam'> welkom " . $_SESSION['user_name'] . "<a href='php/Login/signout.php'> Log uit</a> <div>";
+        echo "<div class='gebruikersnaam'> Welkom " . $_SESSION['user_name'] . ", <a href='php/Login/signout.php'>Log uit</a> <div>";
     }
     ?>
     <h2 class="title">Categories</h2>
