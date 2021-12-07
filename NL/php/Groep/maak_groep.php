@@ -59,9 +59,9 @@
                 </div>
                 <?php
                 if (isset($random) && isset($holes)) {
-                    echo "<input style='background-color: #74AE6A' type='submit' value='Volgende' class='btn' />";
+                    echo "<input type='submit' value='Volgende' class='btn' />";
                 } else {
-                    echo "<a style='text-align: center; text-decoration: none; background-color: #74AE6A' href='../Login/login-front-end.php' class='btn'>Ga naar login</a>";
+                    echo "<a style='text-align: center; text-decoration: none;' href='../Login/login-front-end.php' class='btn'>Ga naar login</a>";
                 }
                 ?>
                 <div class="panel right-panel">
