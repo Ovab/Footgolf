@@ -112,7 +112,7 @@
                 $i = 0;
                 while ($i < $holes) {
                     $i++;
-                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";
+                    echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'> $i</a> </div>";
                     if ($i == ceil(($holes / 2))) {
                         echo "<br>";
                     }
