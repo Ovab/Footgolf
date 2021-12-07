@@ -36,7 +36,7 @@ $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$g
             while ($row = mysqli_fetch_assoc($select_naam)) {
                 $GroepNaam = $row['GroepNaam'];
             }
-            echo "<br><div style='text-align: center'> <h2> Team Naam: " . $GroepNaam . "</h2></div>";
+            echo "<br><div style='text-align: center'> <h2> Huidige team naam:<br>" . $GroepNaam . "<br><br></h2></div>";
         }
         ?>
         <div class="input-field">
