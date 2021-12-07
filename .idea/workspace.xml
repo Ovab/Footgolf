@@ -23,9 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="de join groep mooier gemaakt, en de mappen in de juiste volgorde gezet">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/Holes_aantal.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/Holes_aantal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/maak_groep.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jaspers media/vue-concept" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -194,6 +196,7 @@
       <workItem from="1637230213903" duration="39488000" />
       <workItem from="1638257550478" duration="14527000" />
       <workItem from="1638435216909" duration="14000" />
+      <workItem from="1638873697073" duration="3961000" />
     </task>
     <task id="LOCAL-00001" summary="update vlaggen">
       <created>1637062208666</created>
