@@ -192,6 +192,7 @@ h2 {
     position: relative;
     width: 100px;
     height: 165px;
+    height: 165px;
     background: #EC1C24;
     border-radius: 20px;
     box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
@@ -292,6 +293,7 @@ h2 {
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    margin-top: -3rem !important;
 }
 
 .card {
@@ -299,8 +301,8 @@ h2 {
     font-weight: 600;
     line-height: 1.2;
     position: relative;
-    width: 200px;
-    height: 230px;
+    width: 125px;
+    height: 125px;
     background: #EC1C24;
     border-radius: 20px;
     box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
