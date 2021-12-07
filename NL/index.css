@@ -276,6 +276,7 @@ h2 {
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    margin-top: -3rem !important;
 }
 
 .card {
