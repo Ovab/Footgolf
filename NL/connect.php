@@ -6,7 +6,7 @@ $servername = "localhost";
 $username = "root";
 
 //server wachtwoord
-$password = "";
+$password = "roo";
 
 $database = 'footgolf';
 
