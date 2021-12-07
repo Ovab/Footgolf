@@ -78,7 +78,7 @@
             <?php
             if (isset($_SESSION['groepLead'])) {
                 echo "
-            <a href='../NL/php/Funcs/Group_manager.php' style='text-decoration: none'>
+            <a href='../EN/php/Funcs/Group_manager.php' style='text-decoration: none'>
                 <div class='boxgroups grouptings2'><img class='icon' src='../EN/img/Footgolf-Badge-1.png'><br>
                     <p>Group manager</p>
                 </div>";
