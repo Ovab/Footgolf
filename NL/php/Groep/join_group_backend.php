@@ -4,15 +4,18 @@ include_once '../../connect.php';
 $user_input = $_POST['GroepID'];
 //Check of data is doorgekomen
 if (!empty($user_input)) {
-    $res = mysqli_query($conn, "select groupID, `Speler_aantal`, `num_holes`, GroepNaam from groep where groupID=$user_input limit 1");
+    $res = mysqli_query($conn, "select groupID, `Speler_aantal`, `num_holes`, GroepNaam from groep where groupID=$user_input");
     if ($res) {
-        //loop door de $row resultaten heen en doe het in $row
-        while ($row = mysqli_fetch_assoc($res)) {
+        global $row;
+        global $player_aantal;
+        while ($row = $res->fetch_assoc()) {
             $player_aantal = $row['Speler_aantal'];
             $holes = $row['num_holes'];
-            $_SESSION['holes'] = $holes;
+            $_SESSION['holes'] = $row['num_holes'];
         }
+        print_r($row);
         //Als speler aantal groter of gelijk is aan 5 dan geeft hij die error
+        echo $player_aantal;
         if ($player_aantal >= 4) {
             $_SESSION['Errors'] = "Sorry deze groep zit vol";
             header('location:join_group.php');

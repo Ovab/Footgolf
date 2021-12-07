@@ -109,10 +109,12 @@
     <div class="container" id="gholes">
         <div class="scrolling-wrapper">
             <?php
+            print_r($_SESSION);
             if (isset($_SESSION['holes'])) {
                 unset($_SESSION["cur_hole"]);
                 $holes = $_SESSION['holes'];
                 $i = 0;
+
                 while ($i < $holes) {
                     $i++;
                     echo "<div class='card'><a style='text-decoration: none; color: white; font-size: xxx-large;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' href='php/score/Score-front-end.php?hole=$i'>Hole $i</a> </div>";

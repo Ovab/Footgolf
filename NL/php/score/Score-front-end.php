@@ -76,7 +76,7 @@
     if ($holes - 1 >= $hole) {
         echo "<a href='Score-front-end.php?hole=$nextHole' ><input class='btn' type='submit' value='Volgende Hole'></a>";
     } else {
-        echo "<a href='../../index.php'> <input class='btn' type='submit' value='Naar Home pagina'> </a> ";
+        echo "<a href='../../leaderboard/Teamleaderboard.php'> <input class='btn' type='submit' value='Naar teamscores'> </a> ";
     }
     ?>
 
