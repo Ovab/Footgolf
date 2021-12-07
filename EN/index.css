@@ -181,8 +181,25 @@ h2 {
 
 .grouptings2 {
     margin: auto;
-    width: 100%;
-    height: 95%;
+    /*width: 100%;
+    height: 95%;*/
+}
+
+.boxgroups {
+    padding: 1em;
+    font-weight: 600;
+    line-height: 1.2;
+    position: relative;
+    width: 100px;
+    height: 165px;
+    background: #EC1C24;
+    border-radius: 20px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    margin: 10px;
+    transition: 0.2s ease-in;
+    color: white;
 }
 
 .wrapper1 .icon1 {
