@@ -52,9 +52,9 @@
                 </div>
                 <?php
                 if (isset($random) && isset($holes)) {
-                    echo "<input style='background-color: #74AE6A' type='submit' value='Next' class='btn' />";
+                    echo "<input type='submit' value='Next' class='btn' />";
                 } else {
-                    echo "<a style='text-align: center; text-decoration: none; background-color: #74AE6A' href='../Login/login-front-end.php' class='btn'>Log in</a>";
+                    echo "<a style='text-align: center; text-decoration: none; href='../Login/login-front-end.php' class='btn'>Log in</a>";
                 }
                 ?>
                 <div class="panel right-panel">
