@@ -69,20 +69,20 @@
 
     <div class="container containter2" id="reservation">
         <a href="php/Groep/join_group.php" style="text-decoration: none">
-            <div class="box grouptings2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+            <div class="boxgroups grouptings2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
                 <p>Join groep</p>
             </div>
         </a>
 
         <a href="php/Groep/Holes_aantal.php" style="text-decoration: none">
-            <div class="box2 grouptings2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
+            <div class="boxgroups grouptings2"><img class="icon" src="img/Footgolf-Badge-1.png"><br>
                 <p>Maak groep</p>
             </div>
             <?php
             if (isset($_SESSION['groepLead'])) {
                 echo "
             <a href='php/Funcs/Group_manager.php' style='text-decoration: none'>
-                <div class='box'><img class='icon' src='img/Footgolf-Badge-1.png'><br>
+                <div class='boxgroups'><img class='icon' src='img/Footgolf-Badge-1.png'><br>
                     <p>Groep Beheer</p>
                 </div>";
             }
