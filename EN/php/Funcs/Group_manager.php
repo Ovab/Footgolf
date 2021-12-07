@@ -4,16 +4,26 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="  https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../stylegroep.css"/>
+    <link rel="stylesheet" href="Group_manager.css"/>
     <title>Footgolf - Group manager</title>
 </head>
 
 <body>
 <div class="container">
     <div class="forms-container">
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Group Manager</h3>
+                    <p>
+                        You can edit you group here.
+                    </p>
+                </div>
+            </div>
+        </div>
         <!--Sign in form -->
         <div class="signin-signup">
-            <h2 class="title" style="margin-left: 3%">Group manager </h2>
+
 
             <?php
             include_once '../connect.php';
@@ -42,8 +52,8 @@
                     }
                     echo "<style>
                           table{
-                          margin: 10px;
-                          margin-top: 25%;
+                          z-index: 0;
+                          margin: auto;
                           color: #555555;
                           text-align: center;
                           border: solid red;
@@ -57,7 +67,7 @@
                           border-width: 2px;
                           }
                           </style>
-                          
+                          <div class='tablewrapper'>
                              <table>
                              <th colspan='90%'>Group-name: $groepnaam </th>
                              <th colspan='10%'><a href='../Groep/team-naam.php'>Edit</a></th>
@@ -66,7 +76,7 @@
                              <th colspan='100%' style='border: none'>&nbsp</th><tr>
                             <th colspan='50%'>&nbsp$naam1&nbsp</th>
                             <td colspan='50%'>The leader can't be deleted</td>
-                            <tr>";
+                            <tr></div>";
                     if (isset($naam2)) {
                         echo "<th colspan='50%'>&nbsp$naam2&nbsp</th>
                     <td><a href='delAccGroep.php?player=2'>Delete</a> </td>
@@ -93,13 +103,5 @@
         </div>
     </div>
 </div>
-<div class="panel right-panel">
-    <div class="content">
-        <h3>One of us?</h3>
-        <p>
-            Log in, to get the most of your experience!
-        </p>
-        <button class="btn transparent" id="sign-in-btn">Join</button>
-
 </body>
 </html>
