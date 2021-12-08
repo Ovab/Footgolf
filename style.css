@@ -15,7 +15,7 @@ input {
     position: relative;
     width: 100%;
     background-color: #fff;
-    min-height: 100vh;
+    min-height: 100%;
     overflow: hidden;
 }
 
@@ -308,7 +308,7 @@ form.sign-in-form {
 @media (max-width: 870px) {
     .container {
         min-height: 800px;
-        height: 100vh;
+        height: 100%;
     }
     .signin-signup {
         width: 100%;
