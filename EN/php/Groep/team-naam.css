@@ -48,8 +48,6 @@ form {
     height: 55px;
     max-width: 70%;
     border-radius: 55px;
-    display: grid;
-    grid-template-columns: 15% 85%;
     padding: 0 0.4rem;
     position: relative;
 }
@@ -83,7 +81,6 @@ form {
     text-align: -webkit-center !important;
     margin: auto;
     margin-top: 2rem;
-
     width: 150px;
     background-color: #23A455;
     border: none;
@@ -142,10 +139,6 @@ form {
     .container {
         min-height: 800px;
         height: 100vh;
-    }
-
-    .btn {
-        margin-left: 12.5rem;
     }
 
     .wrapper {
@@ -235,10 +228,6 @@ form {
     .container.sign-up-mode:before {
         bottom: 28%;
         left: 50%;
-    }
-
-    .btn {
-        margin-left: 1.7rem;
     }
 
 }
