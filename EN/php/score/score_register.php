@@ -5,11 +5,11 @@ $spelerPos = $_SESSION['Speler_pos'];
 $hole = $_GET['hole'];
 $groepID = $_SESSION['groupID'];
 if ($score > 10) {
-    $_SESSION['errors'] = "You can't kick the ball more then 10 times <br>";
+    $_SESSION['errors'] = "Your score can't be more then 10.<br>";
     header('location:Score-front-end.php?hole=' . $hole);
 }
 if ($score <= 0) {
-    $_SESSION['errors'] = 'Bruh. <br>';
+    $_SESSION['errors'] = 'Something went wrong. <br>';
     header('location:Score-front-end.php?hole=' . $hole);
 } else {
     $alter_query = "update spellen set Speler$spelerPos= $score where groupID = $groepID and Hole = $hole";
