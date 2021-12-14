@@ -34,7 +34,7 @@
     ?>
     <h2 class="title">Insert your score</h2>
     <div class="input-field">
-        <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" name="speler_score"
+        <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" minlength="1" maxlength="2" min="1" max="10" name="speler_score"
                id="spelerScore">
     </div>
     <br>
