@@ -17,7 +17,7 @@ $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$g
 ?>
 <div class="container">
     <div class="wrapper">
-        <h2 class="title">Voer team naam in:</h2>
+        <h2 class="title">Wat wordt uw team naam?</h2>
         <?php
         session_start();
         if (isset($_SESSION)) {
@@ -43,7 +43,7 @@ $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$g
             <form action="Team-naam-back.php" method="post">
                 <input class="input-text" type="text" placeholder='Team-naam' name="TeamNaam"/>
                 <div class="fast-wrapper">
-                    <input class="btn" type="submit" value="Submit"/>
+                    <input class="btn" type="submit" value="Verzenden"/>
                     <a href="../../index.php" style="color: white;">
                         <input class="btn" style="text-align: center;" value="Naar home">
                     </a>
