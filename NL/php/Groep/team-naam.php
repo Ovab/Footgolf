@@ -36,7 +36,7 @@ $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$g
             while ($row = mysqli_fetch_assoc($select_naam)) {
                 $GroepNaam = $row['GroepNaam'];
             }
-            echo "<br><div style='text-align: center'> <h2> Huidige team naam:<br>" . $GroepNaam . "<br><br></h2></div>";
+            echo "<br><div style='text-align: center'> <h2> Huidige team naam:<br>| " . $GroepNaam . " |<br><br></h2></div>";
         }
         ?>
         <div class="input-field">
@@ -44,13 +44,11 @@ $select_naam = mysqli_query($conn, "Select GroepNaam from groep where groupID=$g
                 <input class="input-text" type="text" placeholder='Team-naam' name="TeamNaam"/>
                 <div class="fast-wrapper">
                     <input class="btn" type="submit" value="Submit"/>
+                    <a href="../../index.php" style="color: white;">
+                        <input class="btn" style="text-align: center;" value="Naar home">
+                    </a>
                 </div>
             </form>
-            <div style="text-decoration: none; margin-top: 70%;">
-                <a href="../../index.php" style="color: white;">
-                    <input class="btn" style="text-align: center; margin-right: 100%" value="Naar home">
-                </a>
-            </div>
         </div>
     </div>
 </div>
