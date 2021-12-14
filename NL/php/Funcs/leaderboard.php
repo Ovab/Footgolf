@@ -57,10 +57,10 @@
                         break;
                     }
                 }
-                echo "<a href='../../index.php' class='btn' style='text-decoration: none; text-align: center; font-size: large'>Naar home</a>";
+                echo "<a href='../../index.php' class='btn' style='text-decoration: none; text-align: center; font-size: large'>Home</a>";
             }
         } else {
-            echo "<h1>Dat hoorde je niet te doen, je hoort uberhaupt terug gestuurd te worden naar de home pagina</h1>";
+            echo "<h1>Er ging iets fout, probeer het opnieuw.</h1>";
             header("location:../../index.php");
         }
         ?>
