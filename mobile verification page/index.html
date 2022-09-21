@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-            crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
     />
     <title>Mobile Verification</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="upper">
-
+      <div class="upper">
         <!--<img src="img/mobile.png" alt="#"> <br>-->
-            <i class="fa fa-chevron-left"></i>
-            <h1>Mobile Code Verification</h1>
+        <i class="fa fa-chevron-left"></i>
+        <h1>Mobile Code Verification</h1>
         <!--<h3>Your code has been sent *******421.</h3> <br>-->
-        </div>
+      </div>
 
-        <h3>CONFIRMATION</h3>
-        <label>Please type the verification code <br> sent to +316*****893</label> <br>
-        <form method="get" action="#">
-        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required>
-        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required>
-        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required>
-        <input type="text" class="codeinvoer" maxlength="1" data-maxlength="1" required> <br>
-        <label><a href="#">Resend code > </a></label> <br>
-        <input class="vbtn" type="submit" value="Verify">
-        </form>
+      <h3>CONFIRMATION</h3>
+      <label
+        >Please type the verification code <br />
+        sent to +316*****893</label
+      >
+      <br />
+      <form method="get" action="#">
+        <input
+          type="text"
+          class="codeinvoer"
+          maxlength="1"
+          data-maxlength="1"
+          required
+        />
+        <input
+          type="text"
+          class="codeinvoer"
+          maxlength="1"
+          data-maxlength="1"
+          required
+        />
+        <input
+          type="text"
+          class="codeinvoer"
+          maxlength="1"
+          data-maxlength="1"
+          required
+        />
+        <input
+          type="text"
+          class="codeinvoer"
+          maxlength="1"
+          data-maxlength="1"
+          required
+        />
+        <br />
+        <label><a href="#">Resend code > </a></label> <br />
+        <input class="vbtn" type="submit" value="Verify" />
+      </form>
     </div>
-<script>
-    $(document).ready(function(){
+    <script>
+      $(document).ready(function () {
         $(".codeinvoer").keyup(function () {
-            $this=$(this);
-            if ($this.val().length >=$this.data("maxlength")) {
-                if($this.val().length>$this.data("maxlength")){
-                    $this.val($this.val().substring(0,4));
-                }
-                $this.next(".codeinvoer").focus();
+          $this = $(this);
+          if ($this.val().length >= $this.data("maxlength")) {
+            if ($this.val().length > $this.data("maxlength")) {
+              $this.val($this.val().substring(0, 4));
             }
+            $this.next(".codeinvoer").focus();
+          }
         });
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>
