@@ -36,7 +36,7 @@ h2 {
 
 .title {
     text-align: center;
-    margin: 0 auto 80px;
+    margin: -20px 0 80px;
     position: relative;
     line-height: 60px;
     color: #555;
@@ -91,6 +91,7 @@ h2 {
     font-size: 12px;
     justify-content: center;
     align-items: center;
+    margin-top:-40px;
 }
 
 h2 {
@@ -326,6 +327,9 @@ h2 {
 @media only screen and (max-width: 850px) {
     .container p {
         font-size: 8px;
+    }
+    .title {
+        margin: -5% 0 80px;
     }
 }
 
