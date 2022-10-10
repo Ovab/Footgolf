@@ -7,7 +7,7 @@ $sql2 = "select SPELER_AANTAL, SPELER1, SPELER2, SPELER3, SPELER4 from groep whe
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
 if ($result->num_rows > 0 && $result2->num_rows > 0) {
-// output data
+    // output data
     while ($row2 = $result2->fetch_assoc()) {
         $speler_aantal = $row2['SPELER_AANTAL'];
         $naam1 = $row2['SPELER1'];
@@ -23,6 +23,7 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
 
         //echo de data, dit refreshed elke paar sec (zie Score-front-end.php in script tag voor cooldown
         echo "GroupID: " . $groepID . "<br>";
+        echo "SpelID: " . $row["SpelID"] . " <br> <br>";
         echo $naam1 . ": " . $Score1 . "<br>";
     }
 

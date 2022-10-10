@@ -15,6 +15,7 @@
         session_start();
         $hole = $_GET['hole'];
         $_SESSION["cur_hole"] = $hole;
+        echo $_SESSION["cur_hole"];
         //zet php error reporting uit
         //error_reporting(E_ERROR | E_PARSE);
         //maar het session variable een normale voor reasons
