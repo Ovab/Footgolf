@@ -68,3 +68,20 @@ function backgroundFunc(x) {
         container.style.background = "#fff";
     }
 }
+
+//zet de juiste ghole card klaar
+function presetCards(ghole) {
+    for (let i = 1; i < ghole; i++) {
+        next();
+    }
+}
+
+var cardsContainer = document.getElementById("container");
+function showCards() {
+    cardsContainer.style.display = "block";
+    setTimeout(function() { cardsContainer.style.opacity = "1"; }, 1);
+}
+function hideCards() {
+    cardsContainer.style.opacity = "0";
+    setTimeout(function() { cardsContainer.style.display = "none"; }, 1000);
+}

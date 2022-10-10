@@ -15,7 +15,7 @@
         session_start();
         $hole = $_GET['hole'];
         $_SESSION["cur_hole"] = $hole;
-        echo $_SESSION["cur_hole"];
+        echo "<div class='title'><h1>Ghole </h1><h1>".$hole."</h1></div>";
         //zet php error reporting uit
         //error_reporting(E_ERROR | E_PARSE);
         //maar het session variable een normale voor reasons
@@ -74,7 +74,7 @@
         $nextHole = $hole + 1;
         $prevHole = $hole - 1;
         if ($hole != 1) {
-            echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Vorige Hole' style='margin-top: 30%'></a>";
+            echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Vorige Hole'></a>";
         }
         if ($holes - 1 >= $hole) {
             echo "<a href='Score-front-end.php?hole=$nextHole' ><input class='btn' type='submit' value='Volgende Hole'></a>";
@@ -82,7 +82,11 @@
             echo "<a href='../../leaderboard/Teamleaderboard.php'> <input class='btn' type='submit' value='Naar teamscores'> </a> ";
         }
         ?>
+
+        <div class="showCards"><button class="btn" onclick="showCards()">Laat uitleg zien</button></div>
+
         <div id="container">
+            <div><button class="hideCards" onclick="hideCards()"><img src="../../../img/close.png"</button></div>
             <div class="container_boxes">
                 <!-- Card 1 -->
                 <div class="card card_1" id="card1">
@@ -297,8 +301,8 @@
         </div>
 
 
-
-        <script src="../../../EN/php/score/java.js"></script>
+        <script src='../../../EN/php/score/java.js'></script>
+        <?php echo "<script>presetCards(".$_SESSION['cur_hole'].")</script>" ?>
     </div>
 </body>
 
