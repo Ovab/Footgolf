@@ -76,7 +76,9 @@ function presetCards(ghole) {
     }
 }
 
+
 var cardsContainer = document.getElementById("container");
+
 function showCards() {
     cardsContainer.style.display = "block";
     setTimeout(function() { cardsContainer.style.opacity = "1"; }, 1);
