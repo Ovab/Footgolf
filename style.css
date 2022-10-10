@@ -9,14 +9,15 @@
 body,
 input {
   font-family: "Poppins", sans-serif;
+  overflow:hidden;
 }
 
 .container {
   position: relative;
+  margin-top:200px;
   width: 100%;
   background-color: #fff;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .forms-container {
@@ -309,6 +310,7 @@ form.sign-in-form {
   .container {
     min-height: 800px;
     height: 100%;
+    margin-top:0;
   }
   .signin-signup {
     width: 100%;
@@ -409,6 +411,11 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
+
+  .container {
+    margin-top:0;
+  }
+
   form {
     padding: 0 1.5rem;
   }
