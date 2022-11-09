@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 100%;
     transition: 0.3s ease-in;
+    overflow:hidden;
 }
 
 .wrapper {
@@ -21,7 +22,16 @@ body {
     height: 100vh;
     text-align: center;
 }
-
+.title {
+    margin-top:20px;
+}
+.title h1 {
+    display:inline;
+    font-size:50px;
+}
+.title h1:nth-child(2) {
+    color:#ec1c24;
+}
 .btns-wrapper {
     display: flex;
     text-align: center;
@@ -60,6 +70,10 @@ h2 {
     color: #23A455;
 }
 
+.showCards {
+    margin-top:30px;
+}
+
 .icon {
     margin-top: 0.5em;
     width: 2em;
@@ -69,7 +83,6 @@ h2 {
 
 
 .container {
-    display: flex;
     text-align: center;
     font-size: 12px;
     justify-content: center;
@@ -330,7 +343,6 @@ input::-webkit-inner-spin-button {
     background: #e1306c;
 }
 
-
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 body {
@@ -339,7 +351,10 @@ body {
     font-family: "Ubuntu", sans-serif;
 }
 #container {
-    position: relative;
+    display:none;
+    opacity: 0;
+    position:fixed;
+    top:0;
     width: 100%;
     height: 100vh;
     background: #fff;
@@ -393,6 +408,18 @@ p {
     left: 40px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.hideCards {
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    position:fixed;
+    top:10px;
+    right:10px;
+}
+.hideCards img {
+    width:60px;
 }
 
 /* CARD 1 */
@@ -801,5 +828,4 @@ p {
 @media (max-width: 570px) {
 
 }
-
 

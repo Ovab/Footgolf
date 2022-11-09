@@ -23,11 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6847c13c-7917-43d5-9ea2-93282e8b38f1" name="Default Changelist" comment="de join groep mooier gemaakt, en de mappen in de juiste volgorde gezet">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/Groep/join_group_backend.php" afterDir="false" />
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/EN/php/score/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/score/java.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EN/php/score/style_score.css" beforeDir="false" afterPath="$PROJECT_DIR$/EN/php/score/style_score.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/Score-front-end.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NL/php/score/style_score.css" beforeDir="false" afterPath="$PROJECT_DIR$/NL/php/score/style_score.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/NL/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/NL/index.css" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +69,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1xkhGgYISGTYIXmWB8KW070rwc5" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -78,7 +82,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NL/php/score" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,11 +101,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Footgolf\NL\php\score" />
       <recent name="$PROJECT_DIR$/EN" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL\php" />
       <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\EN" />
-      <recent name="C:\Users\bavof\Documents\GitHub\Footgolf\NL" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
@@ -197,6 +206,12 @@
       <workItem from="1638257550478" duration="14527000" />
       <workItem from="1638435216909" duration="14000" />
       <workItem from="1638873697073" duration="3961000" />
+<<<<<<< Updated upstream
+      <workItem from="1665410209126" duration="3657000" />
+=======
+      <workItem from="1665388802696" duration="12000" />
+      <workItem from="1665392398485" duration="4212000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="update vlaggen">
       <created>1637062208666</created>

@@ -15,7 +15,7 @@
         session_start();
         $hole = $_GET['hole'];
         $_SESSION["cur_hole"] = $hole;
-        echo $_SESSION["cur_hole"];
+        echo "<div class='title'><h1>Ghole </h1><h1>".$hole."</h1></div>";
         //zet php error reporting uit
         //error_reporting(E_ERROR | E_PARSE);
         //maar het session variable een normale voor reasons
@@ -74,7 +74,7 @@
         $nextHole = $hole + 1;
         $prevHole = $hole - 1;
         if ($hole != 1) {
-            echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Vorige Hole' style='margin-top: 30%'></a>";
+            echo "<a href='Score-front-end.php?hole=$prevHole' ><input class='btn' type='submit' value='Vorige Hole'></a>";
         }
         if ($holes - 1 >= $hole) {
             echo "<a href='Score-front-end.php?hole=$nextHole' ><input class='btn' type='submit' value='Volgende Hole'></a>";
@@ -82,7 +82,11 @@
             echo "<a href='../../leaderboard/Teamleaderboard.php'> <input class='btn' type='submit' value='Naar teamscores'> </a> ";
         }
         ?>
+
+        <div class="showCards"><button class="btn" onclick="showCards()">Laat uitleg zien</button></div>
+
         <div id="container">
+            <div><button class="hideCards" onclick="hideCards()"><img src="../../../img/close.png"</button></div>
             <div class="container_boxes">
                 <!-- Card 1 -->
                 <div class="card card_1" id="card1">
@@ -104,7 +108,7 @@
                     <!-- <p>Play the ball through the 3 concrete rings. OBSTACLE MUST BE TAKEN.
                         Tip: Try to play through the middle ring
                         so that the ball rolls directly into the hole.</p> -->
-                    <p>Speel de bal door de 3 concrete ringen. DE OBSTACEELS MOETEN GENOMEN WORDEN. Tip: probeer de bal
+                    <p>Speel de bal door de 3 concrete ringen. DE OBSTACELS MOETEN GENOMEN WORDEN. <br><br>Tip: probeer de bal
                         door de middelste ring te spelen.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -117,7 +121,7 @@
                     <!-- <p>A real job for a left footed player. exterior
                         right is also possible of course.
                         Tip: Watch out for the ditches.</p> -->
-                    <p>Echt een baan voor links benige mensen. buitenlangs recht is ook een mogelijkheid. Tip: kijk uit
+                    <p>Echt een baan voor links benige mensen. buitenlangs recht is ook een mogelijkheid. <br><br>Tip: kijk uit
                         voor kuilen.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -130,7 +134,7 @@
                     <!-- <p>Carefully play the ball Zig Zag along the fences. OBSTACLE MUST BE TAKEN.
                         Tip: Use the entire imaginary line of
                         the house to put your ball down.</p> -->
-                    <p>Speel de bal voorzichtig zich zaggend langs de hekken. OBSTAKELS MOETEN GENOMEN WORDEN/ Tip: </p>
+                    <p>Speel de bal voorzichtig zich zaggend langs de hekken. OBSTAKELS MOETEN GENOMEN WORDEN/ <br><br>Tip: </p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -141,7 +145,7 @@
                     <!-- <p>Just hit the ball for 100 meters.
                         Tip: Do not play the ball too much along the
                         left hand side.</p> -->
-                    <p>Schiet de bal 100 meter ver. Tip: Schiet de bal niet te veel aan de linker kant.</p>
+                    <p>Schiet de bal 100 meter ver. <br><br>Tip: Schiet de bal niet te veel aan de linker kant.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -152,7 +156,7 @@
                     <!-- <p>A precision track with 2 right angles. Play the ball along or over the logs.
                         Tip: Don't play the ball too hard, with flexibility
                         are you okay..</p> -->
-                    <p>Een baan met twee rechten hoeken. Speel de bal langs of over de stammen. Tip: Schiet de bal niet
+                    <p>Een baan met twee rechten hoeken. Speel de bal langs of over de stammen. <br><br>Tip: Schiet de bal niet
                         te hard</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -165,7 +169,7 @@
                         Tip: Don't play the ball too hard, with flexibility
                         you make it.</p> -->
                     <p>A precision track with 2 right angles. Play the ball along or over the logs.
-                        Tip: Don't play the ball too hard, with flexibility
+                        <br><br>Tip: Don't play the ball too hard, with flexibility
                         you make it.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -175,7 +179,7 @@
                     <div class="image"></div>
                     <h2>Ghole 8</h2>
                     <p>Pass the 3 wooden partitions in your own way and put the ball in the concrete ring.
-                        Tip: Do not try from too great a distance
+                        <br><br>Tip: Do not try from too great a distance
                         to walk.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -187,7 +191,7 @@
                     <!-- <p>Pass the 3 wooden partitions in your own way and put the ball in the concrete ring.
                         Tip: Do not try from too great a distance
                         to walk.</p> -->
-                    <p>Passeer de 3 houten partities op je eigen manier en stop de bal in de betonnen ring. Tip: Probeer
+                    <p>Passeer de 3 houten partities op je eigen manier en stop de bal in de betonnen ring. <br><br>Tip: Probeer
                         het niet van te ver.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -199,7 +203,7 @@
                     <!-- <p>Play the ball over the water and then along or over the tree trunks.
                         Tip: First put the ball ready for the water,
                         across the water in 1 go is almost impossible.</p> -->
-                    <p>Speel de bal over het water en dan langs de boom stronken. Tip: plaats de bal eerst klaar voor de
+                    <p>Speel de bal over het water en dan langs de boom stronken. <br><br>Tip: plaats de bal eerst klaar voor de
                         water obstakel</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -211,7 +215,7 @@
                     <!-- <p>Play the ball through i of the 3 tractor tires. OBSTACLE MUST BE TAKEN.
                         Tip: A 'Goal in One' is possible if you touch the ball
                         plays loud enough through the middle band.</p> -->
-                    <p>Speel de bal door 1 van de 3 tractor banden. OBSTAKELS MOETEN GENOMEN WORDEN. Tip: </p>
+                    <p>Speel de bal door 1 van de 3 tractor banden. OBSTAKELS MOETEN GENOMEN WORDEN. <br><br>Tip: </p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -221,7 +225,7 @@
                     <h2>Ghole 12</h2>
                     <!-- <p>Pass the ball under all the tree trunks. OBSTACLE MUST BE TAKEN.
                         Tip: Don't play the ball too hard.</p> -->
-                    <p>Passeer de bal onder al de boom stonken. OBSTAKELS MOETEN GENOMEN WORDEN. Tip: Speel de bal niet
+                    <p>Passeer de bal onder al de boom stonken. OBSTAKELS MOETEN GENOMEN WORDEN. <br><br>Tip: Speel de bal niet
                         te hard.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -243,7 +247,7 @@
                     <!-- <p>Kick off on a raised platform towards the green.
                         Tip: Be careful when shooting from the
                         elevation.</p> -->
-                    <p>Schiet van een verhoogd platform richting het groenen. Tip: Wees voorzichtig wanneer je op een
+                    <p>Schiet van een verhoogd platform richting het groenen. <br><br>Tip: Wees voorzichtig wanneer je op een
                         verhoging schiet.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
@@ -254,7 +258,7 @@
                     <h2>Ghole 15</h2>
                     <!-- <p>Play the ball along or over the logs.
                         Tip: Don't play the ball too hard.</p> -->
-                    <p>Speel de bal over of langs de stronken. Tip: Schiet de bal niet te hard.</p>
+                    <p>Speel de bal over of langs de stronken. <br><br>Tip: Schiet de bal niet te hard.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -265,7 +269,7 @@
                     <!-- <p>The 'Goal in One' track.
                         Tip: By air is more likely than
                         on the ground.</p> -->
-                    <p>De 'Goal in One' baan. Tip: Door de lucht lukt beter dan over de grond.</p>
+                    <p>De 'Goal in One' baan. <br><br>Tip: Door de lucht lukt beter dan over de grond.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -275,7 +279,7 @@
                     <h2>Ghole 17</h2>
                     <!-- <p>A left and right leg job.
                         Tip: Just hit the ball.</p> -->
-                    <p>Een baan voor links en rechts benige mensen. Tip: schiet de bal.</p>
+                    <p>Een baan voor links en rechts benige mensen. <br><br>Tip: schiet de bal.</p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -288,7 +292,7 @@
                         Tip: The ball serves the wall and the in 1 go
                         to pass goalkeeper.</p> -->
                     <p>Speel de bal over of in de doos met de oranje berichten. Pak daarna de bal op en leg hem op de
-                        stip. Tip: </p>
+                        stip. <br><br>Tip: </p>
                     <div class="prev" onclick="prev()">PREV</div>
                     <div class="next" onclick="next()">NEXT</div>
                 </div>
@@ -297,8 +301,8 @@
         </div>
 
 
-
-        <script src="../../../EN/php/score/java.js"></script>
+        <script src='../../../EN/php/score/java.js'></script>
+        <?php echo "<script>presetCards(".$_SESSION['cur_hole'].")</script>" ?>
     </div>
 </body>
 
