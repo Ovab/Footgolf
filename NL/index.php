@@ -96,7 +96,6 @@
             </a>
         </div>
 
-
         <div class="container containter2" id="leaderboard">
             <a href="php/Funcs/leaderboard.php?holes=18" style="text-decoration: none">
                 <div class="box grouptings"><img class="icon" src="img/Footgolf-Badge-1.png"><br>

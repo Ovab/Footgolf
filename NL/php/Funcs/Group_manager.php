@@ -27,6 +27,7 @@
 
                 <?php
                 include_once '../../connect.php';
+
                 if ($_SESSION['groepLead'] == true) {
                     if (isset($_SESSION)) {
                         error_reporting(E_ERROR | E_PARSE);
@@ -67,7 +68,7 @@
                           border-width: 2px;
                           }
                           </style>
-                          
+
                           <div class='tablewrapper'>
                              <table>
                              <th colspan='90%'>Groep-naam: $groepnaam </th>
@@ -80,29 +81,45 @@
                             <tr></div>";
                         if (isset($naam2)) {
                             echo "<th colspan='50%'>&nbsp$naam2&nbsp</th>
-                    <td><a href='delAccGroep.php?player=2'>Verwijderen</a> </td>
-                    <tr>";
+                        <td><a href='delAccGroep.php?player=2'>Verwijderen</a> </td>
+                        <tr>";
                         }
                         echo "<tr>";
                         if (isset($naam3)) {
                             echo "<th colspan='50%'>&nbsp$naam3&nbsp</th>
-                    <td><a href='delAccGroep.php?player=3'>Verwijderen</a> </td>
-                    <tr>";
+                        <td><a href='delAccGroep.php?player=3'>Verwijderen</a> </td>
+                        <tr>";
                         }
 
                         if (isset($naam4)) {
                             echo "<th colspan='50%'>&nbsp$naam4&nbsp</th>
-                    <td><a href='delAccGroep.php?player=4'>Verwijderen</a> </td>
-                    <tr>";
+                        <td><a href='delAccGroep.php?player=4'>Verwijderen</a> </td>
+                        <tr>";
                         }
                     } else {
                         $_SESSION['Errors'] = "Weet u zeker dat u in een groep zit?";
                     }
                 }
                 ?>
+                <!-- <div class="groep_beheer">
+                    <div class="groep_beheer_item">
+                        <div class="groep_naam">Groep naam: <?php echo $groepnaam ?></div>
+                        <div class="bewerken"><a href='../Groep/team-naam.php'>Bewerken</a></div>
+                    </div>
+                    <div class="groep_code">Groep code: <?php echo $GID ?></div>
+                    <div class="team_leden">
+                        <div class="team_leader">Team leader: <?php echo $naam1 ?></div>
+                        <div class="groep_beheer_item"><?php echo $naam2 ?></div>
+                        <div class="groep_beheer_item"><?php echo $naam3 ?></div>
+                        <div class="groep_beheer_item"><?php echo $naam4 ?></div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
+    <!-- <a href="../../index.php" style="color: white;">
+        <input class="btn" style="text-align: center;" value="Naar home">
+    </a> -->
 </body>
 
 </html>

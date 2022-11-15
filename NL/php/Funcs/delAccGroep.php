@@ -1,5 +1,5 @@
 <?php
-include_once '../connect.php';
+include_once '../../connect.php';
 $GID = $_SESSION['groupID'];
 echo $GID;
 $player = "Speler" . $_GET['player'];

@@ -3,829 +3,833 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease-in;
-    overflow:hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in;
+  /* overflow:hidden; */
 }
 
 .wrapper {
-    width: auto;
-    height: 100vh;
-    text-align: center;
+  width: auto;
+  height: 100vh;
+  text-align: center;
 }
 .title {
-    margin-top:20px;
+  margin-top: 20px;
 }
 .title h1 {
-    display:inline;
-    font-size:50px;
+  display: inline;
+  font-size: 50px;
 }
 .title h1:nth-child(2) {
-    color:#ec1c24;
+  color: #ec1c24;
 }
 .btns-wrapper {
-    display: flex;
-    text-align: center;
-    font-size: 12px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 .title {
-    font-size: 2.2rem;
-    color: #444;
-    margin-bottom: 10px;
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
 }
 
 .btn {
-    margin: auto;
-    width: 150px;
-    background-color: #23A455;
-    border: none;
-    outline: none;
-    height: 49px;
-    border-radius: 49px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.5s;
+  margin: auto;
+  width: 150px;
+  background-color: #23a455;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #23A455;
+  background-color: #fff;
+  color: #23a455;
 }
 
 .showCards {
-    margin-top:30px;
+  margin-top: 30px;
 }
 
 .icon {
-    margin-top: 0.5em;
-    width: 2em;
-    height: auto;
-    padding: 0;
+  margin-top: 0.5em;
+  width: 2em;
+  height: auto;
+  padding: 0;
 }
 
+.margin-top {
+  margin-top: 20px;
+}
 
 .container {
-    text-align: center;
-    font-size: 12px;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .input-field {
-    max-width: 380px;
-    width: 100%;
-    background-color: #f0f0f0;
-    margin: auto;
-    height: 55px;
-    border-radius: 55px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: auto;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
 }
 
 .input-field i {
-    text-align: center;
-    line-height: 55px;
-    color: #acacac;
-    transition: 0.5s;
-    font-size: 1.1rem;
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
 }
 
 .input-field input {
-    margin: 0 10px;
-    min-width: 360px;
-    max-width: 375px;
-    background: none;
-    outline: none;
-    border: none;
-    line-height: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #333;
+  margin: 0 10px;
+  min-width: 360px;
+  max-width: 375px;
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 .error-text {
-    color: #721c24;
-    padding: 8px 10px;
-    text-align: center;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
-    margin-bottom: 10px;
-    box-shadow: 0 0 12px black;
-
+  color: #721c24;
+  padding: 8px 10px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  box-shadow: 0 0 12px black;
 }
 
 .input-field input::placeholder {
-    color: #aaa;
-    font-weight: 500;
-    width: 100%;
+  color: #aaa;
+  font-weight: 500;
+  width: 100%;
 }
 
 .box {
-    padding: 1em;
-    font-weight: 600;
-    line-height: 1.2;
-    position: relative;
-    width: 200px;
-    height: 230px;
-    background: #EC1C24;
-    border-radius: 20px;
-    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+  padding: 1em;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background: #ec1c24;
+  border-radius: 20px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     6px 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid white;
-    margin: 10px;
-    transition: 0.2s ease-in;
-    color: white;
+  border: 1px solid white;
+  margin: 10px;
+  transition: 0.2s ease-in;
+  color: white;
 }
 
 .box:hover {
-    cursor: pointer;
-    background: white;
-    color: #EC1C24;
-    box-shadow: 0 0 20px #EC1C24;
+  cursor: pointer;
+  background: white;
+  color: #ec1c24;
+  box-shadow: 0 0 20px #ec1c24;
 }
 
 .box2 {
-    padding: 1em;
-    font-weight: 600;
-    line-height: 1.2;
-    position: relative;
-    width: 200px;
-    height: 230px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+  padding: 1em;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     6px 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid white;
-    margin: 10px;
-    transition: 0.2s ease-in;
-    color: #EC1C24;
+  border: 1px solid white;
+  margin: 10px;
+  transition: 0.2s ease-in;
+  color: #ec1c24;
 }
 
 .box2:hover {
-    cursor: pointer;
-    background: white;
-    color: #EC1C24;
-    box-shadow: 0 0 20px #EC1C24;
+  cursor: pointer;
+  background: white;
+  color: #ec1c24;
+  box-shadow: 0 0 20px #ec1c24;
 }
 
 .box3 {
-    padding: 1em;
-    font-weight: 600;
-    line-height: 1.2;
-    position: relative;
-    width: 200px;
-    height: 230px;
-    background: #EC1C24;
-    border-radius: 20px;
-    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+  padding: 1em;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background: #ec1c24;
+  border-radius: 20px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     6px 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid white;
-    margin: 10px;
-    transition: 0.2s ease-in;
-    color: white;
+  border: 1px solid white;
+  margin: 10px;
+  transition: 0.2s ease-in;
+  color: white;
 }
 
 .box3:hover {
-    cursor: pointer;
-    background: white;
-    color: #EC1C24;
-    box-shadow: 0 0 20px #EC1C24;
+  cursor: pointer;
+  background: white;
+  color: #ec1c24;
+  box-shadow: 0 0 20px #ec1c24;
 }
 
-
 .wrapper1 .icon1 {
-    margin: 0 20px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper1 .icon1 span {
-    display: block;
-    height: 60px;
-    width: 60px;
-    background: #fff;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper1 .icon1 span i {
-    line-height: 60px;
-    font-size: 25px;
+  line-height: 60px;
+  font-size: 25px;
 }
 
 .wrapper1 .icon1 .tooltip {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background: #fff;
-    color: #fff;
-    padding: 10px 18px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 25px;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper1 .icon1:hover .tooltip {
-    top: -70px;
-    opacity: 1;
-    pointer-events: auto;
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .icon1 .tooltip:before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #fff;
-    left: 50%;
-    bottom: -6px;
-    transform: translateX(-50%) rotate(45deg);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper1 .icon1:hover span {
-    color: #fff;
+  color: #fff;
 }
 
 .wrapper1 .icon1:hover span,
 .wrapper1 .icon1:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 
 .wrapper1 .facebook:hover span,
 .wrapper1 .facebook:hover .tooltip,
 .wrapper1 .facebook:hover .tooltip:before {
-    background: #3B5999;
+  background: #3b5999;
 }
 
 .wrapper1 .twitter:hover span,
 .wrapper1 .twitter:hover .tooltip,
 .wrapper1 .twitter:hover .tooltip:before {
-    background: #46C1F6;
+  background: #46c1f6;
 }
 
 .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .card {
-    padding: 1em;
-    font-weight: 600;
-    line-height: 1.2;
-    position: relative;
-    width: 200px;
-    height: 230px;
-    background: #EC1C24;
-    border-radius: 20px;
-    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+  padding: 1em;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background: #ec1c24;
+  border-radius: 20px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     6px 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid white;
-    margin: 10px;
-    transition: 0.2s ease-in;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
+  border: 1px solid white;
+  margin: 10px;
+  transition: 0.2s ease-in;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
 }
-
 
 .wrapper1 .instagram:hover span,
 .wrapper1 .instagram:hover .tooltip,
 .wrapper1 .instagram:hover .tooltip:before {
-    background: #e1306c;
+  background: #e1306c;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 #container {
-    display:none;
-    opacity: 0;
-    position:fixed;
-    top:0;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    overflow: hidden;
-    transition: 1s;
+  display: none;
+  opacity: 0;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  transition: 1s;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
 .card {
-    position: absolute;
-    left: 50%;
-    top: 100px;
-    transform: translateX(-50%);
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  padding: 20px;
 }
 .image {
-    width: 140px;
-    height: 210px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 40px auto;
+  width: 140px;
+  height: 210px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px auto;
 }
 h2 {
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 0;
-    user-select: none;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+  user-select: none;
 }
 p {
-    margin-top: 0;
-    font-weight: 200;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.64);
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 100px;
-    user-select: none;
+  margin-top: 0;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.64);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+  user-select: none;
 }
 .next {
-    position: absolute;
-    bottom: 50px;
-    right: 40px;
-    font-weight: 500;
-    cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  font-weight: 500;
+  cursor: pointer;
 }
 .prev {
-    position: absolute;
-    bottom: 50px;
-    left: 40px;
-    font-weight: 500;
-    cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .hideCards {
-    border:none;
-    background:transparent;
-    cursor:pointer;
-    position:fixed;
-    top:10px;
-    right:10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 .hideCards img {
-    width:60px;
+  width: 60px;
 }
 
 /* CARD 1 */
 .card_1 {
-    background: #f6f6f6;
-    transition: 1s;
-
+  background: #f6f6f6;
+  transition: 1s;
 }
 .card_1 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_1_0.png");
-
+  background-image: url("../../../img/Footgolf-Holes-GR_1_0.png");
 }
 .card_1 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_1 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_1 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 /* CARD 2 */
 .card_2 {
-    background: #f6f6f6;
-    margin: 1200px;
-    opacity: 0;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: 1200px;
+  opacity: 0;
+  transition: 1.4s;
 }
 .card_2 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_2.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_2.png");
 }
 .card_2 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_2 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_2 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_2.active {
-    opacity: 1;
-    margin: 0;
+  opacity: 1;
+  margin: 0;
 }
 
 /* CARD 3 */
 .card_3 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_3 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_3.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_3.png");
 }
 .card_3 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_3 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_3 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_3.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 4 */
 .card_4 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_4 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_4.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_4.png");
 }
 .card_4 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_4 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_4 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_4.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 5 */
 .card_5 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_5 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_5.png");
-
+  background-image: url("../../../img/Footgolf-Holes-GR_5.png");
 }
 .card_5 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_5 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_5 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_5.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 6 */
 .card_6 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_6 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_6.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_6.png");
 }
 .card_6 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_6 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_6 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_6.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 7 */
 .card_7 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_7 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_7.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_7.png");
 }
 .card_7 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_7 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_7 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_7.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 8 */
 .card_8 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_8 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_8.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_8.png");
 }
 .card_8 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_8 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_8 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_8.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 9 */
 .card_9 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_9 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_9.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_9.png");
 }
 .card_9 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_9 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_9 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_9.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 10 */
 .card_10 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_10 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_10.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_10.png");
 }
 .card_10 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_10 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_10 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_10.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 11 */
 .card_11 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_11 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_11.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_11.png");
 }
 .card_11 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_11 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_11 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_11.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 12 */
 .card_12 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_12 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_12.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_12.png");
 }
 .card_12 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_12 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_12 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_12.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 13 */
 .card_13 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_13 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_13.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_13.png");
 }
 .card_13 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_13 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_13 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_13.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 14 */
 .card_14 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_14 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_14.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_14.png");
 }
 .card_14 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_14 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_14 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_14.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 15 */
 .card_15 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_15 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_15.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_15.png");
 }
 .card_15 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_15 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_15 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_15.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 16 */
 .card_16 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_16 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_16.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_16.png");
 }
 .card_16 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_16 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_16 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_16.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 17 */
 .card_17 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_17 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_9.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_9.png");
 }
 .card_17 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_17 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_17 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_17.active {
-    margin: 0;
+  margin: 0;
 }
 
 /* CARD 9 */
 .card_18 {
-    background: #f6f6f6;
-    margin: -1200px;
-    transition: 1.4s;
+  background: #f6f6f6;
+  margin: -1200px;
+  transition: 1.4s;
 }
 .card_18 .image {
-    background-image: url("../../../img/Footgolf-Holes-GR_18.png");
+  background-image: url("../../../img/Footgolf-Holes-GR_18.png");
 }
 .card_18 h2 {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_18 .next {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_18 .prev {
-    color: #ec1c24;
+  color: #ec1c24;
 }
 .card_18.active {
-    margin: 0;
+  margin: 0;
 }
 
-
 @media (max-width: 870px) {
-    .input-field {
-        width: 100%;
-    }
+  .input-field {
+    width: 100%;
+  }
 }
 
 @media (max-width: 570px) {
-
 }
-
