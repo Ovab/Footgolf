@@ -9,12 +9,12 @@
 body,
 input {
   font-family: "Poppins", sans-serif;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .container {
   position: relative;
-  margin-top:200px;
+  margin-top: 200px;
   width: 100%;
   background-color: #fff;
   min-height: 100%;
@@ -69,7 +69,7 @@ i {
 }
 .buttoneng {
   position: absolute;
-  top: 310%;
+  top: 180%;
   border: 2px solid #fff;
   border-radius: 49px;
   width: 150px;
@@ -192,6 +192,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #ec1c24;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -253,7 +254,7 @@ form.sign-in-form {
 }
 
 .btn.transparent {
-  margin: 0;
+  margin: 20px 0;
   background: none;
   border: 2px solid #fff;
   width: 130px;
@@ -310,7 +311,7 @@ form.sign-in-form {
   .container {
     min-height: 800px;
     height: 100%;
-    margin-top:0;
+    margin-top: 0;
   }
   .signin-signup {
     width: 100%;
@@ -411,9 +412,8 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
-
   .container {
-    margin-top:0;
+    margin-top: 0;
   }
 
   form {

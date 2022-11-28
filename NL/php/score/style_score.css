@@ -21,9 +21,10 @@ body {
   width: auto;
   height: 100vh;
   text-align: center;
+  background-color: #a5ffc8;
 }
 .title {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .title h1 {
   display: inline;

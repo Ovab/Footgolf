@@ -17,7 +17,7 @@ function RandomString($length): string
 
 include_once "../../connect.php";
 $email = $_POST['speler-email'];
-$stmt = $conn->prepare("select `Speler-email` from spelers where `Speler-email`=?");
+$stmt = $conn->prepare("SELECT `Speler-email` FROM spelers WHERE `Speler-email` = ?");
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $stmt->store_result();
@@ -60,19 +60,20 @@ try {
     }
 
     //Setup
-    $username = "fg@bavoknol.nl";//probs email adress
-    $send_from = "fg@bavoknol.nl";//probs ook username
-    $pass = "Footgolf2%21";
-    $mailServer = "mail.mijndomein.nl";
-    $port = 587;//Is een int
+    $username = "kennymeijer35@gmail.com"; //probs email adress
+    $send_from = "kennymeijer@gmail.com"; //probs ook username
+    $pass = "ndyysmxiklbobnwz";
+    $mailServer = "smtp.gmail.com";
+    $port = 587; //Is een int
 
     $reciever = $email;
     //Reciever
     $reciever_naam = $reciever;
     //Content
-    $msgHTML = "<a href='footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand'>Klik deze link om uw email te bevestigen<br></a>";
+    // $msgHTML = "<a href='footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand'>Klik deze link om uw email te bevestigen<br></a>";
+    $msgHTML = "<a href='Localhost/Footgolf/NL/php/login/code_enter-back.php?c=$rand'>Klik deze link om uw email te bevestigen<br></a>";
     $altMSG = "Klik deze link om uw email te bevestigen
-    footgolf.bavoknol.nl/NL/php/Login/code_enter-back.php?c=$rand";
+    Localhost/Footgolf/NL/php/login/code_enter-back.php?c=$rand";
 
 
     //Server settings

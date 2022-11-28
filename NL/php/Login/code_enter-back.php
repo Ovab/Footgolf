@@ -4,7 +4,7 @@ $speler = $_SESSION['user_name'];
 $verify = $_GET['c'];
 $email = $_SESSION['email'];
 $telnummer = (int)$_SESSION['telefoon'];
-if ($stmt = $conn->prepare("select verifyCode, SpelerEmail from `emailverify` where verifyCode=? and SpelerEmail=?")) {
+if ($stmt = $conn->prepare("SELECT verifyCode, SpelerEmail FROM `emailverify` WHERE verifyCode = ? AND SpelerEmail = ?")) {
     $stmt->bind_param("ss", $verify, $email);
     if ($stmt->execute()) {
         $stmt->store_result();
@@ -44,7 +44,6 @@ if ($stmt = $conn->prepare("select verifyCode, SpelerEmail from `emailverify` wh
         $_SESSION['errors'] = "Er is iets fout gegaan met de code checken, probeer aub opnieuw";
         header("location:login-front-end.php");
     }
-
 } else {
     session_destroy();
     session_start();
