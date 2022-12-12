@@ -38,8 +38,7 @@
 
         <h2 class="title">Voer uw score in:</h2>
         <div class="input-field">
-            <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" minlength="1" maxlength="2"
-                min="1" max="10" name="speler_score" id="spelerScore">
+            <input placeholder="Score" type="number" inputmode="numeric" pattern="[0-9]*" minlength="1" maxlength="2" min="1" max="10" name="speler_score" id="spelerScore">
         </div>
         <br>
         <input class="btn" type="submit" value="Verzenden">
@@ -49,25 +48,25 @@
         <script src="../../Javascript/jquery.min.js"></script>
         <!--auto refresh script -->
         <script>
-        function update_var() {
-            jQuery.ajax({
-                url: 'score_fetch.php', //Script URL.
-                method: 'GET', //Methode data doorgeven
-                success: function(answer) {
-                    jQuery('#score').html(answer); //update your div with new content ....
-                },
-                error: function() {
-                    //Iets ging fout, niet sure wat tho
-                    alert("Onbekende error met refreshen, refresh weer over 2.7 sec");
-                }
-            });
-        }
+            function update_var() {
+                jQuery.ajax({
+                    url: 'score_fetch.php', //Script URL.
+                    method: 'GET', //Methode data doorgeven
+                    success: function(answer) {
+                        jQuery('#score').html(answer); //update your div with new content ....
+                    },
+                    error: function() {
+                        //Iets ging fout, niet sure wat tho
+                        alert("Onbekende error met refreshen, refresh weer over 2.7 sec");
+                    }
+                });
+            }
 
-        update_var()
-        //Call de functie elke ~2.7 sec
-        setInterval(function() {
             update_var()
-        }, 2700);
+            //Call de functie elke ~2.7 sec
+            setInterval(function() {
+                update_var()
+            }, 2700);
         </script>
 
         <?php $holes = $_SESSION['holes'];
@@ -86,8 +85,28 @@
         <div class="showCards"><button class="btn" onclick="showCards()">Laat uitleg zien</button></div>
         <?php echo "<a href='../../index.php' ><input class='btn margin-top' type='submit' value='Home'></a>"; ?>
 
+        <div class="pop_up">
+            <div class="pop_up_wrapper">
+                <img class="pop_up_img" src="" alt="">
+                <div class="pop_up_content"></div>
+                <div class="social_media_btns">
+                    <div class="social_media_btn">
+                        <img src="../../img/facebook (1).png" alt="facebook link">
+                        <a href="https://m.facebook.com/foogolfnl/" class="social_media_text_box">Check out our
+                            Facebook!</a>
+                    </div>
+                    <div class="social_media_btn">
+                        <img src="../../img/instagram (3).png" alt="instagram link">
+                        <a href="https://instagram.com/footgolfnl?igshid=YmMyMTA2M2Y=" class="social_media_text_box">Check out our Instagram!</a>
+                    </div>
+                </div>
+                <button class="hideCards" onclick="closePopUp()"><img src="../../../img/close.png" /></button>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
         <div id="container">
-            <div class="overlay"></div>
             <div><button class="hideCards" onclick="hideCards()"><img src="../../../img/close.png" /></button></div>
             <div class="container_boxes">
                 <!-- Card 1 -->
@@ -315,7 +334,21 @@
 
 
         <script src='../../../EN/php/score/java.js'></script>
-        <?php echo "<script>presetCards(" . $_SESSION['cur_hole'] . ")</script>" ?>
+        <?php
+        echo "<script>presetCards(" . $_SESSION['cur_hole'] . ")</script>";
+        // check if $_SESSION["popUpCount"] exits, if not create it
+        $_SESSION["popUpCount"] = array();
+        if (!isset($_SESSION["popUpCount"])) {
+        }
+
+        for ($i = 0; $i <= $_SESSION["holes"]; $i++) {
+            if ($_SESSION["cur_hole"] == $i && !in_array($_SESSION["cur_hole"], $_SESSION['popUpCount'])) {
+                echo "<script>showPopUp(" . $_SESSION["cur_hole"] . ")</script>";
+                array_push($_SESSION["popUpCount"], $_SESSION["cur_hole"]);
+            }
+        }
+        // print_r($_SESSION["array"]);
+        ?>
     </div>
 </body>
 

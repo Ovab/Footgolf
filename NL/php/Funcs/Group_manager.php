@@ -50,6 +50,7 @@
                             $naam2 = $row2['Speler2'];
                             $naam3 = $row2['Speler3'];
                             $naam4 = $row2['Speler4'];
+                            $numHoles = $row2['num_holes'];
                         }
                         echo "<style>
                           table{
@@ -75,6 +76,8 @@
                              <th colspan='10%'><a href='../Groep/team-naam.php'>Bewerken</a></th>
                              <tr>
                              <th colspan='100%'>Groep-code: $GID </th><tr>
+                             <th colspan='50%'>Aantal Gholes: $numHoles</th>
+                             <th colspan='50%'><a href=''>Bewerken</a></th><tr>
                              <th colspan='100%' style='border: none'>&nbsp</th><tr>
                             <th colspan='50%'>&nbsp$naam1&nbsp</th>
                             <td colspan='50%'>De leider kan niet verwijderd worden</td>

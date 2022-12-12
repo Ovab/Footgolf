@@ -4,7 +4,7 @@ include_once '../../connect.php';
 $user_input = $_POST['GroepID'];
 //Check of data is doorgekomen
 if (!empty($user_input)) {
-    $res = mysqli_query($conn, "select groupID, `Speler_aantal`, `num_holes`, GroepNaam from groep where groupID=$user_input");
+    $res = mysqli_query($conn, "SELECT groupID, `Speler_aantal`, `num_holes`, GroepNaam FROM groep WHERE groupID = $user_input");
     if ($res) {
         global $row;
         global $player_aantal;

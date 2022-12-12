@@ -26,7 +26,7 @@
                 //print_r($_POST);
                 $GID = $_SESSION['groupID'];
                 $teamnaam = $_SESSION['teamnaam'];
-                $spellen = mysqli_query($conn, "SELECT GroepNaam,	Speler1, Speler2, Speler3,Speler4 from `spellen` where groupID=$GID");
+                $spellen = mysqli_query($conn, "SELECT GroepNaam, Speler1, Speler2, Speler3, Speler4 from `spellen` where groupID=$GID");
                 $groep = mysqli_query($conn, "SELECT Speler_aantal, Speler1, Speler2, Speler3, Speler4  from `groep` where groupID=$GID");
                 while ($row2 = mysqli_fetch_assoc($groep)) {
                     $groep_groote = $row2['Speler_aantal'];

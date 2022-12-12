@@ -3,7 +3,7 @@ include_once "../../connect.php";
 $groepID = $_SESSION['groupID'];
 $hole = $_SESSION['cur_hole'];
 $sql = "SELECT SpelID, Speler1, Speler2, Speler3, Speler4, groupID FROM spellen where groupID=$groepID and Hole=$hole";
-$sql2 = "select SPELER_AANTAL, SPELER1, SPELER2, SPELER3, SPELER4 from groep where groupID=$groepID";
+$sql2 = "SELECT SPELER_AANTAL, SPELER1, SPELER2, SPELER3, SPELER4 FROM groep WHERE groupID=$groepID";
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
 if ($result->num_rows > 0 && $result2->num_rows > 0) {

@@ -14,25 +14,107 @@ body {
   width: 100%;
   height: 100%;
   transition: 0.3s ease-in;
-  /* overflow:hidden; */
+  /* overflow: hidden; */
+  background-color: #a5ffc8;
+}
+
+.pop_up {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.pop_up_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* padding: 40px; */
+  width: 100%;
+  height: 300px;
+}
+
+.pop_up_img {
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.pop_up_content {
+  padding: 20px;
+  color: #000;
+  position: relative;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.social_media_btns {
+  display: none;
+  /* margin-top: 50px; */
+  justify-content: center;
+  gap: 15px;
+}
+
+.social_media_btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  height: 50px;
+  width: 150px;
+  font-size: 12px;
+}
+
+.social_media_btn:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.social_media_text_box {
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.social_media_btn img {
+  width: 35px;
+  height: 35px;
 }
 
 .wrapper {
   width: auto;
   height: 100vh;
   text-align: center;
-  background-color: #a5ffc8;
 }
+
 .title {
   /* margin-top: 20px; */
 }
+
 .title h1 {
   display: inline;
   font-size: 50px;
 }
+
 .title h1:nth-child(2) {
   color: #ec1c24;
 }
+
 .btns-wrapper {
   display: flex;
   text-align: center;
@@ -354,29 +436,40 @@ body {
 #container {
   display: none;
   opacity: 0;
-  /* position: fixed; */
+  position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: 1s;
 }
 
+/* .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+} */
+
 .overlay {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
 
 .card {
   position: absolute;
   left: 50%;
-  top: 100px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 300px;
   height: auto;
   border-radius: 15px;
@@ -395,6 +488,7 @@ h2 {
   margin-bottom: 0;
   user-select: none;
 }
+#score,
 p {
   margin-top: 0;
   font-weight: 200;
@@ -425,18 +519,20 @@ p {
   border: none;
   background: transparent;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 10;
 }
+
 .hideCards img {
-  width: 60px;
+  width: 25px;
 }
 
 /* CARD 1 */
 .card_1 {
   background: #f6f6f6;
-  transition: 1s;
+  transition: 1.4s;
 }
 .card_1 .image {
   background-image: url("../../../img/Footgolf-Holes-GR_1_0.png");
@@ -450,11 +546,13 @@ p {
 .card_1 .prev {
   color: #ec1c24;
 }
+.card_1.active {
+  margin: 0;
+}
 /* CARD 2 */
 .card_2 {
   background: #f6f6f6;
-  margin: 1200px;
-  opacity: 0;
+  margin: -1200px;
   transition: 1.4s;
 }
 .card_2 .image {
@@ -470,7 +568,7 @@ p {
   color: #ec1c24;
 }
 .card_2.active {
-  opacity: 1;
+  /* opacity: 1; */
   margin: 0;
 }
 

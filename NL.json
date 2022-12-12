@@ -1,0 +1,43 @@
+{
+  "frontPage": {
+    "titles": [
+      {
+        "title1": "Categories",
+        "title2": "Spelregels",
+        "title3": "Gholes",
+        "title4": "Groepen",
+        "title5": "Top scores"
+      }
+    ],
+    "btns": [
+      {
+        "btn1": "Spelregels",
+        "btn2": "Top scores",
+        "btn3": "Login",
+        "btn4": "Groepen",
+        "btn5": "Gholes"
+      }
+    ],
+    "spelregels": [
+      {
+        "card1": "De bedoeling van het spel is dat je de bal in zo min mogelijk trappen, Langs diverse hindernissen de Ghole in speelt Tijdens het spel geldt dat de bal die het verst van de Ghole af ligt, als eerste mag worden gespeeld. Het maximaal aantal per baan is 10.",
+        "card2": "Veel Plezier!",
+        "card3": "Als de hindernis gemist wordt: Leg dan de bal 3 meter voor de hindernis Als de bal via het ongemaaide gras weer in de baan komt: Leg dan de bal terug waar deze de baan verliet"
+      }
+    ],
+    "topScores": [
+      { "top1": "Top scores 18 holes", "top2": "Top scores 27 holes" }
+    ],
+    "groepen": [
+      {
+        "option1": "Join groep",
+        "option2": "Maak groep",
+        "option3": "Groep beheer"
+      }
+    ]
+  },
+  "leaderboardPage": {},
+  "loginPage": {},
+  "verificationCodePage": {},
+  "groupPage": {}
+}

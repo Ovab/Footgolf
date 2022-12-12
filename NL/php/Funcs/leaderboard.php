@@ -11,7 +11,6 @@
 
 <body>
     <div class="container">
-
         <div class="signin-signup">
             <form action="#" class="sign-in-form" method="post">
                 <?php
@@ -31,14 +30,9 @@
                     unset($errors);
                     unset($_SESSION['Errors']);
                     $random = mt_rand(8, $holes);
-                    //print_r($_POST);
                     $GID = $_SESSION['groupID'];
-                    // $spellen = mysqli_query($conn, "SELECT GroepNaam,GroepScore from `spellen` where Hole=$holes and GroepScore>=36 order by GroepScore");
                     $holesIdQuery = mysqli_query($conn, "SELECT groupID FROM `groep` WHERE num_holes = $holes");
                     $holesIds = mysqli_fetch_all($holesIdQuery);
-
-                    // $spellen = mysqli_query($conn, "SELECT GroepNaam, Speler1, Speler2, Speler3, Speler4 FROM `spellen` WHERE groupID = $result");
-                    // print_r(mysqli_fetch_all($spellen));
 
                     // Stores all the scores from each group
                     $allScores = [];
