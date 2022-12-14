@@ -14,14 +14,28 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="EN/laadscherm/index.html" class="sign-in-form">
+          <form
+            action="NL/laadscherm/index.php"
+            class="sign-in-form"
+            method="post"
+          >
             <h2 class="title">English</h2>
-            <button class="buttoneng">go</button>
+            <!-- <button class="buttoneng" name="engels">go</button> -->
+            <input name="engels" type="submit" value="ga" class="buttonnl" />
           </form>
 
-          <form action="NL/laadscherm/index.html" class="sign-up-form">
+          <form
+            action="NL/laadscherm/index.php"
+            class="sign-up-form"
+            method="post"
+          >
             <h2 class="title">Nederlands</h2>
-            <input type="submit" value="ga" class="buttonnl" />
+            <input
+              name="nederlands"
+              type="submit"
+              value="ga"
+              class="buttonnl"
+            />
           </form>
         </div>
       </div>
@@ -46,6 +60,6 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="./NL/Javascript/app.js"></script>
   </body>
 </html>

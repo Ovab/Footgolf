@@ -3,36 +3,36 @@
     "titles": [
       {
         "title1": "Categories",
-        "title2": "Spelregels",
+        "title2": "Game rules",
         "title3": "Gholes",
-        "title4": "Groepen",
+        "title4": "Groups",
         "title5": "Top scores"
       }
     ],
     "btns": [
       {
-        "btn1": "Spelregels",
+        "btn1": "Game rules",
         "btn2": "Top scores",
         "btn3": "Login",
-        "btn4": "Groepen",
+        "btn4": "Groups",
         "btn5": "Gholes"
       }
     ],
     "spelregels": [
       {
-        "card1": "De bedoeling van het spel is dat je de bal in zo min mogelijk trappen, Langs diverse hindernissen de Ghole in speelt Tijdens het spel geldt dat de bal die het verst van de Ghole af ligt, als eerste mag worden gespeeld. Het maximaal aantal per baan is 10.",
-        "card2": "Veel Plezier!",
-        "card3": "Als de hindernis gemist wordt: Leg dan de bal 3 meter voor de hindernis Als de bal via het ongemaaide gras weer in de baan komt: Leg dan de bal terug waar deze de baan verliet"
+        "card1": "The goal of the game is to kick the ball past various obstacles into the holes in as little tries as possible. The ball furthest away from the ghole is played first with a maximum of 10 per hole",
+        "card2": "Have Fun!",
+        "card3": "If an obstacle is missed put the ball 3m before the obstacle <br>If the ball lands in the un mowed grass put the ball where it left the hole"
       }
     ],
     "topScores": [
-      { "top1": "Top scores 18 holes", "top2": "Top scores 27 holes" }
+      { "top1": "Top scores 18 Gholes", "top2": "Top scores 27 Gholes" }
     ],
     "groepen": [
       {
         "option1": "Join groep",
-        "option2": "Maak groep",
-        "option3": "Groep beheer"
+        "option2": "Create group",
+        "option3": "Group manager"
       }
     ]
   },
@@ -45,22 +45,22 @@
       {
         "card1": [
           {
-            "text": "Speel de bal langs of over de heuvels/obstakels. Je mag zelf weten hoe je deze passeert.",
-            "tip": "Over de grond spelen geeft de minste risico's",
+            "text": "Play the ball along or over the hills/obstacles. You can decide for yourself how to pass it.",
+            "tip": "Playing on the ground gives the least risks",
             "warning": ""
           }
         ],
         "card2": [
           {
-            "text": "Speel de bal langs of over de boom-stammen.",
-            "tip": "Speel de bal niet te hard, met souplesse red je het.",
+            "text": "Play the ball along or over the tree trunks.",
+            "tip": "Don't play the ball too hard, with flexibility you can make it.",
             "warning": ""
           }
         ],
         "card3": [
           {
-            "text": "Recht toe, recht aan baan.",
-            "tip": "Pas op! voor of achter de heuvel ligt een bunker.",
+            "text": "Straight to the point, straight to the job.",
+            "tip": "Beware! in front of or behind the hill is a bunker.",
             "warning": ""
           }
         ],

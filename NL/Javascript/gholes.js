@@ -1,76 +1,48 @@
-// Cards
-let card1 = document.getElementById("card1"),
-  card2 = document.getElementById("card2"),
-  card3 = document.getElementById("card3"),
-  card4 = document.getElementById("card4"),
-  card5 = document.getElementById("card5"),
-  card6 = document.getElementById("card6"),
-  card7 = document.getElementById("card7"),
-  card8 = document.getElementById("card8"),
-  card9 = document.getElementById("card9"),
-  card10 = document.getElementById("card10"),
-  card11 = document.getElementById("card11"),
-  card12 = document.getElementById("card12"),
-  card13 = document.getElementById("card13"),
-  card14 = document.getElementById("card14"),
-  card15 = document.getElementById("card15"),
-  card16 = document.getElementById("card16"),
-  card17 = document.getElementById("card17"),
-  card18 = document.getElementById("card18"),
-  card_length = document.querySelectorAll(".card");
+"use strict";
 
-// container
+let cards = document.querySelectorAll(".card");
 let container = document.getElementById("container");
-
 const body = document.body;
-
 const popUp = document.querySelector(".pop_up");
-
 const content = document.querySelector(".pop_up_content");
-
 const overlay = document.querySelector(".overlay");
-
 const popUpImg = document.querySelector(".pop_up_img");
-
 const socialMediaBtns = document.querySelector(".social_media_btns");
+const img = document.querySelectorAll(".image");
+const cardText = document.querySelectorAll(".card_text");
+let data;
 
-// Card List
-let card_list = [
-  card1,
-  card2,
-  card3,
-  card4,
-  card5,
-  card6,
-  card7,
-  card8,
-  card9,
-  card10,
-  card11,
-  card12,
-  card13,
-  card14,
-  card15,
-  card16,
-  card17,
-  card18,
-];
+function getData(array) {
+  data = array;
+}
+
+function insertData(data) {
+  cardText.forEach((element, i) => {
+    element.textContent = data.gholePage.cards[0][`card${i + 1}`][0]["text"];
+  });
+}
+
+img.forEach((element, i) => {
+  element.style.backgroundImage = `url('../../../img/ghole-tracks/new tracks/Footgolf-Holes-GR_${
+    i + 1
+  }.png')`;
+});
 
 // next function
 let counter = 1;
 function next() {
-  if (counter < card_length.length) {
-    card_list[counter].classList.add("active");
+  if (counter < cards.length) {
+    cards[counter].classList.add("active");
     backgroundFunc(counter);
     counter += 1;
   } else {
-    counter = card_length.length;
+    counter = cards.length;
   }
 }
 
 function prev() {
   if (counter > 1) {
-    card_list[counter - 1].classList.remove("active");
+    cards[counter - 1].classList.remove("active");
     counter -= 1;
   } else {
     counter = 1;
@@ -149,9 +121,10 @@ function showCards() {
     container.style.opacity = "1";
   }, 1);
 }
+
 function hideCards() {
   container.style.opacity = "0";
-  body.style.backgroundColor = "#a5ffc8";
+  body.style.backgroundColor = "#d5e6d2";
   setTimeout(function () {
     container.style.display = "none";
   }, 1000);
