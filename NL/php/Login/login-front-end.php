@@ -28,7 +28,7 @@
                     }
                     //variablen leeg maken just in case
                     unset($errors);
-                    unset($_SESSION['errors'])
+                    unset($_SESSION['errors']);
                     //eind PHP code
                     ?>
 
@@ -87,8 +87,6 @@
                     <button class="btn transparent" id="sign-in-btn">
                         Log in
                     </button>
-
-
                 </div>
             </div>
         </div>

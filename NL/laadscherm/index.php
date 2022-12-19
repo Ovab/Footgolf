@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="3; url = ../index.php" />
+    <meta http-equiv="refresh" content="3; url = ../php/Login/login-front-end.php" />
     <title>Laden</title>
     <link rel="stylesheet" href="../css/loading" />
 </head>
@@ -22,14 +22,10 @@
 session_start();
 if (isset($_POST["engels"])) {
   // echo "engels";
-  if (isset($_SESSION["data"])) {
-    $_SESSION["data"] = file_get_contents("../../EN.json");
-  }
+  $_SESSION["data"] = file_get_contents("../../EN.json");
 } else if (isset($_POST["nederlands"])) {
   // echo "nederlands";
-  if (isset($_SESSION["data"])) {
-    $_SESSION["data"] = file_get_contents("../../NL.json");
-  }
+  $_SESSION["data"] = file_get_contents("../../NL.json");
 }
 ?>
 

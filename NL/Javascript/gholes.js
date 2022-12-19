@@ -1,7 +1,7 @@
 "use strict";
 
-let cards = document.querySelectorAll(".card");
-let container = document.getElementById("container");
+const cards = document.querySelectorAll(".card");
+const container = document.getElementById("container");
 const body = document.body;
 const popUp = document.querySelector(".pop_up");
 const content = document.querySelector(".pop_up_content");
@@ -115,7 +115,7 @@ function presetCards(ghole) {
 }
 
 function showCards() {
-  body.style.backgroundColor = "#fff";
+  // body.style.backgroundColor = "#fff";
   container.style.display = "block";
   setTimeout(function () {
     container.style.opacity = "1";
@@ -124,7 +124,7 @@ function showCards() {
 
 function hideCards() {
   container.style.opacity = "0";
-  body.style.backgroundColor = "#d5e6d2";
+  // body.style.backgroundColor = "#d5e6d2";
   setTimeout(function () {
     container.style.display = "none";
   }, 1000);

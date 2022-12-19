@@ -22,7 +22,7 @@
       {
         "card1": "The goal of the game is to kick the ball past various obstacles into the holes in as little tries as possible. The ball furthest away from the ghole is played first with a maximum of 10 per hole",
         "card2": "Have Fun!",
-        "card3": "If an obstacle is missed put the ball 3m before the obstacle <br>If the ball lands in the un mowed grass put the ball where it left the hole"
+        "card3": "If an obstacle is missed put the ball 3m before the obstacle If the ball lands in the un mowed grass put the ball where it left the hole"
       }
     ],
     "topScores": [
@@ -30,7 +30,7 @@
     ],
     "groepen": [
       {
-        "option1": "Join groep",
+        "option1": "Join group",
         "option2": "Create group",
         "option3": "Group manager"
       }
@@ -66,168 +66,168 @@
         ],
         "card4": [
           {
-            "text": "De Zig Zag baan. Speel de bal onder de verhoogde boomstam door. HINDERNIS MOET GENOMEN WORDEN.",
-            "tip": "Speel de bal niet te hard!",
-            "warning": "Missen betekent strafpunt, leg de bal tussen de rode paaltjes en probeer het nogmaals."
+            "text": "The Zig Zag track. Play the ball under the raised tree trunk. HURDLE MUST BE OVERCOME.",
+            "tip": "Don't play the ball to hard!",
+            "warning": "Missing means penalty point, put the ball between the red posts and try again."
           }
         ],
         "card5": [
           {
-            "text": "Gewoon lekker knallen langs of over de obstakels.",
-            "tip": "denk aan de strafpunten, speel de bal niet in het hoge gras!",
+            "text": "Just pop along or over the obstacles.",
+            "tip": "think of the penalty points, don't play the ball in the tall grass!",
             "warning": ""
           }
         ],
         "card6": [
           {
-            "text": "Oerstammen. Speel de bal tussen de oerstammen door.",
-            "tip": "Kies de juiste weg voor zo min mogelijk schoten.",
+            "text": "Primal tribes. Play the ball between the primordial tribes.",
+            "tip": "Choose the right path for as few shots as possible.",
             "warning": ""
           }
         ],
         "card7": [
           {
-            "text": "Rechts en Links benige baan.",
-            "tip": "Houd rekening met de vele strobalen op de baan.",
+            "text": "Track for righty's and lefty's.",
+            "tip": "Take into account the many straw bales on the track.",
             "warning": ""
           }
         ],
         "card8": [
           {
-            "text": "De \"Goal in One\" baan.",
-            "tip": "Over de grond heeft meer kans dan door de lucht.",
+            "text": "The \"Goal in One\" track.",
+            "tip": "Over the ground has more chance than through the air.",
             "warning": ""
           }
         ],
         "card9": [
           {
-            "text": "De vrijetrap specialist. Leg de bal voor de rode palen en schiet de bal langs of over de muur. HINDERNIS MOET GENOMEN WORDEN!",
-            "tip": "de bal dient in 1 keer de muur en de keeper te passeren.",
-            "warning": "Missen betekent strafpunt, leg de bal tussen de rode paaltjes en probeer het nogmaals."
+            "text": "The free kick specialist. Place the ball in front of the red posts and shoot the ball along or over the wall. HURDLE MUST BE OVERCOME!",
+            "tip": "the ball must pass the wall and the keeper in 1 time.",
+            "warning": "Missing means penalty point, put the ball between the red posts and try again."
           }
         ],
         "card10": [
           {
-            "text": "Speel de bal over het water en daarna langs of over de boomstammen.",
-            "tip": "Leg de bal eerst voor het water klaar. In 1 keer over het water lukt bijna niet!",
+            "text": "Play the ball over the water and then along or over the tree trunks.",
+            "tip": "First, prepare the ball for the water. In 1 time over the water almost does not work!",
             "warning": ""
           }
         ],
         "card11": [
           {
-            "text": "Een echte baan voor een rechts benige speler. Speel de bal langs of over de hekken.",
-            "tip": "De hekken staan verder uit elkaar dan je denkt.",
+            "text": "A real job for a right-winged player. Play the ball along or over the fences.",
+            "tip": "The fences are further apart than you think.",
             "warning": ""
           }
         ],
         "card12": [
           {
-            "text": "Speel de bal tussen de palen, over de planken. HINDERNIS MOET GENOMEN WORDEN!",
-            "tip": "Speel de bal niet te hard.",
-            "warning": "Missen betekent strafpunt, leg de bal tussen de rode paaltjes en probeer het nogmaals."
+            "text": "Play the ball between the posts, over the boards. HURDLE MUST BE OVERCOME!",
+            "tip": "Don't play the ball too hard.",
+            "warning": "Missing means penalty point, put the ball between the red posts and try again."
           }
         ],
         "card13": [
           {
-            "text": "De recht opstaande ring. HINDERNIS MOET GENOMEN WORDEN!",
-            "tip": "Probeer niet van een te grote afstand te loppen.",
+            "text": "The upright ring. HURDLE MUST BE OVERCOME!",
+            "tip": "Try not to lurk from too great a distance.",
             "warning": ""
           }
         ],
         "card14": [
           {
-            "text": "Kaats planken. Speel de bal in 4 trappen in de Ghole.",
-            "tip": "Maak gebruik van de kaats planken.",
+            "text": "Kaats planks. Play the ball in 4 kicks in the Ghole.",
+            "tip": "Make use of the kaats shelves.",
             "warning": ""
           }
         ],
         "card15": [
           {
-            "text": "De aflopende muurtjes. Speel de bal langs of over de muurtjes.",
-            "tip": "Over het lage gedeelte beste resultaat.",
+            "text": "The sloping walls. Play the ball along or over the walls.",
+            "tip": "About the low part best result.",
             "warning": ""
           }
         ],
         "card16": [
           {
-            "text": "Speel de bal door 1 van de 3 betonnen ringen. HINDERNIS MOET GENOMEN WORDEN!",
-            "tip": "Probeer door de middelste ring te spelen, zodat de bal de beste lijn volgt.",
+            "text": "Play the ball through 1 of the 3 concrete rings. HURDLE MUST BE OVERCOME!",
+            "tip": "Try to play through the middle ring so that the ball follows the best line.",
             "warning": ""
           }
         ],
         "card17": [
           {
-            "text": "De Slang. Passeer de boomstronk en boomstammen op jou manier.",
-            "tip": "Speel de bal langs de rand.",
+            "text": "The Snake. Pass the stump and logs your way.",
+            "tip": "Play the ball along the edge.",
             "warning": ""
           }
         ],
         "card18": [
           {
-            "text": "De katapult boom. Mik de bal in het net van de Katapult. HINDERNIS MOET GENOMEN WORDEN!",
-            "tip": "Probeer niet van een te grote afstand te schieten.",
+            "text": "The catapult tree. Aim the ball into the net of the Catapult. HURDLE MUST BE OVERCOME!",
+            "tip": "Try not to shoot from too great a distance.",
             "warning": ""
           }
         ],
         "card19": [
           {
-            "text": "Speel de bal door de Trekker banden. HINDERNIS MOET GENOMEN WORDEN",
-            "tip": "Speel de bal niet te hard, klaar leggen geeft beste resultaat.",
-            "warning": "Missen betekent strafpunt, probeer het nogmaals."
+            "text": "Play the ball through the Trekker tires. HURDLE MUST BE OVERCOME.",
+            "tip": "Do not play the ball too hard, getting ready gives best results.",
+            "warning": "Missing means penalty point, try again."
           }
         ],
         "card20": [
           {
-            "text": "8 baan, rechte lijn over de bulten is gewaagt, er om heen is ook prima.",
-            "tip": "leg de bal bij de aftrap iets meer naar links of rechts",
+            "text": "8 lane, straight line over the humps is daring, around it is also fine.",
+            "tip": "put the ball a little more to the left or right at kick-off.",
             "warning": ""
           }
         ],
         "card21": [
           {
-            "text": "Speel de bal onder de boomstammen door. HINDERNIS MOET GENOMEN WORDEN.",
-            "tip": "Geef de bal vaart om 2 hindernissen in 1 scht te passeren",
-            "warning": "Missen betekent strafpunt, probeer het nogmaals."
+            "text": "Play the ball under the tree trunks. HURDLE MUST BE OVERCOME.",
+            "tip": "Give the ball momentum to pass 2 obstacles in 1 shot.",
+            "warning": "Missing means penalty point, try again."
           }
         ],
         "card22": [
           {
-            "text": "Speel de bal voor de stammen of in 1 keer door de lucht. HINDERNIS MOET GENOMEN WORDEN",
-            "tip": "pas op voor de sloot achter de ghole.",
+            "text": "Play the ball in front of the trunks or in 1 time through the air. HURDLE MUST BE OVERCOME.",
+            "tip": "beware of the ditch behind the ghole.",
             "warning": ""
           }
         ],
         "card23": [
           {
-            "text": "Speel de bal door de buis heen. HINDERNIS MOET GENOMEN WORDEN.",
-            "tip": "Speel de bal niet te hard door de buis, misschien gaat hij in 1 keer in de ghole.",
-            "warning": "Missen betekent strafpunt, probeer het nogmaals."
+            "text": "Play the ball through the tube. HURDLE MUST BE OVERCOME.",
+            "tip": "Do not play the ball too hard through the tube, maybe it will go into the ghole in 1 time.",
+            "warning": "Missing means penalty point, try again."
           }
         ],
         "card24": [
           {
-            "text": "Gewoon lekker knallen!",
-            "tip": "houd rekening met de wind.",
+            "text": "Just a blast!",
+            "tip": "take the wind into account.",
             "warning": ""
           }
         ],
         "card25": [
           {
-            "text": "Links en rechtsbenige baan met betonnen ringen.",
-            "tip": "speel de bal niet te hard en het beste langs de kanten.",
+            "text": "Left and right-legged track with concrete rings.",
+            "tip": "don't play the ball too hard and best on the sides.",
             "warning": ""
           }
         ],
         "card26": [
           {
-            "text": "Speel de bal zigzag tussen de hekjes door. Er over heen mag niet! HINDERNIS MOET GENOMEN WORDEN.",
-            "tip": "speel de bal niet te hard, klaar leggen geeft beste resultaat.",
-            "warning": "Missen betekent strafpunt, probeer het nogmaals."
+            "text": "Play the ball zigzag between the fences. You can't get over it! HURDLE MUST BE OVERCOME.",
+            "tip": "do not play the ball too hard, getting ready gives best results.",
+            "warning": "Missing means penalty point, try again."
           }
         ],
         "card27": [
           {
-            "text": "Lekker knallen en speel de bal op het grote eiland. HINDERNIS MOET GENOMEN WORDEN.",
+            "text": "Pop and play the ball on the big island. HURDLE MUST BE OVERCOME.",
             "tip": "",
             "warning": ""
           }

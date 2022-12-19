@@ -15,6 +15,8 @@ body {
   height: 100%;
   transition: 0.3s ease-in;
   /* overflow: hidden; */
+  /* background-color: #beffb2; */
+  /* background-color: #a1bc9b; */
   background-color: #d5e6d2;
 }
 
@@ -536,7 +538,10 @@ p {
   height: auto;
   border-radius: 15px;
   padding: 20px;
-  background: #d5e6d2;
+  /* background-color: #fff; */
+  background-color: #d5e6d2;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.1);
   transition: 1.4s;
   margin: -1200px;
   color: #ec1c24;

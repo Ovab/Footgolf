@@ -4,13 +4,13 @@ const reservation = document.getElementById("reservation");
 const leaderboard = document.getElementById("leaderboard");
 const title = document.getElementById("title");
 const btn = document.querySelectorAll(".btn");
-let pageContent;
 const mainTitle = document.querySelector(".main_title");
 const secondaryTitle = document.querySelector(".secondary_title");
 const categoriesBtns = document.querySelectorAll(".categories_btns");
 const boxContent = document.querySelectorAll(".box_content");
 const topScoreText = document.querySelectorAll(".top_score_text");
 const groupText = document.querySelectorAll(".group_text");
+let pageContent;
 
 //Voor als je het standaart weg wilt hebben.
 //spelRegels.style.display = "none";
